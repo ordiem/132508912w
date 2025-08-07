@@ -108,7 +108,7 @@ export default function Article() {
             src={heroImage}
             alt="Abstract editorial hero representing calm appetite and steady energy"
             loading="eager"
-            className="w-full h-auto"
+            className="w-full max-h-[270px] object-cover"
           />
         </figure>
 
