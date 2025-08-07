@@ -8,8 +8,8 @@ const graphImg = "/lovable-uploads/14b227b0-94d6-43ef-ab06-bc98d1ef6ec5.png";
 const moveImg = "/lovable-uploads/1b1e3232-3389-42f3-8023-3d1a8eae1b50.png";
 
 export default function Article() {
-  const h1 = '5 Reasons a Simple Daily Patch is the "8-Hour Appetite Switch" Women Over 45 are Raving About';
-  const seoTitle = "5 Reasons the 8‑Hour Appetite Switch Patch Works"; // <60 chars
+  const h1 = 'The "Appetite Switch" Patch: 5 Reasons It\'s the New Secret to Weight Loss After 45';
+  const seoTitle = "Appetite Switch Patch: Weight Loss Secret After 45"; // <60 chars
   const description =
     "Metabolism after 45 isn’t about willpower. Discover the daily patch that calms food noise and supports a steady 8‑hour appetite switch.";
   const canonical = `${window.location.origin}/article`;
@@ -76,11 +76,16 @@ export default function Article() {
 
       <header className="border-b bg-card/50 backdrop-blur supports-[backdrop-filter]:bg-card/60">
         <div className="container mx-auto max-w-6xl px-4 py-6">
-          <nav aria-label="Breadcrumb" className="text-sm text-muted-foreground">
-            <a href="/" className="story-link">Home</a>
-            <span className="mx-2">/</span>
-            <span>Health</span>
-          </nav>
+          <div className="flex items-center justify-between">
+            <div className="font-serifDisplay text-2xl font-bold text-foreground">
+              50&Beyond
+            </div>
+            <nav aria-label="Breadcrumb" className="text-sm text-muted-foreground">
+              <a href="/" className="story-link">Home</a>
+              <span className="mx-2">/</span>
+              <span>Health</span>
+            </nav>
+          </div>
         </div>
       </header>
 
