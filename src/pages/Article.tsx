@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import heroImage from "@/assets/hero-wsj.jpg";
 import { Button } from "@/components/ui/button";
 
@@ -8,6 +8,7 @@ export default function Article() {
   const description =
     "Metabolism after 45 isn’t about willpower. Discover the daily patch that calms food noise and supports a steady 8‑hour appetite switch.";
   const canonical = `${window.location.origin}/article`;
+  const [showStickyCTA, setShowStickyCTA] = useState(false);
 
   useEffect(() => {
     document.title = `${seoTitle} — Journal`;
@@ -32,6 +33,19 @@ export default function Article() {
     }
     link.href = canonical;
   }, [seoTitle, description, canonical]);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const doc = document.documentElement;
+      const scrollTop = window.scrollY || doc.scrollTop;
+      const max = (doc.scrollHeight - window.innerHeight) || 1;
+      const progress = scrollTop / max;
+      setShowStickyCTA(progress >= 0.3);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   const jsonLd = useMemo(
     () => ({
@@ -226,6 +240,26 @@ export default function Article() {
           </section>
         </article>
       </main>
+
+      {/* Sticky CTA bar */}
+      <div
+        aria-live="polite"
+        className={`fixed inset-x-0 bottom-0 z-40 transition-transform duration-300 ${showStickyCTA ? 'translate-y-0' : 'translate-y-full'}`}
+      >
+        <div className="border-t bg-card/90 backdrop-blur supports-[backdrop-filter]:bg-card/80">
+          <div className="container mx-auto max-w-6xl px-4 py-3 flex flex-col sm:flex-row items-center gap-3">
+            <p className="text-sm text-muted-foreground text-center sm:text-left flex-1">
+              Ready to try the “8‑Hour Appetite Switch”? Inventory is limited.
+            </p>
+            <Button
+              size="lg"
+              onClick={() => document.getElementById('availability')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Check Availability
+            </Button>
+          </div>
+        </div>
+      </div>
 
       <footer className="border-t py-8 text-center text-sm text-muted-foreground">
         © {new Date().getFullYear()} Journal — Health & Wellness
