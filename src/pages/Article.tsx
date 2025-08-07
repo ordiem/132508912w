@@ -76,15 +76,10 @@ export default function Article() {
 
       <header className="border-b bg-card/50 backdrop-blur supports-[backdrop-filter]:bg-card/60">
         <div className="container mx-auto max-w-6xl px-4 py-6">
-          <div className="flex items-center justify-between">
-            <div className="font-serifDisplay text-2xl font-bold text-foreground">
+          <div className="text-center">
+            <div className="font-serifDisplay text-3xl font-bold text-foreground tracking-tight">
               50&Beyond
             </div>
-            <nav aria-label="Breadcrumb" className="text-sm text-muted-foreground">
-              <a href="/" className="story-link">Home</a>
-              <span className="mx-2">/</span>
-              <span>Health</span>
-            </nav>
           </div>
         </div>
       </header>
