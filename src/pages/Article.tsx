@@ -123,15 +123,6 @@ export default function Article() {
             Here are 5 reasons why this simple “8‑Hour Appetite Switch” patch is becoming the go‑to solution for women who thought they’d tried everything.
           </p>
 
-          <figure className="my-8 overflow-hidden rounded-lg border bg-card">
-            <img
-              src="/placeholder.svg"
-              alt="Placeholder image — replace with lifestyle image A"
-              loading="lazy"
-              className="w-full h-auto"
-            />
-            <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Placeholder — replace later</figcaption>
-          </figure>
 
           <section className="mt-10">
             <h2 className="font-serifDisplay text-2xl mb-3">1. It Tackles the REAL Reason You’re Craving Food After 45</h2>
@@ -163,11 +154,11 @@ export default function Article() {
           <section aria-label="Inline images B & C" className="my-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <figure className="overflow-hidden rounded-lg border bg-card">
-                <img src="/placeholder.svg" alt="Placeholder image — replace with product shot or detail" loading="lazy" className="w-full h-auto" />
+                <img src="/placeholder.svg" alt="Placeholder image — replace with product shot or detail" loading="lazy" className="w-full max-h-[350px] object-cover" />
                 <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Placeholder — replace later</figcaption>
               </figure>
               <figure className="overflow-hidden rounded-lg border bg-card">
-                <img src="/placeholder.svg" alt="Placeholder image — replace with lifestyle image B" loading="lazy" className="w-full h-auto" />
+                <img src="/placeholder.svg" alt="Placeholder image — replace with lifestyle image B" loading="lazy" className="w-full max-h-[350px] object-cover" />
                 <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Placeholder — replace later</figcaption>
               </figure>
             </div>
@@ -200,7 +191,7 @@ export default function Article() {
           </section>
 
           <figure className="my-8 overflow-hidden rounded-lg border bg-card">
-            <img src="/placeholder.svg" alt="Placeholder image — replace with lifestyle image C" loading="lazy" className="w-full h-auto" />
+            <img src="/placeholder.svg" alt="Placeholder image — replace with lifestyle image C" loading="lazy" className="w-full max-h-[350px] object-cover" />
             <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Placeholder — replace later</figcaption>
           </figure>
 
