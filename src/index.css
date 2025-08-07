@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 40 14% 96%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -20,13 +20,13 @@ All colors MUST be HSL.
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 210 20% 90%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 20% 90%;
+    --muted-foreground: 215.4 16.3% 30%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 43 74% 49%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -74,7 +74,7 @@ All colors MUST be HSL.
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 217.2 32.6% 17.5%;
+    --accent: 43 74% 49%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -100,6 +100,37 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-serifBody;
   }
+}
+
+/* Editorial utilities and micro-interactions */
+@layer utilities {
+  .drop-cap::first-letter {
+    float: left;
+    font-family: theme(fontFamily.serifDisplay);
+    font-size: 3.5rem;
+    line-height: 1;
+    padding-right: 0.25rem;
+    margin-top: 0.15rem;
+    color: hsl(var(--primary));
+  }
+  .story-link {
+    position: relative;
+  }
+  .story-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: hsl(var(--accent));
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 300ms ease;
+  }
+  .story-link:hover::after { transform: scaleX(1); transform-origin: left; }
+  .hover-scale { transition: transform 200ms ease; }
+  .hover-scale:hover { transform: translateY(-1px); }
 }
