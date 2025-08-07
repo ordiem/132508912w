@@ -78,7 +78,7 @@ export default function Article() {
         <div className="container mx-auto max-w-6xl px-4 py-6">
           <div className="text-center">
             <div className="font-serifDisplay text-3xl font-bold text-foreground">
-              50&Beyond
+              [LOGO]
             </div>
           </div>
         </div>
