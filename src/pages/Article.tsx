@@ -108,7 +108,7 @@ export default function Article() {
             src={heroImage}
             alt="Abstract editorial hero representing calm appetite and steady energy"
             loading="eager"
-            className="w-full max-h-[270px] object-cover"
+            className="w-full h-[270px] lg:h-[400px] object-cover"
           />
         </figure>
 
@@ -214,12 +214,14 @@ export default function Article() {
           </section>
 
           <blockquote className="mt-10 border-l-4 pl-4 italic text-muted-foreground">
-            “After menopause, nothing worked anymore. I couldn’t afford Wegovy. This patch helped me lose 28 pounds in 4 months. My doctor was shocked.” — <span className="text-foreground">Margaret T., 56</span>
+            “After menopause, nothing worked anymore. I couldn’t afford the injectables. This patch helped me lose 28 pounds in 4 months. My doctor was shocked.” — <span className="text-foreground">Margaret T., 56</span>
           </blockquote>
 
           <section id="availability" className="mt-12 border rounded-lg p-6 bg-card animate-scale-in text-center">
             <h3 className="font-serifDisplay text-2xl">How to Try the “8‑Hour Appetite Switch” Today</h3>
             <p className="mt-3 text-muted-foreground">Lose 30 pounds in 90 days or it’s free.</p>
+            <p className="text-muted-foreground">If you don't lose at least 30 pounds, you will receive a full 100% refund of your purchase price.</p>
+            <p className="text-muted-foreground">No questions asked.</p>
             <div className="mt-4">
               <a href="#" aria-label="Check availability" rel="nofollow">
                 <Button size="lg" className="animate-scale-in">Click Here to Check Availability</Button>
