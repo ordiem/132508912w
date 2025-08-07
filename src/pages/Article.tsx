@@ -77,7 +77,7 @@ export default function Article() {
       <header className="border-b bg-card/50 backdrop-blur supports-[backdrop-filter]:bg-card/60">
         <div className="container mx-auto max-w-6xl px-4 py-6">
           <div className="text-center">
-            <div className="font-serifDisplay text-3xl font-bold text-foreground tracking-tight">
+            <div className="font-serifDisplay text-3xl font-bold text-foreground">
               50&Beyond
             </div>
           </div>
