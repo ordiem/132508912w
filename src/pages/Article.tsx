@@ -1,6 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
-import heroImage from "@/assets/hero-wsj.jpg";
 import { Button } from "@/components/ui/button";
+
+// User-uploaded assets (served from /lovable-uploads)
+const heroImage = "/lovable-uploads/e4c39395-fa79-4f1b-bf86-f61b44dbd2cb.png";
+const dermalImg = "/lovable-uploads/b7fb3eeb-7203-4520-bbed-7e69f4970a6b.png";
+const graphImg = "/lovable-uploads/14b227b0-94d6-43ef-ab06-bc98d1ef6ec5.png";
+const moveImg = "/lovable-uploads/1b1e3232-3389-42f3-8023-3d1a8eae1b50.png";
 
 export default function Article() {
   const h1 = '5 Reasons a Simple Daily Patch is the "8-Hour Appetite Switch" Women Over 45 are Raving About';
@@ -154,12 +159,12 @@ export default function Article() {
           <section aria-label="Inline images B & C" className="my-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <figure className="overflow-hidden rounded-lg border bg-card">
-                <img src="/placeholder.svg" alt="Placeholder image — replace with product shot or detail" loading="lazy" className="w-full max-h-[350px] object-cover" />
-                <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Placeholder — replace later</figcaption>
+                <img src={dermalImg} alt="Transdermal GLP‑1 patch delivering ingredients for 8 hours, bypassing digestion" loading="lazy" className="w-full max-h-[350px] object-cover" />
+                <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Dermal delivery — steady 8‑hour release</figcaption>
               </figure>
               <figure className="overflow-hidden rounded-lg border bg-card">
-                <img src="/placeholder.svg" alt="Placeholder image — replace with lifestyle image B" loading="lazy" className="w-full max-h-[350px] object-cover" />
-                <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Placeholder — replace later</figcaption>
+                <img src={graphImg} alt="Absorption over time: GLP‑1 patches vs pills — sustained 8‑hour release" loading="lazy" className="w-full max-h-[350px] object-cover" />
+                <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Patches vs pills — bioavailability over 8 hours</figcaption>
               </figure>
             </div>
           </section>
@@ -191,8 +196,8 @@ export default function Article() {
           </section>
 
           <figure className="my-8 overflow-hidden rounded-lg border bg-card">
-            <img src="/placeholder.svg" alt="Placeholder image — replace with lifestyle image C" loading="lazy" className="w-full max-h-[350px] object-cover" />
-            <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Placeholder — replace later</figcaption>
+            <img src={moveImg} alt="Active lifestyle with discreet GLP‑1 patch — confidence and energy" loading="lazy" className="w-full max-h-[350px] object-cover" />
+            <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Lifestyle — move freely with a discreet patch</figcaption>
           </figure>
 
           <section className="mt-10">
@@ -214,12 +219,7 @@ export default function Article() {
 
           <section id="availability" className="mt-12 border rounded-lg p-6 bg-card animate-scale-in text-center">
             <h3 className="font-serifDisplay text-2xl">How to Try the “8‑Hour Appetite Switch” Today</h3>
-            <p className="mt-3 text-muted-foreground">
-              The Patched GLP‑1 Patch is not available in stores and inventory is limited due to patented, high‑grade ingredients.
-            </p>
-            <p className="mt-2">
-              For a limited time, new customers can try it risk‑free with a 30‑day, 100% money‑back guarantee.
-            </p>
+            <p className="mt-3 text-muted-foreground">Lose 30 pounds in 90 days or it’s free.</p>
             <div className="mt-4">
               <a href="#" aria-label="Check availability" rel="nofollow">
                 <Button size="lg" className="animate-scale-in">Click Here to Check Availability</Button>
