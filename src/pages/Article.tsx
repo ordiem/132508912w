@@ -197,7 +197,7 @@ export default function Article() {
 
           <figure className="my-8 overflow-hidden rounded-lg border bg-card">
             <img src={moveImg} alt="Active lifestyle with discreet GLP‑1 patch — confidence and energy" loading="lazy" className="w-full max-h-[350px] object-cover" />
-            <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Lifestyle — move freely with a discreet patch</figcaption>
+            <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Move freely with a discreet patch!</figcaption>
           </figure>
 
           <section className="mt-10">
