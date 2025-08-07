@@ -107,38 +107,6 @@ export default function Article() {
           />
         </figure>
 
-        {/* Image placeholders (replace later) */}
-        <section aria-label="Inline images" className="mx-auto max-w-3xl mt-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <figure className="overflow-hidden rounded-lg border bg-card">
-              <img
-                src="/placeholder.svg"
-                alt="Placeholder image — replace with product or lifestyle photo 1"
-                loading="lazy"
-                className="w-full h-auto"
-              />
-              <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Placeholder 1 — replace later</figcaption>
-            </figure>
-            <figure className="overflow-hidden rounded-lg border bg-card">
-              <img
-                src="/placeholder.svg"
-                alt="Placeholder image — replace with product or lifestyle photo 2"
-                loading="lazy"
-                className="w-full h-auto"
-              />
-              <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Placeholder 2 — replace later</figcaption>
-            </figure>
-          </div>
-          <figure className="mt-4 overflow-hidden rounded-lg border bg-card">
-            <img
-              src="/placeholder.svg"
-              alt="Placeholder image — replace with product or lifestyle photo 3"
-              loading="lazy"
-              className="w-full h-auto"
-            />
-            <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Placeholder 3 — replace later</figcaption>
-          </figure>
-        </section>
 
         {/* Body copy */}
         <article className="mx-auto max-w-3xl mt-10 text-[1.07rem] leading-relaxed">
