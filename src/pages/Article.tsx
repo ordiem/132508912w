@@ -155,6 +155,16 @@ export default function Article() {
             Here are 5 reasons why this simple “8‑Hour Appetite Switch” patch is becoming the go‑to solution for women who thought they’d tried everything.
           </p>
 
+          <figure className="my-8 overflow-hidden rounded-lg border bg-card">
+            <img
+              src="/placeholder.svg"
+              alt="Placeholder image — replace with lifestyle image A"
+              loading="lazy"
+              className="w-full h-auto"
+            />
+            <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Placeholder — replace later</figcaption>
+          </figure>
+
           <section className="mt-10">
             <h2 className="font-serifDisplay text-2xl mb-3">1. It Tackles the REAL Reason You’re Craving Food After 45</h2>
             <p>
@@ -179,6 +189,20 @@ export default function Article() {
             <p>
               <strong>The “Switch” Solution:</strong> The patch uses transdermal delivery, a technology trusted by hospitals for decades. By delivering its powerful ingredients directly through the skin into the bloodstream, it completely bypasses the destructive forces of the stomach. This ensures high absorption so your body gets the full, uninterrupted benefit of every single nutrient.
             </p>
+          </section>
+
+          {/* Inline image pair */}
+          <section aria-label="Inline images B & C" className="my-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <figure className="overflow-hidden rounded-lg border bg-card">
+                <img src="/placeholder.svg" alt="Placeholder image — replace with product shot or detail" loading="lazy" className="w-full h-auto" />
+                <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Placeholder — replace later</figcaption>
+              </figure>
+              <figure className="overflow-hidden rounded-lg border bg-card">
+                <img src="/placeholder.svg" alt="Placeholder image — replace with lifestyle image B" loading="lazy" className="w-full h-auto" />
+                <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Placeholder — replace later</figcaption>
+              </figure>
+            </div>
           </section>
 
           <section className="mt-10">
@@ -206,6 +230,11 @@ export default function Article() {
               <strong>The “Switch” Solution:</strong> The patch contains a patented, concentrated form of Saffron Extract. In a double‑blind, placebo‑controlled study, this ingredient reduced sugar cravings by 65% and decreased snacking events by 55%. By keeping your energy and hormone levels stable for 8 hours, it helps you glide through your day without the desperate need for a sugary pick‑me‑up.
             </p>
           </section>
+
+          <figure className="my-8 overflow-hidden rounded-lg border bg-card">
+            <img src="/placeholder.svg" alt="Placeholder image — replace with lifestyle image C" loading="lazy" className="w-full h-auto" />
+            <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Placeholder — replace later</figcaption>
+          </figure>
 
           <section className="mt-10">
             <h2 className="font-serifDisplay text-2xl mb-3">5. It’s a Simple, Once‑a‑Day Ritual That Works While You Live Your Life</h2>
