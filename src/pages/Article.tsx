@@ -11,7 +11,7 @@ export default function Article() {
   const h1 = 'The "Appetite Switch" Patch: 5 Reasons It\'s the New Secret to Weight Loss After 45';
   const seoTitle = "Appetite Switch Patch: Weight Loss Secret After 45"; // <60 chars
   const description =
-    "Metabolism after 45 isn’t about willpower. Discover the daily patch that calms food noise and supports a steady 8‑hour appetite switch.";
+    "Metabolism after 45 isn't about willpower. Discover the daily patch that calms food noise and supports a steady 8‑hour appetite switch.";
   const canonical = `${window.location.origin}/article`;
   const [showStickyCTA, setShowStickyCTA] = useState(false);
 
@@ -88,9 +88,9 @@ export default function Article() {
         {/* Intro block - centered like the gallery layout */}
         <article className="mx-auto max-w-3xl text-center animate-fade-in">
           <p className="uppercase tracking-[0.12em] text-xs text-muted-foreground">Health & Wellness</p>
-          <h1 className="font-serifDisplay text-4xl sm:text-5xl md:text-6xl leading-tight mt-3">{h1}</h1>
+          <h1 className="font-serifDisplay text-5xl sm:text-6xl md:text-7xl leading-tight mt-3">{h1}</h1>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-            If you feel like your metabolism has betrayed you and food cravings are running your life, you’re not just imagining it. Here’s the science-backed reason why—and the simple daily ritual that’s changing everything.
+            If you feel like your metabolism has betrayed you and food cravings are running your life, you're not just imagining it. Here's the science-backed reason why—and the simple daily ritual that's changing everything.
           </p>
           <div className="mt-6 flex flex-col items-center gap-2 text-sm text-muted-foreground">
             <div className="h-12 w-12 rounded-full bg-accent/20 text-accent flex items-center justify-center font-semibold">ED</div>
@@ -116,42 +116,42 @@ export default function Article() {
         {/* Body copy */}
         <article className="mx-auto max-w-3xl mt-10 text-[1.07rem] leading-relaxed">
           <p>
-            For years, you’ve been told the same story: eat less, move more. But if you’re a woman over 45, you know it’s not that simple. You can eat salads until you’re blue in the face, but the scale remains stuck and the cravings for sugar and carbs feel like a constant, nagging battle.
+            For years, you've been told the same story: eat less, move more. But if you're a woman over 45, you know it's not that simple. You can eat salads until you're blue in the face, but the scale remains stuck and the cravings for sugar and carbs feel like a constant, nagging battle.
           </p>
           <p>
-            But what if that battle wasn’t about willpower?
+            But what if that battle wasn't about willpower?
           </p>
           <p>
-            A growing body of research, championed by nutritional doctors like Dr. Sarah Mitchell, ND, reveals that the root cause isn’t a lack of discipline—it’s a biological switch that gets turned off. Fortunately, a revolutionary new approach is helping thousands of women flip that switch back on, silencing food cravings and reactivating their metabolism for 8 hours straight.
+            A growing body of research, championed by nutritional doctors like Dr. Sarah Mitchell, ND, reveals that the root cause isn't a lack of discipline—it's a biological switch that gets turned off. Fortunately, a revolutionary new approach is helping thousands of women flip that switch back on, silencing food cravings and reactivating their metabolism for 8 hours straight.
           </p>
           <p>
-            Here are 5 reasons why this simple “8‑Hour Appetite Switch” patch is becoming the go‑to solution for women who thought they’d tried everything.
+            Here are 5 reasons why this simple "8‑Hour Appetite Switch" patch is becoming the go‑to solution for women who thought they'd tried everything.
           </p>
 
 
           <section className="mt-10">
-            <h2 className="font-serifDisplay text-2xl mb-3">1. It Tackles the REAL Reason You’re Craving Food After 45</h2>
+            <h2 className="font-serifDisplay text-3xl mb-3">1. It Tackles the REAL Reason You're Craving Food After 45</h2>
             <p>
-              You’re not imagining it: your body changed after 45. The real culprit is a hormone called GLP‑1, your body’s “master appetite hormone.” It tells your brain when you’re full, slows down digestion to make you feel satisfied longer, and helps stabilize blood sugar.
+              You're not imagining it: your body changed after 45. The real culprit is a hormone called GLP‑1, your body's "master appetite hormone." It tells your brain when you're full, slows down digestion to make you feel satisfied longer, and helps stabilize blood sugar.
             </p>
             <p>
-              <strong>The Problem:</strong> Research shows that after age 45, your natural GLP‑1 production can plummet by as much as 32%. When this happens, the “off switch” for your hunger is broken. Your brain rarely gets the signal that you’re full, leading to constant “food noise” and relentless cravings that no amount of willpower can defeat.
+              <strong>The Problem:</strong> Research shows that after age 45, your natural GLP‑1 production can plummet by as much as 32%. When this happens, the "off switch" for your hunger is broken. Your brain rarely gets the signal that you're full, leading to constant "food noise" and relentless cravings that no amount of willpower can defeat.
             </p>
             <p>
-              <strong>The “Switch” Solution:</strong> The patch delivers a steady, 8‑hour supply of natural, clinically‑studied ingredients like Lemon Fruit Extract, which has been shown in human trials to boost the body’s own GLP‑1 production by up to 22%. It works by fixing the root problem—restoring the hormonal signal that tells your body you’re satisfied.
+              <strong>The "Switch" Solution:</strong> The patch delivers a steady, 8‑hour supply of natural, clinically‑studied ingredients like Lemon Fruit Extract, which has been shown in human trials to boost the body's own GLP‑1 production by up to 22%. It works by fixing the root problem—restoring the hormonal signal that tells your body you're satisfied.
             </p>
           </section>
 
           <section className="mt-10">
-            <h2 className="font-serifDisplay text-2xl mb-3">2. It Bypasses the “Digestive Death Trap” That Makes Pills Useless</h2>
+            <h2 className="font-serifDisplay text-3xl mb-3">2. It Bypasses the "Digestive Death Trap" That Makes Pills Useless</h2>
             <p>
               Have you ever spent a fortune on supplements, only to feel like they did absolutely nothing? You were probably right.
             </p>
             <p>
-              <strong>The Problem:</strong> Your stomach is an acid bath designed to break things down. Experts estimate that up to 80% of the active ingredients in oral supplements are destroyed during digestion. For anyone with a compromised or slowed digestive system (a common issue for those on GLP‑1 medications), that number can be even higher. You’re literally flushing your money down the toilet.
+              <strong>The Problem:</strong> Your stomach is an acid bath designed to break things down. Experts estimate that up to 80% of the active ingredients in oral supplements are destroyed during digestion. For anyone with a compromised or slowed digestive system (a common issue for those on GLP‑1 medications), that number can be even higher. You're literally flushing your money down the toilet.
             </p>
             <p>
-              <strong>The “Switch” Solution:</strong> The patch uses transdermal delivery, a technology trusted by hospitals for decades. By delivering its powerful ingredients directly through the skin into the bloodstream, it completely bypasses the destructive forces of the stomach. This ensures high absorption so your body gets the full, uninterrupted benefit of every single nutrient.
+              <strong>The "Switch" Solution:</strong> The patch uses transdermal delivery, a technology trusted by hospitals for decades. By delivering its powerful ingredients directly through the skin into the bloodstream, it completely bypasses the destructive forces of the stomach. This ensures high absorption so your body gets the full, uninterrupted benefit of every single nutrient.
             </p>
           </section>
 
@@ -170,28 +170,28 @@ export default function Article() {
           </section>
 
           <section className="mt-10">
-            <h2 className="font-serifDisplay text-2xl mb-3">3. It Uses “Nature’s Ozempic” to Reduce Hunger by Nearly Half</h2>
+            <h2 className="font-serifDisplay text-3xl mb-3">3. It Uses "Nature's Ozempic" to Reduce Hunger by Nearly Half</h2>
             <p>
               Imagine feeling naturally less hungry without the side effects, cost, or hassle of prescriptions.
             </p>
             <p>
-              <strong>The Problem:</strong> Uncontrolled hunger sabotages even the best‑laid diet plans. When your GLP‑1 is low, you’re fighting a losing battle against your own biology.
+              <strong>The Problem:</strong> Uncontrolled hunger sabotages even the best‑laid diet plans. When your GLP‑1 is low, you're fighting a losing battle against your own biology.
             </p>
             <p>
-              <strong>The “Switch” Solution:</strong> The patch is infused with Berberine, a potent plant extract often nicknamed “Nature’s Ozempic.” In a peer‑reviewed clinical study, participants taking Berberine naturally reduced their food intake by 47.5%. The patch delivers this ingredient steadily, helping you feel satisfied with smaller portions without the “white‑knuckle” struggle.
+              <strong>The "Switch" Solution:</strong> The patch is infused with Berberine, a potent plant extract often nicknamed "Nature's Ozempic." In a peer‑reviewed clinical study, participants taking Berberine naturally reduced their food intake by 47.5%. The patch delivers this ingredient steadily, helping you feel satisfied with smaller portions without the "white‑knuckle" struggle.
             </p>
           </section>
 
           <section className="mt-10">
-            <h2 className="font-serifDisplay text-2xl mb-3">4. It Stops Sugar Cravings and Prevents the “3 p.m. Crash”</h2>
+            <h2 className="font-serifDisplay text-3xl mb-3">4. It Stops Sugar Cravings and Prevents the "3 p.m. Crash"</h2>
             <p>
-              That afternoon energy slump that sends you running for the snack cabinet isn’t just a bad habit—it’s a sign of unstable blood sugar.
+              That afternoon energy slump that sends you running for the snack cabinet isn't just a bad habit—it's a sign of unstable blood sugar.
             </p>
             <p>
               <strong>The Problem:</strong> When your GLP‑1 levels are low, your blood sugar is on a rollercoaster, leading to energy spikes and crashes that trigger intense cravings for sugar and simple carbs.
             </p>
             <p>
-              <strong>The “Switch” Solution:</strong> The patch contains a patented, concentrated form of Saffron Extract. In a double‑blind, placebo‑controlled study, this ingredient reduced sugar cravings by 65% and decreased snacking events by 55%. By keeping your energy and hormone levels stable for 8 hours, it helps you glide through your day without the desperate need for a sugary pick‑me‑up.
+              <strong>The "Switch" Solution:</strong> The patch contains a patented, concentrated form of Saffron Extract. In a double‑blind, placebo‑controlled study, this ingredient reduced sugar cravings by 65% and decreased snacking events by 55%. By keeping your energy and hormone levels stable for 8 hours, it helps you glide through your day without the desperate need for a sugary pick‑me‑up.
             </p>
           </section>
 
@@ -201,25 +201,25 @@ export default function Article() {
           </figure>
 
           <section className="mt-10">
-            <h2 className="font-serifDisplay text-2xl mb-3">5. It’s a Simple, Once‑a‑Day Ritual That Works While You Live Your Life</h2>
+            <h2 className="font-serifDisplay text-3xl mb-3">5. It's a Simple, Once‑a‑Day Ritual That Works While You Live Your Life</h2>
             <p>
-              The best health solutions are the ones you don’t have to think about.
+              The best health solutions are the ones you don't have to think about.
             </p>
             <p>
               <strong>The Problem:</strong> Complicated routines with multiple pills, powders, and restrictive meal plans are difficult to maintain and often lead to burnout and failure.
             </p>
             <p>
-              <strong>The “Switch” Solution:</strong> Apply one small, discreet patch in the morning and take it off 8 hours later. No pills to swallow, no nausea, no refrigeration, and no rigid schedules. It works quietly in the background, easing cravings and supporting metabolism while you focus on your day.
+              <strong>The "Switch" Solution:</strong> Apply one small, discreet patch in the morning and take it off 8 hours later. No pills to swallow, no nausea, no refrigeration, and no rigid schedules. It works quietly in the background, easing cravings and supporting metabolism while you focus on your day.
             </p>
           </section>
 
           <blockquote className="mt-10 border-l-4 pl-4 italic text-muted-foreground">
-            “After menopause, nothing worked anymore. I couldn’t afford the injectables. This patch helped me lose 28 pounds in 4 months. My doctor was shocked.” — <span className="text-foreground">Margaret T., 56</span>
+            "After menopause, nothing worked anymore. I couldn't afford the injectables. This patch helped me lose 28 pounds in 4 months. My doctor was shocked." — <span className="text-foreground">Margaret T., 56</span>
           </blockquote>
 
           <section id="availability" className="mt-12 border rounded-lg p-6 bg-card animate-scale-in text-center">
-            <h3 className="font-serifDisplay text-2xl">How to Try the “8‑Hour Appetite Switch” Today</h3>
-            <p className="mt-3 text-muted-foreground">Lose 30 pounds in 90 days or it’s free.</p>
+            <h3 className="font-serifDisplay text-3xl">How to Try the "8‑Hour Appetite Switch" Today</h3>
+            <p className="mt-3 text-muted-foreground">Lose 30 pounds in 90 days or it's free.</p>
             <p className="text-muted-foreground">If you don't lose at least 30 pounds, you will receive a full 100% refund of your purchase price.</p>
             <p className="text-muted-foreground">No questions asked.</p>
             <div className="mt-4">
@@ -239,7 +239,7 @@ export default function Article() {
         <div className="border-t bg-card/90 backdrop-blur supports-[backdrop-filter]:bg-card/80">
           <div className="container mx-auto max-w-6xl px-4 py-3 flex flex-col sm:flex-row items-center gap-3">
             <p className="text-sm text-muted-foreground text-center sm:text-left flex-1">
-              Ready to try the “8‑Hour Appetite Switch”? Inventory is limited.
+              Ready to try the "8‑Hour Appetite Switch"? Inventory is limited.
             </p>
             <Button
               size="lg"
