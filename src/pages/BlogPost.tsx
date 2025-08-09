@@ -473,9 +473,7 @@ const BlogPost = () => {
                     ✓ Over-the-counter availability • ✓ No prescription needed
                   </p>
                 </div>
-                <p className="text-foreground">
-                  It's one of the lowest-risk, highest-reward options I've seen in my career.
-                </p>
+                
               </div>
               
               <p className="text-lg font-medium text-foreground">
@@ -496,13 +494,11 @@ const BlogPost = () => {
 
             {/* Resources and Studies Section */}
             <div className="bg-card border rounded-lg p-8 mt-12 shadow-sm">
-              <h2 className="text-2xl md:text-3xl font-serifDisplay font-semibold text-foreground mb-6">
-                Resources and Studies
-              </h2>
+              <h2 className="text-2xl md:text-3xl font-serifDisplay font-semibold text-foreground mb-6">Clinical Research Summary</h2>
               
               <div className="space-y-6">
                 <div className="bg-muted/50 rounded-lg p-6">
-                  <h3 className="text-lg font-semibold text-foreground mb-4">Clinical Research Summary</h3>
+                  
                   <div className="space-y-6 text-sm">
                     <div>
                       <h4 className="font-semibold text-foreground">BERBERINE — Metabolic Enhancement</h4>
