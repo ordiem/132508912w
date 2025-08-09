@@ -225,9 +225,7 @@ export default function Article() {
       <div aria-live="polite" className={`fixed inset-x-0 bottom-0 z-40 transition-transform duration-300 ${showStickyCTA ? 'translate-y-0' : 'translate-y-full'}`}>
         <div className="border-t bg-card/90 backdrop-blur supports-[backdrop-filter]:bg-card/80">
           <div className="container mx-auto max-w-6xl px-4 py-3 flex flex-col sm:flex-row items-center gap-3">
-            <p className="text-sm text-muted-foreground text-center sm:text-left flex-1">
-              Ready to try the "8‑Hour Appetite Switch"? Inventory is limited.
-            </p>
+            <p className="text-sm text-muted-foreground text-center sm:text-left flex-1">Ready to try the 8-Hour Appetite Switch? Lose 30 lbs in 90 days—or it’s free.</p>
             <Button size="lg" onClick={() => document.getElementById('availability')?.scrollIntoView({
             behavior: 'smooth'
           })}>
