@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-wsj.jpg";
+
 import { useState, useEffect } from "react";
 
 const BlogPost = () => {
@@ -18,6 +18,27 @@ const BlogPost = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // SEO metadata
+  useEffect(() => {
+    document.title = "Pharmacist Reveals $39.99 GLP-1 Alternative | Updated July 2025";
+    const metaContent = "See if this $39.99 GLP-1 alternative is still available today. 85%+ absorption via transdermal patch, 97% cheaper than injectables.";
+    let desc = document.querySelector('meta[name="description"]');
+    if (!desc) {
+      desc = document.createElement('meta');
+      desc.setAttribute('name', 'description');
+      document.head.appendChild(desc);
+    }
+    desc.setAttribute('content', metaContent);
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', window.location.href);
   }, []);
 
   return (
@@ -53,7 +74,7 @@ const BlogPost = () => {
               </Badge>
             </div>
             <div className="text-sm text-muted-foreground">
-              Updated Dec 15, 2024
+              Updated July 15, 2025
             </div>
           </div>
 
@@ -73,25 +94,24 @@ const BlogPost = () => {
               <span className="text-sm font-medium text-muted-foreground">RP</span>
             </div>
             <div>
-              <p className="text-sm font-medium text-foreground">Dr. Robert Phillips, PharmD</p>
+              <p className="text-sm font-medium text-foreground">Robert Phillips</p>
               <p className="text-xs text-muted-foreground">Former Community Pharmacist, 7 Years</p>
             </div>
           </div>
 
           <Separator />
 
-          {/* Hero Image Placeholder */}
-          <div className="w-full h-80 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg border border-border flex items-center justify-center shadow-sm">
-            <div className="text-center space-y-2">
-              <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto">
-                <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <p className="text-lg font-medium text-muted-foreground">Hero image: GLP-1 alternative breakthrough</p>
-              <p className="text-sm text-muted-foreground">Pharmacist with natural solution comparison</p>
-            </div>
-          </div>
+          {/* Hero Image */}
+          <figure className="w-full rounded-lg border border-border overflow-hidden shadow-sm">
+            <img
+              src="/lovable-uploads/7ef499b0-dfd7-4a39-9301-b661c57589f2.png"
+              alt="Hero image: GLP-1 alternative breakthrough — pharmacist with natural solution comparison"
+              className="w-full h-80 object-cover"
+              loading="eager"
+              decoding="async"
+            />
+            <figcaption className="sr-only">GLP-1 alternative breakthrough</figcaption>
+          </figure>
 
           {/* Article Content */}
           <div className="prose prose-base md:prose-lg max-w-none space-y-8">
@@ -114,18 +134,17 @@ const BlogPost = () => {
               One of my favorite regular customers—a woman named Margaret—was in that exact situation.
             </p>
 
-            {/* Image Placeholder 1 */}
-            <div className="w-full h-64 bg-gradient-to-br from-muted/30 to-muted/60 rounded-lg border border-border flex items-center justify-center my-8 shadow-sm">
-              <div className="text-center space-y-2">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto">
-                  <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
-                  </svg>
-                </div>
-                <p className="text-sm font-medium text-muted-foreground">Pharmacy consultation scene</p>
-                <p className="text-xs text-muted-foreground">Image showing pharmacist helping customer</p>
-              </div>
-            </div>
+            {/* Pharmacy consultation scene */}
+            <figure className="w-full rounded-lg border border-border overflow-hidden my-8 shadow-sm">
+              <img
+                src="/lovable-uploads/b6f06d4a-6b59-431f-a23c-1e142073677c.png"
+                alt="Pharmacy consultation scene — pharmacist helping customer"
+                className="w-full h-64 object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Pharmacy consultation scene — pharmacist helping customer</figcaption>
+            </figure>
 
             <h3 className="text-xl md:text-2xl font-serifDisplay font-semibold text-foreground mt-8 mb-4">
               The Conversation That Started It All
@@ -216,18 +235,17 @@ const BlogPost = () => {
               But there was still one big obstacle: absorption.
             </p>
 
-            {/* Image Placeholder 2 */}
-            <div className="w-full h-64 bg-gradient-to-br from-secondary/20 to-primary/20 rounded-lg border border-border flex items-center justify-center my-8 shadow-sm">
-              <div className="text-center space-y-2">
-                <div className="w-16 h-16 bg-secondary/30 rounded-full flex items-center justify-center mx-auto">
-                  <svg className="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                  </svg>
-                </div>
-                <p className="text-sm font-medium text-muted-foreground">Scientific research illustration</p>
-                <p className="text-xs text-muted-foreground">Natural ingredients and absorption comparison</p>
-              </div>
-            </div>
+            {/* Scientific research illustration & absorption comparison */}
+            <figure className="w-full rounded-lg border border-border overflow-hidden my-8 shadow-sm bg-background">
+              <img
+                src="/lovable-uploads/f00da2e4-d1f5-4266-82c9-c53c93aabb9a.png"
+                alt="Scientific research illustration — natural ingredients and absorption comparison"
+                className="w-full h-64 object-contain bg-background"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Scientific research illustration — natural ingredients and absorption comparison</figcaption>
+            </figure>
 
             <h3 className="text-xl md:text-2xl font-serifDisplay font-semibold text-foreground mt-8 mb-4">
               Why Absorption Matters More Than Most People Realize
@@ -254,7 +272,7 @@ const BlogPost = () => {
             <div className="grid gap-4 mt-6">
               <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 flex items-center gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-primary font-bold text-sm">95%+</span>
+                  <span className="text-primary font-bold text-sm">85%+</span>
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground">Superior Absorption</h4>
@@ -306,7 +324,7 @@ const BlogPost = () => {
                   </tr>
                   <tr className="border-b hover:bg-muted/20 transition-colors">
                     <td className="p-4 text-foreground">Poor nutrient absorption</td>
-                    <td className="p-4 font-semibold text-primary">95%+ absorption</td>
+                    <td className="p-4 font-semibold text-primary">85%+ absorption</td>
                   </tr>
                   <tr className="border-b hover:bg-muted/20 transition-colors">
                     <td className="p-4 text-foreground">Requires prescription & insurance approval</td>
@@ -397,7 +415,7 @@ const BlogPost = () => {
                   </div>
                   <div className="flex gap-2">
                     <span className="font-semibold text-foreground">Absorption:</span> 
-                    <span className="text-foreground">95%+</span>
+                    <span className="text-foreground">85%+</span>
                   </div>
                   <div className="flex gap-2">
                     <span className="font-semibold text-foreground">Side Effects:</span> 
@@ -506,9 +524,9 @@ const BlogPost = () => {
 
             {/* Call to Action */}
             <div className="bg-primary text-primary-foreground rounded-lg p-8 text-center shadow-lg">
-              <h3 className="text-2xl font-bold mb-4">Ready to Learn More?</h3>
+              <h3 className="text-2xl font-bold mb-4">Check Availability</h3>
               <p className="text-lg mb-6 opacity-90">
-                See if this $39.99 alternative is available in your area
+                See If This $39.99 Alternative Is Still Available Today
               </p>
               <Button size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90 shadow-md">
                 Check Availability Now →
