@@ -102,7 +102,7 @@ const BlogPost = () => {
           <Separator />
 
           {/* Hero Image */}
-          <figure className="w-full rounded-lg border border-border overflow-hidden shadow-sm">
+          <figure className="w-full rounded-lg border border-border overflow-hidden shadow-sm bg-card">
             <img
               src="/lovable-uploads/7ef499b0-dfd7-4a39-9301-b661c57589f2.png"
               alt="Hero image: GLP-1 alternative breakthrough — pharmacist with natural solution comparison"
@@ -110,7 +110,6 @@ const BlogPost = () => {
               loading="eager"
               decoding="async"
             />
-            <figcaption className="sr-only">GLP-1 alternative breakthrough</figcaption>
           </figure>
 
           {/* Article Content */}
@@ -135,7 +134,7 @@ const BlogPost = () => {
             </p>
 
             {/* Pharmacy consultation scene */}
-            <figure className="w-full rounded-lg border border-border overflow-hidden my-8 shadow-sm">
+            <figure className="w-full rounded-lg border border-border overflow-hidden my-8 shadow-sm bg-card">
               <img
                 src="/lovable-uploads/b6f06d4a-6b59-431f-a23c-1e142073677c.png"
                 alt="Pharmacy consultation scene — pharmacist helping customer"
@@ -143,7 +142,6 @@ const BlogPost = () => {
                 loading="lazy"
                 decoding="async"
               />
-              <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Pharmacy consultation scene — pharmacist helping customer</figcaption>
             </figure>
 
             <h3 className="text-xl md:text-2xl font-serifDisplay font-semibold text-foreground mt-8 mb-4">
@@ -236,15 +234,14 @@ const BlogPost = () => {
             </p>
 
             {/* Scientific research illustration & absorption comparison */}
-            <figure className="w-full rounded-lg border border-border overflow-hidden my-8 shadow-sm bg-background">
+            <figure className="w-full rounded-lg border border-border overflow-hidden my-8 shadow-sm bg-card">
               <img
                 src="/lovable-uploads/f00da2e4-d1f5-4266-82c9-c53c93aabb9a.png"
                 alt="Scientific research illustration — natural ingredients and absorption comparison"
-                className="w-full h-64 object-contain bg-background"
+                className="w-full h-64 object-contain"
                 loading="lazy"
                 decoding="async"
               />
-              <figcaption className="px-3 py-2 text-xs text-muted-foreground text-center">Scientific research illustration — natural ingredients and absorption comparison</figcaption>
             </figure>
 
             <h3 className="text-xl md:text-2xl font-serifDisplay font-semibold text-foreground mt-8 mb-4">
