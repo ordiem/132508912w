@@ -234,11 +234,11 @@ const BlogPost = () => {
             </p>
 
             {/* Scientific research illustration & absorption comparison */}
-            <figure className="w-full rounded-lg border border-border overflow-hidden my-8 shadow-sm bg-card">
+            <figure className="w-full rounded-lg border border-border overflow-hidden my-8 shadow-lg bg-card">
               <img
                 src="/lovable-uploads/f00da2e4-d1f5-4266-82c9-c53c93aabb9a.png"
                 alt="Scientific research illustration — natural ingredients and absorption comparison"
-                className="w-full h-64 object-contain"
+                className="w-full h-80 md:h-96 lg:h-[28rem] object-contain bg-white/50"
                 loading="lazy"
                 decoding="async"
               />
