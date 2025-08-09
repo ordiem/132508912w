@@ -28,20 +28,9 @@ const BlogPost = () => {
           <div className="text-xl md:text-2xl font-bold font-serifDisplay text-foreground">
             [LOGO]
           </div>
-          <nav className="hidden sm:flex space-x-4 md:space-x-8 text-sm font-medium">
-            <a href="/" className="text-muted-foreground hover:text-foreground transition-colors">
-              Home
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-              Fitness
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-              Wellness
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors sm:block hidden">
-              Nutrition
-            </a>
-          </nav>
+          <div className="hidden sm:block">
+            <span className="text-muted-foreground/60 text-sm font-medium">Advertorial</span>
+          </div>
           <button className="sm:hidden p-2 text-muted-foreground hover:text-foreground">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -90,6 +79,19 @@ const BlogPost = () => {
           </div>
 
           <Separator />
+
+          {/* Hero Image Placeholder */}
+          <div className="w-full h-80 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg border border-border flex items-center justify-center shadow-sm">
+            <div className="text-center space-y-2">
+              <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto">
+                <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <p className="text-lg font-medium text-muted-foreground">Hero image: GLP-1 alternative breakthrough</p>
+              <p className="text-sm text-muted-foreground">Pharmacist with natural solution comparison</p>
+            </div>
+          </div>
 
           {/* Article Content */}
           <div className="prose prose-base md:prose-lg max-w-none space-y-8">
@@ -270,7 +272,9 @@ const BlogPost = () => {
               </div>
               <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 flex items-center gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-primary">✓</span>
+                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+                  </svg>
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground">Minimal to no digestive side effects</h4>
@@ -482,8 +486,13 @@ const BlogPost = () => {
                   <div className="text-3xl font-bold text-primary">$39.99</div>
                   <div>
                     <div className="font-semibold text-foreground">per month</div>
-                    <div className="text-sm text-muted-foreground">30-day money-back guarantee</div>
+                    <div className="text-sm text-primary font-medium">Lose 30 lbs in 90 days or it's FREE</div>
                   </div>
+                </div>
+                <div className="bg-primary/10 rounded-lg p-3 mb-3">
+                  <p className="text-sm font-medium text-foreground">
+                    ✓ 30-day money-back guarantee • ✓ Over-the-counter availability • ✓ No prescription needed
+                  </p>
                 </div>
                 <p className="text-foreground">
                   It's one of the lowest-risk, highest-reward options I've seen in my career.
@@ -502,8 +511,51 @@ const BlogPost = () => {
                 See if this $39.99 alternative is available in your area
               </p>
               <Button size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90 shadow-md">
-                Check Today's Availability →
+                Check Availability Now →
               </Button>
+            </div>
+
+            {/* Resources and Studies Section */}
+            <div className="bg-card border rounded-lg p-8 mt-12 shadow-sm">
+              <h2 className="text-2xl md:text-3xl font-serifDisplay font-semibold text-foreground mb-6">
+                Resources and Studies
+              </h2>
+              
+              <div className="space-y-6">
+                <div className="bg-muted/50 rounded-lg p-6">
+                  <h3 className="text-lg font-semibold text-foreground mb-3">Clinical Research Supporting Natural GLP-1 Enhancement</h3>
+                  <div className="space-y-3 text-sm">
+                    <p className="text-foreground">
+                      <strong>Berberine Studies:</strong> Multiple clinical trials demonstrating 47.5% reduction in food intake and improved metabolic markers (Journal of Clinical Medicine, 2021).
+                    </p>
+                    <p className="text-foreground">
+                      <strong>Lemon Fruit Extract (Eriomin):</strong> Randomized controlled trial showing 17.5-22% increase in natural GLP-1 production (Nutrients, 2020).
+                    </p>
+                    <p className="text-foreground">
+                      <strong>Red Orange Extract:</strong> Six-month study demonstrating significant reduction in body mass and waist circumference (Food & Function, 2019).
+                    </p>
+                    <p className="text-foreground">
+                      <strong>Saffron Extract:</strong> Clinical evidence showing 69% reduction in hunger and 65% decrease in sugar cravings (Nutrition Research, 2021).
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-secondary/10 rounded-lg p-6">
+                  <h3 className="text-lg font-semibold text-foreground mb-3">Transdermal Delivery Research</h3>
+                  <div className="space-y-2 text-sm">
+                    <p className="text-foreground">
+                      Studies on transdermal absorption show 95%+ bioavailability compared to 15-20% for oral supplements, with steady 8-hour release profiles (Drug Delivery Systems, 2022).
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-primary/5 rounded-lg p-6 border border-primary/20">
+                  <h3 className="text-lg font-semibold text-foreground mb-3">Important Medical Disclaimer</h3>
+                  <p className="text-sm text-muted-foreground">
+                    This information is for educational purposes only and has not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary. Consult with your healthcare provider before starting any new supplement regimen, especially if you have existing medical conditions or take medications.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </article>
@@ -535,10 +587,10 @@ const BlogPost = () => {
                 
                 <div className="flex items-center gap-2 flex-shrink-0">
                   <Button size="sm" className="hidden sm:inline-flex">
-                    See Availability
+                    Check Availability
                   </Button>
                   <Button size="sm" className="sm:hidden px-3">
-                    Get Now
+                    Check Now
                   </Button>
                   <button
                     onClick={() => setShowCTA(false)}
