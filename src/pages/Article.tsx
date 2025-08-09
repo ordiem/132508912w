@@ -86,7 +86,7 @@ export default function Article() {
         <article className="mx-auto max-w-3xl text-center animate-fade-in">
           <p className="uppercase tracking-[0.12em] text-xs text-muted-foreground">Health & Wellness</p>
           <h1 className="font-serifDisplay text-5xl sm:text-6xl leading-tight mt-3 md:text-5xl">{h1}</h1>
-          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">If cravings control you and your metabolism feels broken, it’s not your fault. Science shows why.</p>
+          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">Nothing worked after 45, until this. Women are flipping their body’s ‘appetite switch’ and watching cravings vanish for 8 hours straight. Here are 5 reasons this tiny patch changes everything.</p>
           <div className="mt-6 flex flex-col items-center gap-2 text-sm text-muted-foreground">
             <div className="h-12 w-12 rounded-full bg-accent/20 text-accent flex items-center justify-center font-semibold">ED</div>
             <div>
