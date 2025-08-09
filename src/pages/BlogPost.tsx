@@ -1,8 +1,25 @@
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-wsj.jpg";
+import { useState, useEffect } from "react";
 
 const BlogPost = () => {
+  const [showCTA, setShowCTA] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercentage = (scrollTop / documentHeight) * 100;
+      
+      setShowCTA(scrollPercentage > 30);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -439,6 +456,53 @@ const BlogPost = () => {
           </div>
         </article>
       </main>
+
+      {/* Sticky CTA */}
+      {showCTA && (
+        <div className="fixed bottom-0 left-0 right-0 z-40 transform transition-transform duration-500 ease-out translate-y-0">
+          <div className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/90 border-t border-border shadow-2xl">
+            <div className="container max-w-4xl mx-auto px-4 py-4">
+              <div className="flex items-center justify-between gap-4">
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <svg className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <div className="min-w-0">
+                      <p className="text-sm font-semibold text-foreground truncate">
+                        $39.99 GLP-1 Alternative - 97% Cheaper Than Ozempic
+                      </p>
+                      <p className="text-xs text-muted-foreground hidden sm:block">
+                        30-day money-back guarantee • Over-the-counter availability
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-2 flex-shrink-0">
+                  <Button size="sm" className="hidden sm:inline-flex">
+                    See Availability
+                  </Button>
+                  <Button size="sm" className="sm:hidden px-3">
+                    Get Now
+                  </Button>
+                  <button
+                    onClick={() => setShowCTA(false)}
+                    className="p-1.5 text-muted-foreground hover:text-foreground transition-colors"
+                    aria-label="Close"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
