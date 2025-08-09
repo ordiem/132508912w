@@ -87,7 +87,7 @@ const BlogPost = () => {
             </div>
             <div>
               <p className="text-sm font-medium text-foreground">Robert Phillips</p>
-              <p className="text-xs text-muted-foreground">Former Community Pharmacist, 7 Years</p>
+              <p className="text-xs text-muted-foreground">Former Community Pharmacist</p>
             </div>
           </div>
 
@@ -193,19 +193,23 @@ const BlogPost = () => {
             <div className="grid gap-6 mt-6">
               <div className="bg-card border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
                 <h4 className="font-semibold text-lg mb-2 text-foreground">Berberine</h4>
-                <p className="text-muted-foreground leading-relaxed">Reduced food intake by up to 47.5% in studies and improved blood sugar levels.</p>
+                <p className="text-muted-foreground leading-relaxed">Helps lower blood sugar levels and improves how your body processes sugar.
+Reduces bad cholesterol and supports healthy heart function.</p>
               </div>
               <div className="bg-card border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
                 <h4 className="font-semibold text-lg mb-2 text-foreground">Lemon Fruit Extract (Eriomin)</h4>
-                <p className="text-muted-foreground leading-relaxed">Increased natural GLP-1 production by 17.5–22%.</p>
+                <p className="text-muted-foreground leading-relaxed">Naturally boosts your body's ability to control blood sugar after meals.
+Helps your body produce more of the hormone that makes you feel full.</p>
               </div>
               <div className="bg-card border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
                 <h4 className="font-semibold text-lg mb-2 text-foreground">Red Orange Extract</h4>
-                <p className="text-muted-foreground leading-relaxed">Reduced body mass and waist circumference over six months.</p>
+                <p className="text-muted-foreground leading-relaxed">Helps you lose weight and reduces belly fat over time.
+Makes your waist smaller and improves overall body shape.</p>
               </div>
               <div className="bg-card border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
                 <h4 className="font-semibold text-lg mb-2 text-foreground">Saffron Extract</h4>
-                <p className="text-muted-foreground leading-relaxed">Lowered hunger by 69% and cut sugar cravings by 65%.</p>
+                <p className="text-muted-foreground leading-relaxed">Reduces feelings of hunger and helps control food cravings.
+Makes you feel more satisfied with less food and supports weight loss.</p>
               </div>
             </div>
 
