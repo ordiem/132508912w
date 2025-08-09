@@ -8,7 +8,7 @@ const graphImg = "/lovable-uploads/14b227b0-94d6-43ef-ab06-bc98d1ef6ec5.png";
 const moveImg = "/lovable-uploads/1b1e3232-3389-42f3-8023-3d1a8eae1b50.png";
 
 export default function Article() {
-  const h1 = 'Flip Your Body\'s Appetite Switch—5 Ways This Patch Makes Losing Weight After 45 Easier';
+  const h1 = 'The "Appetite Switch" Patch: 5 Reasons It\'s the New Secret to Weight Loss After 45';
   const seoTitle = "Appetite Switch Patch: Weight Loss Secret After 45"; // <60 chars
   const description =
     "Metabolism after 45 isn't about willpower. Discover the daily patch that calms food noise and supports a steady 8‑hour appetite switch.";
