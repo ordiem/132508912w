@@ -8,7 +8,7 @@ const Index = () => {
         <p className="text-xl text-muted-foreground mb-6">Check your design suggestions here:</p>
         <div className="space-y-4">
           <a href="/article" className="story-link text-primary block">Read the "Appetite Switch" Modern Clean Design</a>
-          <a href="/blog" className="story-link text-primary block">Read the Modern Blog Post Design</a>
+          <a href="/blog" className="story-link text-primary block">Pharmacist Reveals $39.99 Alternative to Costly GLP-1 Medications</a>
         </div>
       </article>
     </main>
