@@ -568,7 +568,7 @@ const BlogPost = () => {
                     </div>
                     <div className="min-w-0">
                       <p className="text-sm font-semibold text-foreground truncate">
-                        $39.99 GLP-1 Alternative - 97% Cheaper Than Ozempic
+                        $39.99 GLP-1 Alternative - 97% Cheaper
                       </p>
                       <p className="text-xs text-muted-foreground hidden sm:block">
                         Lose 30 pounds in 90 days or it's FREE • Over-the-counter availability
