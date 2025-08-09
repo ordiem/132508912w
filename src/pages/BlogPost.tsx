@@ -233,10 +233,20 @@ const BlogPost = () => {
               But there was still one big obstacle: absorption.
             </p>
 
-            <h3 className="text-xl md:text-2xl font-serifDisplay font-semibold text-foreground mt-8 mb-6">
+            {/* Scientific research illustration & absorption comparison */}
+            <figure className="w-full rounded-lg border border-border overflow-hidden my-8 shadow-sm bg-card">
+              <img
+                src="/lovable-uploads/f00da2e4-d1f5-4266-82c9-c53c93aabb9a.png"
+                alt="Scientific research illustration — natural ingredients and absorption comparison"
+                className="w-full h-64 object-contain"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+
+            <h3 className="text-xl md:text-2xl font-serifDisplay font-semibold text-foreground mt-8 mb-4">
               Why Absorption Matters More Than Most People Realize
             </h3>
-
             
             <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-6">
               <p className="text-foreground leading-relaxed mb-4">
@@ -284,29 +294,6 @@ const BlogPost = () => {
                 <div>
                   <h4 className="font-semibold text-foreground">Minimal to no digestive side effects</h4>
                   <p className="text-sm text-muted-foreground">No stomach upset or nausea</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Scientific research illustration & absorption comparison - Prominently Placed */}
-            <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] my-20">
-              <div className="bg-gradient-to-br from-primary/5 to-secondary/5 py-12">
-                <div className="container max-w-6xl mx-auto px-4">
-                  <div className="text-center mb-8">
-                    <h4 className="text-xl md:text-2xl font-serifDisplay font-semibold text-foreground mb-2">
-                      Clinical Absorption Data
-                    </h4>
-                    <p className="text-muted-foreground">Transdermal patches vs oral supplements over 8 hours</p>
-                  </div>
-                  <figure className="w-full bg-white rounded-xl shadow-2xl border border-border overflow-hidden">
-                    <img
-                      src="/lovable-uploads/f00da2e4-d1f5-4266-82c9-c53c93aabb9a.png"
-                      alt="Scientific research showing absorption comparison: GLP-1 patches achieve 85%+ bioavailability vs 15-20% for pills over 8-hour duration"
-                      className="w-full h-[28rem] sm:h-[36rem] md:h-[44rem] lg:h-[52rem] xl:h-[60rem] object-contain bg-white"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </figure>
                 </div>
               </div>
             </div>
