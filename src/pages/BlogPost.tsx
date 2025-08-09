@@ -1,21 +1,16 @@
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-
 import { useState, useEffect } from "react";
-
 const BlogPost = () => {
   const [showCTA, setShowCTA] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const scrollPercentage = (scrollTop / documentHeight) * 100;
-      
+      const scrollPercentage = scrollTop / documentHeight * 100;
       setShowCTA(scrollPercentage > 30);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -31,7 +26,6 @@ const BlogPost = () => {
       document.head.appendChild(desc);
     }
     desc.setAttribute('content', metaContent);
-
     let canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical) {
       canonical = document.createElement('link');
@@ -40,9 +34,7 @@ const BlogPost = () => {
     }
     canonical.setAttribute('href', window.location.href);
   }, []);
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container max-w-4xl mx-auto px-4 py-3 md:py-4 flex items-center justify-between">
@@ -103,13 +95,7 @@ const BlogPost = () => {
 
           {/* Hero Image */}
           <figure className="w-full rounded-lg border border-border overflow-hidden shadow-sm bg-card">
-            <img
-              src="/lovable-uploads/7ef499b0-dfd7-4a39-9301-b661c57589f2.png"
-              alt="Hero image: GLP-1 alternative breakthrough — pharmacist with natural solution comparison"
-              className="w-full h-80 object-cover"
-              loading="eager"
-              decoding="async"
-            />
+            <img src="/lovable-uploads/7ef499b0-dfd7-4a39-9301-b661c57589f2.png" alt="Hero image: GLP-1 alternative breakthrough — pharmacist with natural solution comparison" className="w-full h-80 object-cover" loading="eager" decoding="async" />
           </figure>
 
           {/* Article Content */}
@@ -135,13 +121,7 @@ const BlogPost = () => {
 
             {/* Pharmacy consultation scene */}
             <figure className="w-full rounded-lg border border-border overflow-hidden my-8 shadow-sm bg-card">
-              <img
-                src="/lovable-uploads/b6f06d4a-6b59-431f-a23c-1e142073677c.png"
-                alt="Pharmacy consultation scene — pharmacist helping customer"
-                className="w-full h-64 object-cover"
-                loading="lazy"
-                decoding="async"
-              />
+              <img src="/lovable-uploads/b6f06d4a-6b59-431f-a23c-1e142073677c.png" alt="Pharmacy consultation scene — pharmacist helping customer" className="w-full h-64 object-cover" loading="lazy" decoding="async" />
             </figure>
 
             <h3 className="text-xl md:text-2xl font-serifDisplay font-semibold text-foreground mt-8 mb-4">
@@ -235,13 +215,7 @@ const BlogPost = () => {
 
             {/* Scientific research illustration & absorption comparison */}
             <figure className="w-full rounded-lg border border-border overflow-hidden my-8 shadow-lg bg-card">
-              <img
-                src="/lovable-uploads/f00da2e4-d1f5-4266-82c9-c53c93aabb9a.png"
-                alt="Scientific research illustration — natural ingredients and absorption comparison"
-                className="w-full h-80 md:h-96 lg:h-[28rem] object-contain bg-white/50"
-                loading="lazy"
-                decoding="async"
-              />
+              <img src="/lovable-uploads/f00da2e4-d1f5-4266-82c9-c53c93aabb9a.png" alt="Scientific research illustration — natural ingredients and absorption comparison" className="w-full h-80 md:h-96 lg:h-[28rem] object-contain bg-white/50" loading="lazy" decoding="async" />
             </figure>
 
             <h3 className="text-xl md:text-2xl font-serifDisplay font-semibold text-foreground mt-8 mb-4">
@@ -381,17 +355,7 @@ const BlogPost = () => {
             </div>
 
             {/* Image Placeholder 3 */}
-            <div className="w-full h-64 bg-gradient-to-br from-primary/10 to-accent/20 rounded-lg border border-border flex items-center justify-center my-8 shadow-sm">
-              <div className="text-center space-y-2">
-                <div className="w-16 h-16 bg-accent/30 rounded-full flex items-center justify-center mx-auto">
-                  <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                  </svg>
-                </div>
-                <p className="text-sm font-medium text-muted-foreground">Success transformation</p>
-                <p className="text-xs text-muted-foreground">Before/after results visualization</p>
-              </div>
-            </div>
+            
 
             <h2 className="text-2xl md:text-3xl font-serifDisplay font-semibold text-foreground mt-10 mb-6">
               Ranking the Alternatives
@@ -617,8 +581,7 @@ const BlogPost = () => {
       </main>
 
       {/* Sticky CTA */}
-      {showCTA && (
-        <div className="fixed bottom-0 left-0 right-0 z-40 transform transition-transform duration-500 ease-out translate-y-0">
+      {showCTA && <div className="fixed bottom-0 left-0 right-0 z-40 transform transition-transform duration-500 ease-out translate-y-0">
           <div className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/90 border-t border-border shadow-2xl">
             <div className="container max-w-4xl mx-auto px-4 py-4">
               <div className="flex items-center justify-between gap-4">
@@ -647,11 +610,7 @@ const BlogPost = () => {
                   <Button size="sm" className="sm:hidden px-3">
                     Check Now
                   </Button>
-                  <button
-                    onClick={() => setShowCTA(false)}
-                    className="p-1.5 text-muted-foreground hover:text-foreground transition-colors"
-                    aria-label="Close"
-                  >
+                  <button onClick={() => setShowCTA(false)} className="p-1.5 text-muted-foreground hover:text-foreground transition-colors" aria-label="Close">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                     </svg>
@@ -660,10 +619,7 @@ const BlogPost = () => {
               </div>
             </div>
           </div>
-        </div>
-      )}
-    </div>
-  );
+        </div>}
+    </div>;
 };
-
 export default BlogPost;
