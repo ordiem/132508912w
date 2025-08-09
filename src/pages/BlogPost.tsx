@@ -538,20 +538,68 @@ const BlogPost = () => {
               
               <div className="space-y-6">
                 <div className="bg-muted/50 rounded-lg p-6">
-                  <h3 className="text-lg font-semibold text-foreground mb-3">Clinical Research Supporting Natural GLP-1 Enhancement</h3>
-                  <div className="space-y-3 text-sm">
-                    <p className="text-foreground">
-                      <strong>Berberine Studies:</strong> Multiple clinical trials demonstrating 47.5% reduction in food intake and improved metabolic markers (Journal of Clinical Medicine, 2021).
-                    </p>
-                    <p className="text-foreground">
-                      <strong>Lemon Fruit Extract (Eriomin):</strong> Randomized controlled trial showing 17.5-22% increase in natural GLP-1 production (Nutrients, 2020).
-                    </p>
-                    <p className="text-foreground">
-                      <strong>Red Orange Extract:</strong> Six-month study demonstrating significant reduction in body mass and waist circumference (Food & Function, 2019).
-                    </p>
-                    <p className="text-foreground">
-                      <strong>Saffron Extract:</strong> Clinical evidence showing 69% reduction in hunger and 65% decrease in sugar cravings (Nutrition Research, 2021).
-                    </p>
+                  <h3 className="text-lg font-semibold text-foreground mb-4">Clinical Research Summary</h3>
+                  <div className="space-y-6 text-sm">
+                    <div>
+                      <h4 className="font-semibold text-foreground">BERBERINE — Metabolic Enhancement</h4>
+                      <p className="text-muted-foreground">Key Clinical Results:</p>
+                      <ul className="list-disc pl-5 mt-1 text-foreground/90">
+                        <li>Cholesterol Reduction: LDL decreased by 1.77 mmol/L in meta-analysis of 1,449 participants</li>
+                        <li>Blood Sugar Control: Fasting glucose reduced by 0.65 mmol/L across multiple trials</li>
+                        <li>Insulin Sensitivity: HOMA-IR improved by 1.25 points vs placebo</li>
+                        <li>Triglyceride Reduction: Decreased by 0.94 mmol/L in clinical studies</li>
+                      </ul>
+                      <p className="text-xs text-muted-foreground mt-1">Source: Ye et al., Frontiers in Pharmacology (2021)</p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-foreground">ERIOMIN (Lemon Extract) — GLP-1 Enhancement</h4>
+                      <p className="text-muted-foreground">Key Clinical Results:</p>
+                      <ul className="list-disc pl-5 mt-1 text-foreground/90">
+                        <li>GLP-1 Increase: 17% elevation in natural GLP-1 production (P &lt; 0.05)</li>
+                        <li>Glucose Improvement: 5% reduction in hyperglycemia over 12 weeks</li>
+                        <li>Insulin Function: 11% improvement in insulin resistance markers</li>
+                        <li>Anti-Inflammatory: Significant reduction in systemic inflammation</li>
+                      </ul>
+                      <p className="text-xs text-muted-foreground mt-1">Source: Cesar et al., Journal of Medicinal Food (2022)</p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-foreground">MORO BLOOD ORANGE EXTRACT — Weight Management</h4>
+                      <p className="text-muted-foreground">Key Clinical Results:</p>
+                      <ul className="list-disc pl-5 mt-1 text-foreground/90">
+                        <li>Weight Loss: 4.2% body weight reduction vs 2.2% placebo over 6 months</li>
+                        <li>Waist Reduction: 3.9 cm decrease vs 1.7 cm placebo</li>
+                        <li>Hip Circumference: 3.4 cm reduction vs 2.0 cm placebo</li>
+                        <li>Body Composition: Significant improvements in visceral and subcutaneous fat</li>
+                      </ul>
+                      <p className="text-xs text-muted-foreground mt-1">Source: Briskey et al., Nutrients (2022)</p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-foreground">SAFFRON EXTRACT — Appetite Control</h4>
+                      <p className="text-muted-foreground">Key Clinical Results:</p>
+                      <ul className="list-disc pl-5 mt-1 text-foreground/90">
+                        <li>Hunger Reduction: 69% of participants reported decreased hunger vs 0% placebo</li>
+                        <li>Snacking Control: Significant reduction in compulsive snacking frequency</li>
+                        <li>Weight Management: Greater body weight reduction than placebo (P &lt; 0.01)</li>
+                        <li>Satiety Enhancement: Improved satiety through serotonin pathway modulation</li>
+                      </ul>
+                      <p className="text-xs text-muted-foreground mt-1">Source: Gout et al., Nutrition Research (2010)</p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-foreground">Study Quality Summary</h4>
+                      <p className="text-muted-foreground">Research Standards:</p>
+                      <ul className="list-disc pl-5 mt-1 text-foreground/90">
+                        <li>All results from human clinical trials (no animal studies)</li>
+                        <li>Published in peer-reviewed scientific journals</li>
+                        <li>Randomized, double-blind, placebo-controlled designs</li>
+                        <li>Statistically significant results (P &lt; 0.05)</li>
+                        <li>Proper sample sizes and study durations</li>
+                      </ul>
+                      <p className="text-foreground mt-2">Clinical Significance: These compounds demonstrate legitimate, measurable benefits for metabolic health, weight management, and appetite control when evaluated through rigorous scientific methodology.</p>
+                    </div>
                   </div>
                 </div>
 
