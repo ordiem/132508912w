@@ -491,7 +491,7 @@ const BlogPost = () => {
                 </div>
                 <div className="bg-primary/10 rounded-lg p-3 mb-3">
                   <p className="text-sm font-medium text-foreground">
-                    ✓ 30-day money-back guarantee • ✓ Over-the-counter availability • ✓ No prescription needed
+                    ✓ Over-the-counter availability • ✓ No prescription needed
                   </p>
                 </div>
                 <p className="text-foreground">
@@ -540,14 +540,6 @@ const BlogPost = () => {
                   </div>
                 </div>
 
-                <div className="bg-secondary/10 rounded-lg p-6">
-                  <h3 className="text-lg font-semibold text-foreground mb-3">Transdermal Delivery Research</h3>
-                  <div className="space-y-2 text-sm">
-                    <p className="text-foreground">
-                      Studies on transdermal absorption show 95%+ bioavailability compared to 15-20% for oral supplements, with steady 8-hour release profiles (Drug Delivery Systems, 2022).
-                    </p>
-                  </div>
-                </div>
 
                 <div className="bg-primary/5 rounded-lg p-6 border border-primary/20">
                   <h3 className="text-lg font-semibold text-foreground mb-3">Important Medical Disclaimer</h3>
@@ -579,7 +571,7 @@ const BlogPost = () => {
                         $39.99 GLP-1 Alternative - 97% Cheaper Than Ozempic
                       </p>
                       <p className="text-xs text-muted-foreground hidden sm:block">
-                        30-day money-back guarantee • Over-the-counter availability
+                        Lose 30 pounds in 90 days or it's FREE • Over-the-counter availability
                       </p>
                     </div>
                   </div>
