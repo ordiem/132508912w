@@ -209,7 +209,7 @@ export default function Article() {
 
           <section id="availability" className="mt-12 border rounded-lg p-6 bg-card animate-scale-in text-center">
             <h3 className="font-serifDisplay text-3xl">How to Try the "8‑Hour Appetite Switch" Today</h3>
-            <p className="mt-3 text-muted-foreground">Lose 30 pounds in 90 days or it's free.</p>
+            <p className="mt-3 text-muted-foreground">Check availability now. Grab the 90-Day Supply Bundle to join the challenge—backed by their 90-Day Guarantee: Lose 30 lbs in 90 days or it’s free.</p>
             
             
             <div className="mt-4">
