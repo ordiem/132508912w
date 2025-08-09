@@ -112,6 +112,19 @@ const BlogPost = () => {
               One of my favorite regular customers—a woman named Margaret—was in that exact situation.
             </p>
 
+            {/* Image Placeholder 1 */}
+            <div className="w-full h-64 bg-gradient-to-br from-muted/30 to-muted/60 rounded-lg border border-border flex items-center justify-center my-8 shadow-sm">
+              <div className="text-center space-y-2">
+                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto">
+                  <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                  </svg>
+                </div>
+                <p className="text-sm font-medium text-muted-foreground">Pharmacy consultation scene</p>
+                <p className="text-xs text-muted-foreground">Image showing pharmacist helping customer</p>
+              </div>
+            </div>
+
             <h3 className="text-xl md:text-2xl font-serifDisplay font-semibold text-foreground mt-8 mb-4">
               The Conversation That Started It All
             </h3>
@@ -200,6 +213,19 @@ const BlogPost = () => {
             <p className="text-lg font-medium text-foreground">
               But there was still one big obstacle: absorption.
             </p>
+
+            {/* Image Placeholder 2 */}
+            <div className="w-full h-64 bg-gradient-to-br from-secondary/20 to-primary/20 rounded-lg border border-border flex items-center justify-center my-8 shadow-sm">
+              <div className="text-center space-y-2">
+                <div className="w-16 h-16 bg-secondary/30 rounded-full flex items-center justify-center mx-auto">
+                  <svg className="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                </div>
+                <p className="text-sm font-medium text-muted-foreground">Scientific research illustration</p>
+                <p className="text-xs text-muted-foreground">Natural ingredients and absorption comparison</p>
+              </div>
+            </div>
 
             <h3 className="text-xl md:text-2xl font-serifDisplay font-semibold text-foreground mt-8 mb-4">
               Why Absorption Matters More Than Most People Realize
@@ -332,6 +358,19 @@ const BlogPost = () => {
                 <p className="text-foreground font-medium">
                   The best part? She was saving over $1,200 a month compared to injectables.
                 </p>
+              </div>
+            </div>
+
+            {/* Image Placeholder 3 */}
+            <div className="w-full h-64 bg-gradient-to-br from-primary/10 to-accent/20 rounded-lg border border-border flex items-center justify-center my-8 shadow-sm">
+              <div className="text-center space-y-2">
+                <div className="w-16 h-16 bg-accent/30 rounded-full flex items-center justify-center mx-auto">
+                  <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                  </svg>
+                </div>
+                <p className="text-sm font-medium text-muted-foreground">Success transformation</p>
+                <p className="text-xs text-muted-foreground">Before/after results visualization</p>
               </div>
             </div>
 
