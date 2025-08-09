@@ -1,7 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import CTACard from "@/components/ui/cta-card";
 import heroImage from "@/assets/hero-wsj.jpg";
 import { useState, useEffect } from "react";
 
@@ -457,9 +456,15 @@ const BlogPost = () => {
               </p>
             </div>
 
-            {/* Premium CTA Section */}
-            <div className="my-16">
-              <CTACard />
+            {/* Call to Action */}
+            <div className="bg-primary text-primary-foreground rounded-lg p-8 text-center shadow-lg">
+              <h3 className="text-2xl font-bold mb-4">Ready to Learn More?</h3>
+              <p className="text-lg mb-6 opacity-90">
+                See if this $39.99 alternative is available in your area
+              </p>
+              <Button size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90 shadow-md">
+                Check Today's Availability →
+              </Button>
             </div>
           </div>
         </article>
