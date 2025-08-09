@@ -6,18 +6,14 @@ const heroImage = "/lovable-uploads/e4c39395-fa79-4f1b-bf86-f61b44dbd2cb.png";
 const dermalImg = "/lovable-uploads/b7fb3eeb-7203-4520-bbed-7e69f4970a6b.png";
 const graphImg = "/lovable-uploads/14b227b0-94d6-43ef-ab06-bc98d1ef6ec5.png";
 const moveImg = "/lovable-uploads/1b1e3232-3389-42f3-8023-3d1a8eae1b50.png";
-
 export default function Article() {
   const h1 = 'The "Appetite Switch" Patch: 5 Reasons It\'s the New Secret to Weight Loss After 45';
   const seoTitle = "Appetite Switch Patch: Weight Loss Secret After 45"; // <60 chars
-  const description =
-    "Metabolism after 45 isn't about willpower. Discover the daily patch that calms food noise and supports a steady 8‑hour appetite switch.";
+  const description = "Metabolism after 45 isn't about willpower. Discover the daily patch that calms food noise and supports a steady 8‑hour appetite switch.";
   const canonical = `${window.location.origin}/article`;
   const [showStickyCTA, setShowStickyCTA] = useState(false);
-
   useEffect(() => {
     document.title = `${seoTitle} — Journal`;
-
     const setMeta = (name: string, content: string) => {
       let el = document.querySelector(`meta[name="${name}"]`);
       if (!el) {
@@ -27,9 +23,7 @@ export default function Article() {
       }
       el.setAttribute("content", content);
     };
-
     setMeta("description", description);
-
     let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!link) {
       link = document.createElement("link");
@@ -38,41 +32,44 @@ export default function Article() {
     }
     link.href = canonical;
   }, [seoTitle, description, canonical]);
-
   useEffect(() => {
     const onScroll = () => {
       const doc = document.documentElement;
       const scrollTop = window.scrollY || doc.scrollTop;
-      const max = (doc.scrollHeight - window.innerHeight) || 1;
+      const max = doc.scrollHeight - window.innerHeight || 1;
       const progress = scrollTop / max;
       setShowStickyCTA(progress >= 0.3);
     };
     onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('scroll', onScroll, {
+      passive: true
+    });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
-
-  const jsonLd = useMemo(
-    () => ({
-      "@context": "https://schema.org",
-      "@type": "Article",
-      headline: h1,
-      name: seoTitle,
-      description,
-      image: [new URL(heroImage, window.location.origin).toString()],
-      articleSection: "Health & Wellness",
-      author: { "@type": "Person", name: "Editorial Desk" },
-      publisher: { "@type": "Organization", name: "Journal" },
-      datePublished: "2025-08-07",
-      dateModified: "2025-08-07",
-      mainEntityOfPage: canonical,
-    }),
-    [h1, seoTitle, description, canonical]
-  );
-
-  return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+  const jsonLd = useMemo(() => ({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: h1,
+    name: seoTitle,
+    description,
+    image: [new URL(heroImage, window.location.origin).toString()],
+    articleSection: "Health & Wellness",
+    author: {
+      "@type": "Person",
+      name: "Editorial Desk"
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Journal"
+    },
+    datePublished: "2025-08-07",
+    dateModified: "2025-08-07",
+    mainEntityOfPage: canonical
+  }), [h1, seoTitle, description, canonical]);
+  return <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+      __html: JSON.stringify(jsonLd)
+    }} />
 
       <header className="border-b bg-card/50 backdrop-blur supports-[backdrop-filter]:bg-card/60">
         <div className="container mx-auto max-w-6xl px-4 py-6">
@@ -88,10 +85,8 @@ export default function Article() {
         {/* Intro block - centered like the gallery layout */}
         <article className="mx-auto max-w-3xl text-center animate-fade-in">
           <p className="uppercase tracking-[0.12em] text-xs text-muted-foreground">Health & Wellness</p>
-          <h1 className="font-serifDisplay text-5xl sm:text-6xl md:text-7xl leading-tight mt-3">{h1}</h1>
-          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-            If you feel like your metabolism has betrayed you and food cravings are running your life, you're not just imagining it. Here's the science-backed reason why—and the simple daily ritual that's changing everything.
-          </p>
+          <h1 className="font-serifDisplay text-5xl sm:text-6xl leading-tight mt-3 md:text-5xl">{h1}</h1>
+          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">If cravings control you and your metabolism feels broken, it’s not your fault. Science shows why.</p>
           <div className="mt-6 flex flex-col items-center gap-2 text-sm text-muted-foreground">
             <div className="h-12 w-12 rounded-full bg-accent/20 text-accent flex items-center justify-center font-semibold">ED</div>
             <div>
@@ -104,12 +99,7 @@ export default function Article() {
 
         {/* Lead image */}
         <figure className="mt-10 overflow-hidden rounded-lg border">
-          <img
-            src={heroImage}
-            alt="Abstract editorial hero representing calm appetite and steady energy"
-            loading="eager"
-            className="w-full h-[270px] lg:h-[400px] object-cover"
-          />
+          <img src={heroImage} alt="Abstract editorial hero representing calm appetite and steady energy" loading="eager" className="w-full h-[270px] lg:h-[400px] object-cover" />
         </figure>
 
 
@@ -220,8 +210,8 @@ export default function Article() {
           <section id="availability" className="mt-12 border rounded-lg p-6 bg-card animate-scale-in text-center">
             <h3 className="font-serifDisplay text-3xl">How to Try the "8‑Hour Appetite Switch" Today</h3>
             <p className="mt-3 text-muted-foreground">Lose 30 pounds in 90 days or it's free.</p>
-            <p className="text-muted-foreground">If you don't lose at least 30 pounds, you will receive a full 100% refund of your purchase price.</p>
-            <p className="text-muted-foreground">No questions asked.</p>
+            
+            
             <div className="mt-4">
               <a href="#" aria-label="Check availability" rel="nofollow">
                 <Button size="lg" className="animate-scale-in">Click Here to Check Availability</Button>
@@ -232,19 +222,15 @@ export default function Article() {
       </main>
 
       {/* Sticky CTA bar */}
-      <div
-        aria-live="polite"
-        className={`fixed inset-x-0 bottom-0 z-40 transition-transform duration-300 ${showStickyCTA ? 'translate-y-0' : 'translate-y-full'}`}
-      >
+      <div aria-live="polite" className={`fixed inset-x-0 bottom-0 z-40 transition-transform duration-300 ${showStickyCTA ? 'translate-y-0' : 'translate-y-full'}`}>
         <div className="border-t bg-card/90 backdrop-blur supports-[backdrop-filter]:bg-card/80">
           <div className="container mx-auto max-w-6xl px-4 py-3 flex flex-col sm:flex-row items-center gap-3">
             <p className="text-sm text-muted-foreground text-center sm:text-left flex-1">
               Ready to try the "8‑Hour Appetite Switch"? Inventory is limited.
             </p>
-            <Button
-              size="lg"
-              onClick={() => document.getElementById('availability')?.scrollIntoView({ behavior: 'smooth' })}
-            >
+            <Button size="lg" onClick={() => document.getElementById('availability')?.scrollIntoView({
+            behavior: 'smooth'
+          })}>
               Check Availability
             </Button>
           </div>
@@ -254,6 +240,5 @@ export default function Article() {
       <footer className="border-t py-8 text-center text-sm text-muted-foreground">
         © {new Date().getFullYear()} Journal — Health & Wellness
       </footer>
-    </>
-  );
+    </>;
 }
