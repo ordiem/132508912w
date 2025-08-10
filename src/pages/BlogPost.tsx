@@ -142,7 +142,7 @@ const BlogPost = () => {
               That question stuck with me. Margaret wasn't just another customer—she trusted my advice. I decided to dig into the research and see if there was a better path.
             </p>
 
-            <h2 className="text-2xl md:text-3xl font-serifDisplay font-semibold text-foreground mt-10 mb-6">My Criteria For A good</h2>
+            <h2 className="text-2xl md:text-3xl font-serifDisplay font-semibold text-foreground mt-10 mb-6">What I Was Looking For</h2>
             
             <div className="bg-card border rounded-lg p-6 shadow-sm">
               <h3 className="text-lg font-semibold mb-4 text-foreground">I set out to find an alternative that could:</h3>
