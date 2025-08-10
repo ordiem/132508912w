@@ -86,11 +86,11 @@ export default function Article() {
         <article className="mx-auto max-w-3xl text-center animate-fade-in">
           <p className="uppercase tracking-[0.12em] text-xs text-muted-foreground">Health & Wellness</p>
           <h1 className="font-serifDisplay text-5xl sm:text-6xl leading-tight mt-3 md:text-5xl">{h1}</h1>
-          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">Nothing worked after 45, until this. Women are flipping their body’s ‘appetite switch’ and watching cravings vanish for 8 hours straight. Here are 5 reasons this tiny patch changes everything.</p>
+          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">Women are flipping their body’s ‘appetite switch’ and watching cravings vanish for 8 hours straight. Here are 5 reasons this tiny patch changes the way you loose weight.</p>
           <div className="mt-6 flex flex-col items-center gap-2 text-sm text-muted-foreground">
             <div className="h-12 w-12 rounded-full bg-accent/20 text-accent flex items-center justify-center font-semibold">ED</div>
             <div>
-              <span className="text-foreground">Editorial Desk</span>
+              <span className="text-foreground">Sara Emerson</span>
               <span className="mx-2">•</span>
               <time dateTime="2025-08-07">Aug 7, 2025</time>
             </div>
@@ -105,25 +105,25 @@ export default function Article() {
 
         {/* Body copy */}
         <article className="mx-auto max-w-3xl mt-10 text-[1.07rem] leading-relaxed">
-          <p>
-            For years, you've been told the same story: eat less, move more. But if you're a woman over 45, you know it's not that simple. You can eat salads until you're blue in the face, but the scale remains stuck and the cravings for sugar and carbs feel like a constant, nagging battle.
-          </p>
+          <p>For years, you've been told the same story: eat less, move more. But if you're a woman over 45, you know it's not that simple. You can eat salads until you're blue in the face, but the scale remains stuck and the cravings for sugar and carbs feel like a constant, nagging battle.
+
+        </p>
           <p>
             But what if that battle wasn't about willpower?
           </p>
           <p>
-            A growing body of research, championed by nutritional doctors like Dr. Sarah Mitchell, ND, reveals that the root cause isn't a lack of discipline—it's a biological switch that gets turned off. Fortunately, a revolutionary new approach is helping thousands of women flip that switch back on, silencing food cravings and reactivating their metabolism for 8 hours straight.
-          </p>
-          <p>
-            Here are 5 reasons why this simple "8‑Hour Appetite Switch" patch is becoming the go‑to solution for women who thought they'd tried everything.
-          </p>
+
+A growing body of research, championed by nutritional doctors like Dr. Sarah Mitchell, ND, reveals that the root cause isn't a lack of discipline—it's a biological switch that gets turned off. Fortunately, a revolutionary new approach is helping thousands of women flip that switch back on, silencing food cravings and reactivating their metabolism for 8 hours straight.</p>
+          <p className="text-base">
+
+Here are 5 reasons why this simple "8‑Hour Appetite Switch" patch is becoming the go‑to solution for women who thought they'd tried everything.</p>
 
 
           <section className="mt-10">
-            <h2 className="font-serifDisplay text-3xl mb-3">1. It Tackles the REAL Reason You're Craving Food After 45</h2>
-            <p>
-              You're not imagining it: your body changed after 45. The real culprit is a hormone called GLP‑1, your body's "master appetite hormone." It tells your brain when you're full, slows down digestion to make you feel satisfied longer, and helps stabilize blood sugar.
-            </p>
+            <h2 className="font-serifDisplay text-3xl mb-3">1. It Tackles the REAL Reason You're Craving Food</h2>
+            <p>You're not imagining it: your body changed after 45. The real culprit is a hormone called GLP‑1, your body's "master appetite hormone." It tells your brain when you're full, slows down digestion to make you feel satisfied longer, and helps stabilize blood sugar.
+
+          </p>
             <p>
               <strong>The Problem:</strong> Research shows that after age 45, your natural GLP‑1 production can plummet by as much as 32%. When this happens, the "off switch" for your hunger is broken. Your brain rarely gets the signal that you're full, leading to constant "food noise" and relentless cravings that no amount of willpower can defeat.
             </p>
@@ -133,10 +133,10 @@ export default function Article() {
           </section>
 
           <section className="mt-10">
-            <h2 className="font-serifDisplay text-3xl mb-3">2. It Bypasses the "Digestive Death Trap" That Makes Pills Useless</h2>
-            <p>
-              Have you ever spent a fortune on supplements, only to feel like they did absolutely nothing? You were probably right.
-            </p>
+            <h2 className="font-serifDisplay text-3xl mb-3">2. It Bypasses the "Digestive Death Trap"</h2>
+            <p>Have you ever spent a fortune on supplements, only to feel like they did absolutely nothing? You were probably right.
+
+          </p>
             <p>
               <strong>The Problem:</strong> Your stomach is an acid bath designed to break things down. Experts estimate that up to 80% of the active ingredients in oral supplements are destroyed during digestion. For anyone with a compromised or slowed digestive system (a common issue for those on GLP‑1 medications), that number can be even higher. You're literally flushing your money down the toilet.
             </p>
@@ -160,10 +160,10 @@ export default function Article() {
           </section>
 
           <section className="mt-10">
-            <h2 className="font-serifDisplay text-3xl mb-3">3. It Uses "Nature's Ozempic" to Reduce Hunger by Nearly Half</h2>
-            <p>
-              Imagine feeling naturally less hungry without the side effects, cost, or hassle of prescriptions.
-            </p>
+            <h2 className="font-serifDisplay text-3xl mb-3">3. It Uses "Nature's Ozempic" to Reduce Hunger</h2>
+            <p>Imagine feeling naturally less hungry without the side effects, cost, or hassle of prescriptions.
+
+          </p>
             <p>
               <strong>The Problem:</strong> Uncontrolled hunger sabotages even the best‑laid diet plans. When your GLP‑1 is low, you're fighting a losing battle against your own biology.
             </p>
@@ -174,9 +174,9 @@ export default function Article() {
 
           <section className="mt-10">
             <h2 className="font-serifDisplay text-3xl mb-3">4. It Stops Sugar Cravings and Prevents the "3 p.m. Crash"</h2>
-            <p>
-              That afternoon energy slump that sends you running for the snack cabinet isn't just a bad habit—it's a sign of unstable blood sugar.
-            </p>
+            <p>That afternoon energy slump that sends you running for the snack cabinet isn't just a bad habit—it's a sign of unstable blood sugar.
+
+          </p>
             <p>
               <strong>The Problem:</strong> When your GLP‑1 levels are low, your blood sugar is on a rollercoaster, leading to energy spikes and crashes that trigger intense cravings for sugar and simple carbs.
             </p>
@@ -191,10 +191,10 @@ export default function Article() {
           </figure>
 
           <section className="mt-10">
-            <h2 className="font-serifDisplay text-3xl mb-3">5. It's a Simple, Once‑a‑Day Ritual That Works While You Live Your Life</h2>
-            <p>
-              The best health solutions are the ones you don't have to think about.
-            </p>
+            <h2 className="font-serifDisplay text-3xl mb-3">5. A Patch That Works While You Live Your Life</h2>
+            <p>The best health solutions are the ones you don't have to think about.
+
+          </p>
             <p>
               <strong>The Problem:</strong> Complicated routines with multiple pills, powders, and restrictive meal plans are difficult to maintain and often lead to burnout and failure.
             </p>
@@ -209,7 +209,10 @@ export default function Article() {
 
           <section id="availability" className="mt-12 border rounded-lg p-6 bg-card animate-scale-in text-center">
             <h3 className="font-serifDisplay text-3xl">How to Try the "8‑Hour Appetite Switch" Today</h3>
-            <p className="mt-3 text-muted-foreground">Check availability now. Grab the 90-Day Supply Bundle to join the challenge—backed by their 90-Day Guarantee: Lose 30 lbs in 90 days or it’s free.</p>
+            <p className="mt-3 text-muted-foreground">1. Check availability.
+2. Grab the 90-Day Supply Bundle.
+3. Join the challenge—backed by the 90-Day Guarantee:
+Lose 30 lbs in 90 days or it's free.</p>
             
             
             <div className="mt-4">
