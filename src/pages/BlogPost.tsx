@@ -236,14 +236,14 @@ Makes you feel more satisfied with less food and supports weight loss.</p>
               The Transdermal Advantage
             </h3>
 
+            <p className="text-foreground leading-relaxed mb-6">
+              The product I found uses a medical-grade transdermal patch—ingredients are absorbed through the skin directly into the bloodstream. This bypasses the digestive system entirely, resulting in:
+            </p>
+
             {/* Scientific research illustration & absorption comparison */}
             <figure className="w-full rounded-lg border border-border overflow-hidden my-8 shadow-lg bg-card">
               <img src="/lovable-uploads/f00da2e4-d1f5-4266-82c9-c53c93aabb9a.png" alt="Scientific research illustration — natural ingredients and absorption comparison" className="w-full h-80 md:h-96 lg:h-[28rem] object-contain bg-white/50" loading="lazy" decoding="async" />
             </figure>
-            
-            <p className="text-foreground leading-relaxed mb-6">
-              The product I found uses a medical-grade transdermal patch—ingredients are absorbed through the skin directly into the bloodstream. This bypasses the digestive system entirely, resulting in:
-            </p>
 
             <div className="grid gap-4 mt-6">
               <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 flex items-center gap-4">
