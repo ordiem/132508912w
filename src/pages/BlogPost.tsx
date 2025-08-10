@@ -72,12 +72,8 @@ const BlogPost = () => {
 
           {/* Headline */}
           <div className="space-y-4">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serifDisplay font-bold leading-tight text-foreground">
-              Pharmacist Reveals $39.99 Alternative to Costly GLP-1 Medications
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              It costs 97% less than prescriptions and skips the side effects that derail most patients
-            </p>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serifDisplay font-bold leading-tight text-foreground">Pharmacist Reveals $39.99 Alternative to Costly GLP-1 Medications</h1>
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">Millions are paying over $1,000 a month for GLP-1 injections to curb cravings and lose weight. But one pharmacist says a $39.99 alternative can deliver similar appetite-controlling benefits without prescriptions.</p>
           </div>
 
           {/* Author Info */}
@@ -144,9 +140,7 @@ const BlogPost = () => {
               That question stuck with me. Margaret wasn't just another customer—she trusted my advice. I decided to dig into the research and see if there was a better path.
             </p>
 
-            <h2 className="text-2xl md:text-3xl font-serifDisplay font-semibold text-foreground mt-10 mb-6">
-              What I Discovered
-            </h2>
+            <h2 className="text-2xl md:text-3xl font-serifDisplay font-semibold text-foreground mt-10 mb-6">What I Was Looking For</h2>
             
             <div className="bg-card border rounded-lg p-6 shadow-sm">
               <h3 className="text-lg font-semibold mb-4 text-foreground">I set out to find an alternative that could:</h3>
@@ -217,6 +211,10 @@ Makes you feel more satisfied with less food and supports weight loss.</p>
               But there was still one big obstacle: absorption.
             </p>
 
+            {/* Scientific research illustration & absorption comparison */}
+            <figure className="w-full rounded-lg border border-border overflow-hidden my-8 shadow-lg bg-card">
+              <img src="/lovable-uploads/f00da2e4-d1f5-4266-82c9-c53c93aabb9a.png" alt="Scientific research illustration — natural ingredients and absorption comparison" className="w-full h-80 md:h-96 lg:h-[28rem] object-contain bg-white/50" loading="lazy" decoding="async" />
+            </figure>
 
             <h3 className="text-xl md:text-2xl font-serifDisplay font-semibold text-foreground mt-8 mb-4">
               Why Absorption Matters More Than Most People Realize
@@ -235,15 +233,10 @@ Makes you feel more satisfied with less food and supports weight loss.</p>
             <h3 className="text-xl md:text-2xl font-serifDisplay font-semibold text-foreground mt-8 mb-4">
               The Transdermal Advantage
             </h3>
-
+            
             <p className="text-foreground leading-relaxed mb-6">
               The product I found uses a medical-grade transdermal patch—ingredients are absorbed through the skin directly into the bloodstream. This bypasses the digestive system entirely, resulting in:
             </p>
-
-            {/* Scientific research illustration & absorption comparison */}
-            <figure className="w-full rounded-lg border border-border overflow-hidden my-8 shadow-lg bg-card">
-              <img src="/lovable-uploads/f00da2e4-d1f5-4266-82c9-c53c93aabb9a.png" alt="Scientific research illustration — natural ingredients and absorption comparison" className="w-full h-80 md:h-96 lg:h-[28rem] object-contain bg-white/50" loading="lazy" decoding="async" />
-            </figure>
 
             <div className="grid gap-4 mt-6">
               <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 flex items-center gap-4">
