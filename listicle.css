@@ -107,7 +107,7 @@ body {
 
 .progress-fill {
     height: 100%;
-    width: 9%;
+    width: 14%;
     background: linear-gradient(90deg, #6366f1, #8b5cf6);
     border-radius: 4px;
     transition: width 0.5s ease;
@@ -184,6 +184,40 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.reason-content ul {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.reason-content ul li {
+    font-size: 1.125rem;
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+    position: relative;
+}
+
+.reason-content ul li::marker {
+    color: #6366f1;
+    font-weight: bold;
+}
+
+.reason-content em {
+    font-style: italic;
+    color: #475569;
+    background: rgba(99, 102, 241, 0.05);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    border-left: 3px solid #6366f1;
+    margin: 1rem 0;
+    display: block;
+}
+
+.reason-content strong {
+    color: #1e293b;
+    font-weight: 700;
+}
+
 .reason-emoji {
     text-align: center;
     font-size: 4rem;
@@ -237,6 +271,13 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 1rem;
+}
+
+.cta-card h4 {
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    font-weight: 600;
+    color: #1e293b;
+    margin: 1.5rem 0 1rem 0;
 }
 
 .cta-card p {
