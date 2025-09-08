@@ -1,14 +1,15 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import StickyCTA from "@/components/StickyCTA";
 const FallsListicle = () => {
   return <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
         <div className="max-w-4xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold tracking-tight">50&Beyond</div>
-            <Badge variant="secondary">Health</Badge>
+            <div className="text-2xl font-bold tracking-tight font-serifDisplay">50&Beyond</div>
+            <Badge variant="secondary">Advertorial</Badge>
           </div>
         </div>
       </header>
@@ -21,29 +22,33 @@ const FallsListicle = () => {
             <div className="space-y-2">
               <Badge variant="outline" className="text-xs font-medium">WEIGHT LOSS
             </Badge>
-              <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
+              <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight font-serifDisplay">
                 5 Reasons Why You're Still Gaining Weight After 40 - Even If You're Doing Everything "Right"
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">If the diet that worked at 35 suddenly stops working at 45, you're not alone. And it's not a willpower problem. The truth is, your body plays by a different set of rules as you age — and once you understand them, you can finally see results again.</p>
+              <p className="text-xl text-muted-foreground leading-relaxed font-serifBody">If the diet that worked at 35 suddenly stops working at 45, you're not alone. And it's not a willpower problem. The truth is, your body plays by a different set of rules as you age — and once you understand them, you can finally see results again.</p>
             </div>
             
-            <div className="flex items-center space-x-4 text-sm text-muted-foreground border-b border-border pb-6">
+            <div className="flex items-center space-x-6 text-sm text-muted-foreground border-b border-border pb-6">
               
               
-              <span>Sara Markstein</span>
+              <span>Sept. 8, 2025</span>
               <span>•</span>
               <span>8 min read</span>
             </div>
           </div>
 
           {/* Lead Image Placeholder */}
-          <div className="w-full h-64 md:h-80 bg-muted rounded-lg flex items-center justify-center border">
-            <p className="text-muted-foreground">Split-screen comparison showing the same woman at 35 vs 50, both frustrated while looking at a scale</p>
+          <div className="w-full h-48 md:h-60 rounded-lg overflow-hidden border">
+            <img 
+              src="/lovable-uploads/f58d9cb9-e2b8-4b6a-bca4-b6a0bb9abc59.png" 
+              alt="Frustrated woman in her 50s sitting with a bathroom scale, representing the weight struggles after 40"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           {/* Introduction */}
           <div className="prose prose-lg max-w-none">
-            <p className="text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed mb-6">
               After age 40, your hormones change. This affects how your body processes food, stores fat, and feels full. 
               Here are 5 little-known reasons why stubborn pounds are even harder to lose after 50.
             </p>
@@ -58,12 +63,16 @@ const FallsListicle = () => {
             {/* Item 1 */}
             <Card className="p-8 border-l-4 border-l-primary">
               <div className="space-y-4">
-                <div className="flex items-center space-x-3">
+                <div className="flex items-start space-x-3">
                   <span className="text-3xl font-bold text-primary">1</span>
-                  <h2 className="text-2xl font-bold">Your Fullness Signal Has Gone Silent</h2>
+                  <h2 className="text-2xl font-bold font-serifDisplay">Your Fullness Signal Has Gone Silent</h2>
                 </div>
-                <div className="h-48 bg-muted rounded-lg flex items-center justify-center">
-                  <p className="text-muted-foreground">Close-up of a woman in her 50s sitting at a dinner table, looking at an empty plate with a confused expression, hand on stomach</p>
+                <div className="h-48 md:h-60 rounded-lg overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/3b3e562d-49aa-4016-afce-8485de82181e.png" 
+                    alt="Woman in her 50s sitting at a dinner table with an empty plate, looking confused about not feeling full"
+                     className="w-full h-full object-cover object-top"
+                  />
                 </div>
                 <p className="text-lg leading-relaxed">
                   There's a hormone called GLP‑1 that tells your brain when to stop eating. It used to work with high effectiveness. 
@@ -72,9 +81,16 @@ const FallsListicle = () => {
                 <p className="text-lg leading-relaxed">
                   That's why you can eat a full plate and still feel hungry an hour later. You're not greedy. Your body's chemical "off switch" is weaker.
                 </p>
-                <div className="bg-muted/50 p-4 rounded-lg">
-                  <p className="font-semibold">Fix it:</p>
-                  <p>Add more protein, fiber, and real fat to meals. They help activate GLP‑1 naturally and keep you full longer.</p>
+                <div className="bg-gradient-to-r from-primary/10 to-primary/5 border-l-4 border-primary p-6 rounded-lg shadow-sm">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-primary text-sm font-bold">✓</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground mb-2">Action Step:</p>
+                      <p className="text-muted-foreground">Add more protein, fiber, and real fat to meals. They help activate GLP‑1 naturally and keep you full longer.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Card>
@@ -82,12 +98,16 @@ const FallsListicle = () => {
             {/* Item 2 */}
             <Card className="p-8 border-l-4 border-l-primary">
               <div className="space-y-4">
-                <div className="flex items-center space-x-3">
+                <div className="flex items-start space-x-3">
                   <span className="text-3xl font-bold text-primary">2</span>
-                  <h2 className="text-2xl font-bold">Muscle Is Disappearing in the Background</h2>
+                  <h2 className="text-2xl font-bold font-serifDisplay">Muscle Is Disappearing in the Background</h2>
                 </div>
-                <div className="h-48 bg-muted rounded-lg flex items-center justify-center">
-                  <p className="text-muted-foreground">Side-by-side illustration showing muscle tissue comparison - vibrant, dense muscle fibers on the left labeled '30s' versus thinner, less dense muscle fibers on the right labeled '50s'</p>
+                <div className="h-48 md:h-60 rounded-lg overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/6b4f6afd-e7f1-44a6-be3a-6fe0e65dd395.png" 
+                    alt="Side-by-side comparison of muscle tissue density between 30s and 50s showing muscle deterioration with age"
+                    className="w-full h-full object-cover object-center"
+                  />
                 </div>
                 <p className="text-lg leading-relaxed">
                   You lose muscle every year after 50 whether you notice it or not. And muscle isn't just for looks. It burns calories around the clock.
@@ -98,9 +118,16 @@ const FallsListicle = () => {
                 <p className="text-lg leading-relaxed">
                   The kicker? Most diets make this worse by causing muscle loss on top of fat.
                 </p>
-                <div className="bg-muted/50 p-4 rounded-lg">
-                  <p className="font-semibold">Fix it:</p>
-                  <p>Lift weights. Eat enough protein. Muscle is your metabolism's best friend.</p>
+                <div className="bg-gradient-to-r from-primary/10 to-primary/5 border-l-4 border-primary p-6 rounded-lg shadow-sm">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-primary text-sm font-bold">✓</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground mb-2">Action Step:</p>
+                      <p className="text-muted-foreground">Lift weights. Eat enough protein. Muscle is your metabolism's best friend.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Card>
@@ -108,12 +135,16 @@ const FallsListicle = () => {
             {/* Item 3 */}
             <Card className="p-8 border-l-4 border-l-primary">
               <div className="space-y-4">
-                <div className="flex items-center space-x-3">
+                <div className="flex items-start space-x-3">
                   <span className="text-3xl font-bold text-primary">3</span>
-                  <h2 className="text-2xl font-bold">Stress Is Forcing Fat Onto Your Belly</h2>
+                  <h2 className="text-2xl font-bold font-serifDisplay">Stress Is Forcing Fat Onto Your Belly</h2>
                 </div>
-                <div className="h-48 bg-muted rounded-lg flex items-center justify-center">
-                  <p className="text-muted-foreground">A mature woman juggling multiple responsibilities (work laptop, family photos, bills) with a subtle red glow around her midsection representing cortisol-driven belly fat storage</p>
+                <div className="h-48 md:h-60 rounded-lg overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/5178ab99-1f4c-4618-a982-6609b9c857ea.png" 
+                    alt="Stressed mature woman juggling multiple responsibilities with papers and laptop, representing cortisol-driven stress"
+                    className="w-full h-full object-cover object-right"
+                  />
                 </div>
                 <p className="text-lg leading-relaxed">
                   After 50, stress hits harder and your body gets worse at handling it. That means cortisol, your main stress hormone, stays elevated longer.
@@ -121,9 +152,16 @@ const FallsListicle = () => {
                 <p className="text-lg leading-relaxed">
                   High cortisol tells your body to store fat, especially around your middle. It also drives cravings for sugar, salt, and comfort food, whether you're actually hungry or not.
                 </p>
-                <div className="bg-muted/50 p-4 rounded-lg">
-                  <p className="font-semibold">Fix it:</p>
-                  <p>Managing stress isn't a luxury. It's a weight-loss tool. Walk, breathe, lift, sleep on a daily basis.</p>
+                <div className="bg-gradient-to-r from-primary/10 to-primary/5 border-l-4 border-primary p-6 rounded-lg shadow-sm">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-primary text-sm font-bold">✓</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground mb-2">Action Step:</p>
+                      <p className="text-muted-foreground">Managing stress isn't a luxury. It's a weight-loss tool. Walk, breathe, lift, sleep on a daily basis.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Card>
@@ -131,12 +169,16 @@ const FallsListicle = () => {
             {/* Item 4 */}
             <Card className="p-8 border-l-4 border-l-primary">
               <div className="space-y-4">
-                <div className="flex items-center space-x-3">
+                <div className="flex items-start space-x-3">
                   <span className="text-3xl font-bold text-primary">4</span>
-                  <h2 className="text-2xl font-bold">Sleep Wrecks Your Hunger Hormones</h2>
+                  <h2 className="text-2xl font-bold font-serifDisplay">Sleep Wrecks Your Hunger Hormones</h2>
                 </div>
-                <div className="h-48 bg-muted rounded-lg flex items-center justify-center">
-                  <p className="text-muted-foreground">A woman lying in bed at night, eyes slightly open. The room should be dimly lit with perhaps a digital clock showing 2:47 AM. Include subtle visual cues of restless sleep like rumpled sheets</p>
+                <div className="h-48 md:h-60 rounded-lg overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/a8aeb87b-dbee-4e98-b393-2a4a3a97c00e.png" 
+                    alt="Woman lying in bed at night with digital clock showing 2:47 AM, representing sleep disruption and restless nights"
+                    className="w-full h-full object-cover object-center"
+                  />
                 </div>
                 <p className="text-lg leading-relaxed">
                   Sleep gets lighter and more broken after 50. Blame hormones, night sweats, bathroom trips, or just an overactive mind.
@@ -144,9 +186,16 @@ const FallsListicle = () => {
                 <p className="text-lg leading-relaxed">
                   Poor sleep doesn't just make you tired; it changes your appetite. It increases ghrelin, which makes you feel hungry. At the same time, it lowers leptin, the hormone that makes you feel full. As a result, you eat more and crave unhealthy foods, even if you aim to eat healthy.
                 </p>
-                <div className="bg-muted/50 p-4 rounded-lg">
-                  <p className="font-semibold">Fix it:</p>
-                  <p>Focus on sleep like a workout. Dark room. Cool temperature. No screens.</p>
+                <div className="bg-gradient-to-r from-primary/10 to-primary/5 border-l-4 border-primary p-6 rounded-lg shadow-sm">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-primary text-sm font-bold">✓</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground mb-2">Action Step:</p>
+                      <p className="text-muted-foreground">Focus on sleep like a workout. Dark room. Cool temperature. No screens.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Card>
@@ -154,11 +203,11 @@ const FallsListicle = () => {
             {/* Item 5 */}
             <Card className="p-8 border-l-4 border-l-primary">
               <div className="space-y-4">
-                <div className="flex items-center space-x-3">
+                <div className="flex items-start space-x-3">
                   <span className="text-3xl font-bold text-primary">5</span>
-                  <h2 className="text-2xl font-bold">Your Body Doesn't Handle Sugar Like It Used To</h2>
+                  <h2 className="text-2xl font-bold font-serifDisplay">Your Body Doesn't Handle Sugar Like It Used To</h2>
                 </div>
-                <div className="h-48 bg-muted rounded-lg flex items-center justify-center">
+                <div className="h-48 md:h-60 bg-muted rounded-lg flex items-center justify-center">
                   <p className="text-muted-foreground">An abstract visualization of a blood sugar roller coaster. Graph throughout the day. Line comparison by age</p>
                 </div>
                 <p className="text-lg leading-relaxed">
@@ -167,36 +216,68 @@ const FallsListicle = () => {
                 <p className="text-lg leading-relaxed">
                   You feel wired… then drained. And when that crash hits? Your body screams for fast sugar. That's the roller coaster that keeps weight loss out of reach.
                 </p>
-                <div className="bg-muted/50 p-4 rounded-lg">
-                  <p className="font-semibold">Fix it:</p>
-                  <p>Don't fear carbs; balance them. Pair every carb with protein or fat to keep blood sugar steady.</p>
+                <div className="bg-gradient-to-r from-primary/10 to-primary/5 border-l-4 border-primary p-6 rounded-lg shadow-sm">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-primary text-sm font-bold">✓</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground mb-2">Action Step:</p>
+                      <p className="text-muted-foreground">Don't fear carbs; balance them. Pair every carb with protein or fat to keep blood sugar steady.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Card>
 
           </div>
 
-          {/* Conclusion */}
-          <Card className="p-8 bg-primary/5 border-primary/20">
-            <div className="space-y-4">
-              <h2 className="text-2xl font-bold">Turn the Switch Back On: Discover how your hormones might be holding you back.</h2>
-              <p className="text-lg leading-relaxed">
-                The good news? Pinpointing which hormones need the most support is quick and eye-opening.
-              </p>
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold">Take the 30‑Second Quiz</h3>
-                <p className="text-lg">Answer a handful of simple lifestyle and symptom questions.</p>
-                <p className="text-lg">Take this quick 30-second quiz. Discover how your hormones might be holding you back. Find out what steps you can take to restart natural weight loss.</p>
+          {/* Redesigned CTA Section */}
+          <Card className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-primary/5 to-background border-primary/30 shadow-lg">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent"></div>
+            <div className="relative p-8 md:p-12">
+              <div className="text-center space-y-6">
+                <div className="space-y-3">
+                  <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/20 text-primary text-sm font-medium">
+                    ⚡ Free 30-Second Assessment
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold leading-tight font-serifDisplay">
+                    Ready to Turn Your Fat-Burning Switch Back On?
+                  </h2>
+                  <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                    Discover which hormones are sabotaging your weight loss and get a personalized action plan to fix them.
+                  </p>
+                </div>
+                
+                <div className="flex flex-col md:flex-row items-center justify-center gap-6 py-4">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    Science-backed results
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    Personalized recommendations
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    Takes just 30 seconds
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <Button 
+                    size="lg" 
+                    className="w-full md:w-auto px-12 py-4 text-lg font-semibold bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
+                  >
+                    Take the Free Quiz Now →
+                  </Button>
+                  <p className="text-sm text-muted-foreground">
+                    Join 50,000+ women who've discovered their hormone solution
+                  </p>
+                </div>
               </div>
             </div>
           </Card>
-
-          {/* CTA */}
-          <div className="text-center space-y-4 py-8">
-            <Button size="lg" className="px-8 text-lg py-6">
-              Start the 30-Second Quiz Now
-            </Button>
-          </div>
         </article>
       </main>
 
@@ -206,6 +287,9 @@ const FallsListicle = () => {
           <p>&copy; 2025 The Health Times. Educational content for informational purposes.</p>
         </div>
       </footer>
+
+      {/* Sticky CTA */}
+      <StickyCTA />
     </div>;
 };
 export default FallsListicle;
