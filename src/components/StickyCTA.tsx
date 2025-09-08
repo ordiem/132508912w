@@ -16,7 +16,7 @@ const StickyCTA = ({ onQuizStart }: StickyCTAProps) => {
       <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
         <div className="flex-1 min-w-0">
           <p className="text-sm font-medium text-foreground truncate">
-            Ready to discover what's holding you back?
+            Discover how your hormones might be holding you back.
           </p>
           <p className="text-xs text-muted-foreground hidden sm:block">
             Take the 30-second hormone quiz
