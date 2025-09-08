@@ -80,9 +80,16 @@ const FallsListicle = () => {
                 <p className="text-lg leading-relaxed">
                   That's why you can eat a full plate and still feel hungry an hour later. You're not greedy. Your body's chemical "off switch" is weaker.
                 </p>
-                <div className="bg-muted/50 p-4 rounded-lg">
-                  <p className="font-semibold">Fix it:</p>
-                  <p>Add more protein, fiber, and real fat to meals. They help activate GLP‑1 naturally and keep you full longer.</p>
+                <div className="bg-gradient-to-r from-primary/10 to-primary/5 border-l-4 border-primary p-6 rounded-lg shadow-sm">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-primary text-sm font-bold">✓</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground mb-2">Action Step:</p>
+                      <p className="text-muted-foreground">Add more protein, fiber, and real fat to meals. They help activate GLP‑1 naturally and keep you full longer.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Card>
@@ -110,9 +117,16 @@ const FallsListicle = () => {
                 <p className="text-lg leading-relaxed">
                   The kicker? Most diets make this worse by causing muscle loss on top of fat.
                 </p>
-                <div className="bg-muted/50 p-4 rounded-lg">
-                  <p className="font-semibold">Fix it:</p>
-                  <p>Lift weights. Eat enough protein. Muscle is your metabolism's best friend.</p>
+                <div className="bg-gradient-to-r from-primary/10 to-primary/5 border-l-4 border-primary p-6 rounded-lg shadow-sm">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-primary text-sm font-bold">✓</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground mb-2">Action Step:</p>
+                      <p className="text-muted-foreground">Lift weights. Eat enough protein. Muscle is your metabolism's best friend.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Card>
@@ -137,9 +151,16 @@ const FallsListicle = () => {
                 <p className="text-lg leading-relaxed">
                   High cortisol tells your body to store fat, especially around your middle. It also drives cravings for sugar, salt, and comfort food, whether you're actually hungry or not.
                 </p>
-                <div className="bg-muted/50 p-4 rounded-lg">
-                  <p className="font-semibold">Fix it:</p>
-                  <p>Managing stress isn't a luxury. It's a weight-loss tool. Walk, breathe, lift, sleep on a daily basis.</p>
+                <div className="bg-gradient-to-r from-primary/10 to-primary/5 border-l-4 border-primary p-6 rounded-lg shadow-sm">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-primary text-sm font-bold">✓</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground mb-2">Action Step:</p>
+                      <p className="text-muted-foreground">Managing stress isn't a luxury. It's a weight-loss tool. Walk, breathe, lift, sleep on a daily basis.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Card>
@@ -164,9 +185,16 @@ const FallsListicle = () => {
                 <p className="text-lg leading-relaxed">
                   Poor sleep doesn't just make you tired; it changes your appetite. It increases ghrelin, which makes you feel hungry. At the same time, it lowers leptin, the hormone that makes you feel full. As a result, you eat more and crave unhealthy foods, even if you aim to eat healthy.
                 </p>
-                <div className="bg-muted/50 p-4 rounded-lg">
-                  <p className="font-semibold">Fix it:</p>
-                  <p>Focus on sleep like a workout. Dark room. Cool temperature. No screens.</p>
+                <div className="bg-gradient-to-r from-primary/10 to-primary/5 border-l-4 border-primary p-6 rounded-lg shadow-sm">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-primary text-sm font-bold">✓</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground mb-2">Action Step:</p>
+                      <p className="text-muted-foreground">Focus on sleep like a workout. Dark room. Cool temperature. No screens.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Card>
@@ -187,9 +215,16 @@ const FallsListicle = () => {
                 <p className="text-lg leading-relaxed">
                   You feel wired… then drained. And when that crash hits? Your body screams for fast sugar. That's the roller coaster that keeps weight loss out of reach.
                 </p>
-                <div className="bg-muted/50 p-4 rounded-lg">
-                  <p className="font-semibold">Fix it:</p>
-                  <p>Don't fear carbs; balance them. Pair every carb with protein or fat to keep blood sugar steady.</p>
+                <div className="bg-gradient-to-r from-primary/10 to-primary/5 border-l-4 border-primary p-6 rounded-lg shadow-sm">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-primary text-sm font-bold">✓</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground mb-2">Action Step:</p>
+                      <p className="text-muted-foreground">Don't fear carbs; balance them. Pair every carb with protein or fat to keep blood sugar steady.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Card>
