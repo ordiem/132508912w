@@ -27,7 +27,7 @@ const FallsListicle = () => {
               <p className="text-xl text-muted-foreground leading-relaxed">If the diet that worked at 35 suddenly stops working at 45, you're not alone. And it's not a willpower problem. The truth is, your body plays by a different set of rules as you age — and once you understand them, you can finally see results again.</p>
             </div>
             
-            <div className="flex items-center space-x-4 text-sm text-muted-foreground border-b border-border pb-6">
+            <div className="flex items-center space-x-6 text-sm text-muted-foreground border-b border-border pb-6">
               
               
               <span>Sept. 8, 2025</span>
