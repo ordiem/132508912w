@@ -66,7 +66,7 @@ const FallsListicle = () => {
                   <span className="text-3xl font-bold text-primary">1</span>
                   <h2 className="text-2xl font-bold">Your Fullness Signal Has Gone Silent</h2>
                 </div>
-                <div className="h-48 rounded-lg overflow-hidden">
+                <div className="h-48 md:h-60 rounded-lg overflow-hidden">
                   <img 
                     src="/lovable-uploads/3b3e562d-49aa-4016-afce-8485de82181e.png" 
                     alt="Woman in her 50s sitting at a dinner table with an empty plate, looking confused about not feeling full"
@@ -94,7 +94,7 @@ const FallsListicle = () => {
                   <span className="text-3xl font-bold text-primary">2</span>
                   <h2 className="text-2xl font-bold">Muscle Is Disappearing in the Background</h2>
                 </div>
-                <div className="h-48 bg-muted rounded-lg flex items-center justify-center">
+                <div className="h-48 md:h-60 bg-muted rounded-lg flex items-center justify-center">
                   <p className="text-muted-foreground">Side-by-side illustration showing muscle tissue comparison - vibrant, dense muscle fibers on the left labeled '30s' versus thinner, less dense muscle fibers on the right labeled '50s'</p>
                 </div>
                 <p className="text-lg leading-relaxed">
@@ -120,7 +120,7 @@ const FallsListicle = () => {
                   <span className="text-3xl font-bold text-primary">3</span>
                   <h2 className="text-2xl font-bold">Stress Is Forcing Fat Onto Your Belly</h2>
                 </div>
-                <div className="h-48 bg-muted rounded-lg flex items-center justify-center">
+                <div className="h-48 md:h-60 bg-muted rounded-lg flex items-center justify-center">
                   <p className="text-muted-foreground">A mature woman juggling multiple responsibilities (work laptop, family photos, bills) with a subtle red glow around her midsection representing cortisol-driven belly fat storage</p>
                 </div>
                 <p className="text-lg leading-relaxed">
@@ -143,7 +143,7 @@ const FallsListicle = () => {
                   <span className="text-3xl font-bold text-primary">4</span>
                   <h2 className="text-2xl font-bold">Sleep Wrecks Your Hunger Hormones</h2>
                 </div>
-                <div className="h-48 bg-muted rounded-lg flex items-center justify-center">
+                <div className="h-48 md:h-60 bg-muted rounded-lg flex items-center justify-center">
                   <p className="text-muted-foreground">A woman lying in bed at night, eyes slightly open. The room should be dimly lit with perhaps a digital clock showing 2:47 AM. Include subtle visual cues of restless sleep like rumpled sheets</p>
                 </div>
                 <p className="text-lg leading-relaxed">
@@ -166,7 +166,7 @@ const FallsListicle = () => {
                   <span className="text-3xl font-bold text-primary">5</span>
                   <h2 className="text-2xl font-bold">Your Body Doesn't Handle Sugar Like It Used To</h2>
                 </div>
-                <div className="h-48 bg-muted rounded-lg flex items-center justify-center">
+                <div className="h-48 md:h-60 bg-muted rounded-lg flex items-center justify-center">
                   <p className="text-muted-foreground">An abstract visualization of a blood sugar roller coaster. Graph throughout the day. Line comparison by age</p>
                 </div>
                 <p className="text-lg leading-relaxed">
