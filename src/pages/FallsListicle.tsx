@@ -23,10 +23,10 @@ const FallsListicle = () => {
             <div className="space-y-2">
               <Badge variant="outline" className="text-xs font-medium">HEALTH CRISIS</Badge>
               <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
-                7 Hidden Medication Risks That Are Causing Deadly Falls in Older Adults
+                5 Reasons Why You're Still Gaining Weight After 40 - Even If You're Doing Everything "Right"
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Fall deaths among seniors have surged 70% in two decades. Many don't realize their prescriptions are partly to blame.
+                If the diet that worked at 35 suddenly stops working at 50, you're not alone. And it's not a willpower problem.
               </p>
             </div>
             
@@ -41,20 +41,19 @@ const FallsListicle = () => {
 
           {/* Lead Image Placeholder */}
           <div className="w-full h-64 md:h-80 bg-muted rounded-lg flex items-center justify-center border">
-            <p className="text-muted-foreground">Elderly person with pill organizer, looking concerned</p>
+            <p className="text-muted-foreground">Split-screen comparison showing the same woman at 35 vs 50, both frustrated while looking at a scale</p>
           </div>
 
           {/* Introduction */}
           <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed">
-              Martha Richardson, 78, was taking her morning medications when she felt dizzy and collapsed in her kitchen. 
-              The fall fractured her hip and led to complications that kept her hospitalized for weeks. What she didn't know 
-              was that the combination of her blood pressure medication and sleeping pill had created a perfect storm for falls.
+              After age 40, your hormones change. This affects how your body processes food, stores fat, and feels full. 
+              Here are 5 little-known reasons why stubborn pounds are even harder to lose after 50.
             </p>
-            <p className="text-lg leading-relaxed">
-              Martha's story is increasingly common. CDC data shows fall deaths among adults 65 and older have risen more than 
-              70% since 2003. While age-related factors play a role, medications are an overlooked culprit behind this deadly trend.
-            </p>
+            <div className="bg-primary/10 p-6 rounded-lg border-l-4 border-l-primary">
+              <p className="font-semibold text-lg mb-2">Find out what you can do today to turn your fat-burning switch back on.</p>
+              <p className="text-base">And why it has nothing to do with discipline.</p>
+            </div>
           </div>
 
           {/* Listicle Items */}
@@ -64,18 +63,21 @@ const FallsListicle = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <span className="text-3xl font-bold text-primary">1</span>
-                  <h2 className="text-2xl font-bold">Blood Pressure Medications Can Drop You Fast</h2>
+                  <h2 className="text-2xl font-bold">Your Fullness Signal Has Gone Silent</h2>
                 </div>
                 <div className="h-48 bg-muted rounded-lg flex items-center justify-center">
-                  <p className="text-muted-foreground">Person checking blood pressure with medication bottles nearby</p>
+                  <p className="text-muted-foreground">Close-up of a woman in her 50s sitting at a dinner table, looking at an empty plate with a confused expression, hand on stomach</p>
                 </div>
                 <p className="text-lg leading-relaxed">
-                  ACE inhibitors and diuretics—common blood pressure drugs—can cause sudden drops in blood pressure when 
-                  standing up. This orthostatic hypotension affects up to 30% of seniors and doubles fall risk.
+                  There's a hormone called GLP‑1 that tells your brain when to stop eating. It used to work with high effectiveness. 
+                  But after 45, it drops off and meals stop feeling as satisfying.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  That's why you can eat a full plate and still feel hungry an hour later. You're not greedy. Your body's chemical "off switch" is weaker.
                 </p>
                 <div className="bg-muted/50 p-4 rounded-lg">
-                  <p className="font-semibold">What to watch for:</p>
-                  <p>Dizziness when standing, lightheadedness, or feeling faint after getting up from sitting or lying down.</p>
+                  <p className="font-semibold">Fix it:</p>
+                  <p>Add more protein, fiber, and real fat to meals. They help activate GLP‑1 naturally and keep you full longer.</p>
                 </div>
               </div>
             </Card>
@@ -85,18 +87,23 @@ const FallsListicle = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <span className="text-3xl font-bold text-primary">2</span>
-                  <h2 className="text-2xl font-bold">Sleep Aids Turn into Daytime Dangers</h2>
+                  <h2 className="text-2xl font-bold">Muscle Is Disappearing in the Background</h2>
                 </div>
                 <div className="h-48 bg-muted rounded-lg flex items-center justify-center">
-                  <p className="text-muted-foreground">Split image: peaceful sleep vs. groggy morning routine</p>
+                  <p className="text-muted-foreground">Side-by-side illustration showing muscle tissue comparison - vibrant, dense muscle fibers on the left labeled '30s' versus thinner, less dense muscle fibers on the right labeled '50s'</p>
                 </div>
                 <p className="text-lg leading-relaxed">
-                  Sleeping pills like Ambien and Lunesta can remain in your system for 8-12 hours, causing morning grogginess 
-                  and impaired balance. Studies show seniors taking sleep aids have a 44% higher fall risk the next day.
+                  You lose muscle every year after 50 whether you notice it or not. And muscle isn't just for looks. It burns calories around the clock.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  So with less muscle, your metabolism slows. You're burning fewer calories doing the exact same things you've always done.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  The kicker? Most diets make this worse by causing muscle loss on top of fat.
                 </p>
                 <div className="bg-muted/50 p-4 rounded-lg">
-                  <p className="font-semibold">Safer alternatives:</p>
-                  <p>Melatonin (lower doses), sleep hygiene improvements, or shorter-acting medications prescribed by your doctor.</p>
+                  <p className="font-semibold">Fix it:</p>
+                  <p>Lift weights. Eat enough protein. Muscle is your metabolism's best friend.</p>
                 </div>
               </div>
             </Card>
@@ -106,18 +113,20 @@ const FallsListicle = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <span className="text-3xl font-bold text-primary">3</span>
-                  <h2 className="text-2xl font-bold">Anti-Anxiety Drugs Create a False Sense of Security</h2>
+                  <h2 className="text-2xl font-bold">Stress Is Forcing Fat Onto Your Belly</h2>
                 </div>
                 <div className="h-48 bg-muted rounded-lg flex items-center justify-center">
-                  <p className="text-muted-foreground">Person walking confidently but unsteadily</p>
+                  <p className="text-muted-foreground">A mature woman juggling multiple responsibilities (work laptop, family photos, bills) with a subtle red glow around her midsection representing cortisol-driven belly fat storage</p>
                 </div>
                 <p className="text-lg leading-relaxed">
-                  Benzodiazepines like Xanax and Ativan reduce anxiety but also reduce your awareness of balance problems. 
-                  You feel calm and confident, but your reaction time and coordination are compromised.
+                  After 50, stress hits harder and your body gets worse at handling it. That means cortisol, your main stress hormone, stays elevated longer.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  High cortisol tells your body to store fat, especially around your middle. It also drives cravings for sugar, salt, and comfort food, whether you're actually hungry or not.
                 </p>
                 <div className="bg-muted/50 p-4 rounded-lg">
-                  <p className="font-semibold">The hidden risk:</p>
-                  <p>These medications can stay active for 24-48 hours in older adults, much longer than in younger people.</p>
+                  <p className="font-semibold">Fix it:</p>
+                  <p>Managing stress isn't a luxury. It's a weight-loss tool. Walk, breathe, lift, sleep on a daily basis.</p>
                 </div>
               </div>
             </Card>
@@ -127,18 +136,20 @@ const FallsListicle = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <span className="text-3xl font-bold text-primary">4</span>
-                  <h2 className="text-2xl font-bold">Muscle Relaxants That Relax You Too Much</h2>
+                  <h2 className="text-2xl font-bold">Sleep Wrecks Your Hunger Hormones</h2>
                 </div>
                 <div className="h-48 bg-muted rounded-lg flex items-center justify-center">
-                  <p className="text-muted-foreground">Comparison of stable vs. unstable muscle control</p>
+                  <p className="text-muted-foreground">A woman lying in bed at night, eyes slightly open. The room should be dimly lit with perhaps a digital clock showing 2:47 AM. Include subtle visual cues of restless sleep like rumpled sheets</p>
                 </div>
                 <p className="text-lg leading-relaxed">
-                  Medications like Flexeril and Soma don't just relax painful muscles—they can make all your muscles less 
-                  responsive. This includes the small stabilizing muscles that keep you upright and balanced.
+                  Sleep gets lighter and more broken after 50. Blame hormones, night sweats, bathroom trips, or just an overactive mind.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  Poor sleep doesn't just make you tired; it changes your appetite. It increases ghrelin, which makes you feel hungry. At the same time, it lowers leptin, the hormone that makes you feel full. As a result, you eat more and crave unhealthy foods, even if you aim to eat healthy.
                 </p>
                 <div className="bg-muted/50 p-4 rounded-lg">
-                  <p className="font-semibold">Timing matters:</p>
-                  <p>Never take muscle relaxants before walking, especially at night or when navigating stairs.</p>
+                  <p className="font-semibold">Fix it:</p>
+                  <p>Focus on sleep like a workout. Dark room. Cool temperature. No screens.</p>
                 </div>
               </div>
             </Card>
@@ -148,85 +159,45 @@ const FallsListicle = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <span className="text-3xl font-bold text-primary">5</span>
-                  <h2 className="text-2xl font-bold">Antidepressants Affect More Than Mood</h2>
+                  <h2 className="text-2xl font-bold">Your Body Doesn't Handle Sugar Like It Used To</h2>
                 </div>
                 <div className="h-48 bg-muted rounded-lg flex items-center justify-center">
-                  <p className="text-muted-foreground">Brain diagram showing balance/coordination centers</p>
+                  <p className="text-muted-foreground">An abstract visualization of a blood sugar roller coaster. Graph throughout the day. Line comparison by age</p>
                 </div>
                 <p className="text-lg leading-relaxed">
-                  SSRIs and tricyclic antidepressants can cause dizziness, blurred vision, and something called "brain fog" 
-                  that affects spatial awareness. About 25% of seniors on these medications report balance issues.
+                  Your cells become less sensitive to insulin as you age. So carbs that used to fuel you now spike your blood sugar then crash it.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  You feel wired… then drained. And when that crash hits? Your body screams for fast sugar. That's the roller coaster that keeps weight loss out of reach.
                 </p>
                 <div className="bg-muted/50 p-4 rounded-lg">
-                  <p className="font-semibold">Important note:</p>
-                  <p>Never stop antidepressants suddenly. Work with your doctor to adjust dosing or timing if falls are a concern.</p>
+                  <p className="font-semibold">Fix it:</p>
+                  <p>Don't fear carbs; balance them. Pair every carb with protein or fat to keep blood sugar steady.</p>
                 </div>
               </div>
             </Card>
 
-            {/* Item 6 */}
-            <Card className="p-8 border-l-4 border-l-primary">
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <span className="text-3xl font-bold text-primary">6</span>
-                  <h2 className="text-2xl font-bold">Diabetes Drugs Can Drop Blood Sugar and Balance</h2>
-                </div>
-                <div className="h-48 bg-muted rounded-lg flex items-center justify-center">
-                  <p className="text-muted-foreground">Blood glucose meter with warning indicators</p>
-                </div>
-                <p className="text-lg leading-relaxed">
-                  Insulin and sulfonylureas can cause hypoglycemia (low blood sugar), leading to shakiness, confusion, 
-                  and weakness. When blood sugar drops below 70 mg/dL, fall risk increases dramatically.
-                </p>
-                <div className="bg-muted/50 p-4 rounded-lg">
-                  <p className="font-semibold">Prevention strategy:</p>
-                  <p>Regular blood sugar monitoring, consistent meal timing, and keeping glucose tablets handy.</p>
-                </div>
-              </div>
-            </Card>
-
-            {/* Item 7 */}
-            <Card className="p-8 border-l-4 border-l-primary">
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <span className="text-3xl font-bold text-primary">7</span>
-                  <h2 className="text-2xl font-bold">The Deadly Cocktail: Multiple Medications</h2>
-                </div>
-                <div className="h-48 bg-muted rounded-lg flex items-center justify-center">
-                  <p className="text-muted-foreground">Multiple pill bottles with interaction warning symbols</p>
-                </div>
-                <p className="text-lg leading-relaxed">
-                  Taking 4 or more medications increases fall risk by 60%. Drug interactions can amplify side effects in 
-                  unpredictable ways. Even "safe" combinations can become dangerous when metabolism slows with age.
-                </p>
-                <div className="bg-muted/50 p-4 rounded-lg">
-                  <p className="font-semibold">Action step:</p>
-                  <p>Schedule an annual medication review with your pharmacist to identify potential interactions and unnecessary drugs.</p>
-                </div>
-              </div>
-            </Card>
           </div>
 
           {/* Conclusion */}
           <Card className="p-8 bg-primary/5 border-primary/20">
             <div className="space-y-4">
-              <h2 className="text-2xl font-bold">What You Can Do Today</h2>
-              <div className="space-y-3">
-                <p className="text-lg">• Ask your doctor about fall-risk medications during every visit</p>
-                <p className="text-lg">• Request the lowest effective doses for your conditions</p>
-                <p className="text-lg">• Keep a medication list updated with timing and side effects</p>
-                <p className="text-lg">• Consider a home safety assessment to reduce environmental fall risks</p>
-                <p className="text-lg">• Stay physically active to maintain strength and balance</p>
+              <h2 className="text-2xl font-bold">Turn the Switch Back On: Discover how your hormones might be holding you back.</h2>
+              <p className="text-lg leading-relaxed">
+                The good news? Pinpointing which hormones need the most support is quick and eye-opening.
+              </p>
+              <div className="space-y-4">
+                <h3 className="text-xl font-semibold">Take the 30‑Second Quiz</h3>
+                <p className="text-lg">Answer a handful of simple lifestyle and symptom questions.</p>
+                <p className="text-lg">Take this quick 30-second quiz. Discover how your hormones might be holding you back. Find out what steps you can take to restart natural weight loss.</p>
               </div>
             </div>
           </Card>
 
           {/* CTA */}
           <div className="text-center space-y-4 py-8">
-            <h3 className="text-xl font-semibold">Concerned About Your Medications?</h3>
-            <p className="text-muted-foreground">Talk to your healthcare provider about conducting a fall-risk medication review.</p>
-            <Button size="lg" className="px-8">
-              Find Healthcare Providers
+            <Button size="lg" className="px-8 text-lg py-6">
+              Start the 30-Second Quiz Now
             </Button>
           </div>
         </article>

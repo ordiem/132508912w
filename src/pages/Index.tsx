@@ -9,7 +9,7 @@ const Index = () => {
         <div className="space-y-4">
           <a href="/article" className="story-link text-primary block">Read the "Appetite Switch" Modern Clean Design</a>
           <a href="/blog" className="story-link text-primary block">Pharmacist Reveals $39.99 Alternative to Costly GLP-1 Medications</a>
-          <a href="/falls-listicle" className="story-link text-primary block">7 Hidden Medication Risks Causing Deadly Falls in Older Adults</a>
+          <a href="/falls-listicle" className="story-link text-primary block">5 Reasons Why You're Still Gaining Weight After 40</a>
           
         </div>
       </article>
