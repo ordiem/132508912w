@@ -120,8 +120,12 @@ const FallsListicle = () => {
                   <span className="text-3xl font-bold text-primary">3</span>
                   <h2 className="text-2xl font-bold">Stress Is Forcing Fat Onto Your Belly</h2>
                 </div>
-                <div className="h-48 md:h-60 bg-muted rounded-lg flex items-center justify-center">
-                  <p className="text-muted-foreground">A mature woman juggling multiple responsibilities (work laptop, family photos, bills) with a subtle red glow around her midsection representing cortisol-driven belly fat storage</p>
+                <div className="h-48 md:h-60 rounded-lg overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/5178ab99-1f4c-4618-a982-6609b9c857ea.png" 
+                    alt="Stressed mature woman juggling multiple responsibilities with papers and laptop, representing cortisol-driven stress"
+                    className="w-full h-full object-cover object-right"
+                  />
                 </div>
                 <p className="text-lg leading-relaxed">
                   After 50, stress hits harder and your body gets worse at handling it. That means cortisol, your main stress hormone, stays elevated longer.
