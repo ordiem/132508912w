@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import StickyCTA from "@/components/StickyCTA";
 const FallsListicle = () => {
   return <div className="min-h-screen bg-background">
       {/* Header */}
@@ -286,6 +287,9 @@ const FallsListicle = () => {
           <p>&copy; 2025 The Health Times. Educational content for informational purposes.</p>
         </div>
       </footer>
+
+      {/* Sticky CTA */}
+      <StickyCTA />
     </div>;
 };
 export default FallsListicle;
