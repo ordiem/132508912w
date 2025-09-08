@@ -94,8 +94,12 @@ const FallsListicle = () => {
                   <span className="text-3xl font-bold text-primary">2</span>
                   <h2 className="text-2xl font-bold">Muscle Is Disappearing in the Background</h2>
                 </div>
-                <div className="h-48 md:h-60 bg-muted rounded-lg flex items-center justify-center">
-                  <p className="text-muted-foreground">Side-by-side illustration showing muscle tissue comparison - vibrant, dense muscle fibers on the left labeled '30s' versus thinner, less dense muscle fibers on the right labeled '50s'</p>
+                <div className="h-48 md:h-60 rounded-lg overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/6b4f6afd-e7f1-44a6-be3a-6fe0e65dd395.png" 
+                    alt="Side-by-side comparison of muscle tissue density between 30s and 50s showing muscle deterioration with age"
+                    className="w-full h-full object-cover object-bottom"
+                  />
                 </div>
                 <p className="text-lg leading-relaxed">
                   You lose muscle every year after 50 whether you notice it or not. And muscle isn't just for looks. It burns calories around the clock.
