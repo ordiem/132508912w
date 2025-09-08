@@ -151,8 +151,12 @@ const FallsListicle = () => {
                   <span className="text-3xl font-bold text-primary">4</span>
                   <h2 className="text-2xl font-bold">Sleep Wrecks Your Hunger Hormones</h2>
                 </div>
-                <div className="h-48 md:h-60 bg-muted rounded-lg flex items-center justify-center">
-                  <p className="text-muted-foreground">A woman lying in bed at night, eyes slightly open. The room should be dimly lit with perhaps a digital clock showing 2:47 AM. Include subtle visual cues of restless sleep like rumpled sheets</p>
+                <div className="h-48 md:h-60 rounded-lg overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/a8aeb87b-dbee-4e98-b393-2a4a3a97c00e.png" 
+                    alt="Woman lying in bed at night with digital clock showing 2:47 AM, representing sleep disruption and restless nights"
+                    className="w-full h-full object-cover object-center"
+                  />
                 </div>
                 <p className="text-lg leading-relaxed">
                   Sleep gets lighter and more broken after 50. Blame hormones, night sweats, bathroom trips, or just an overactive mind.
