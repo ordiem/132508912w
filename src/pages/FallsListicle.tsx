@@ -90,7 +90,7 @@ const FallsListicle = () => {
             {/* Item 2 */}
             <Card className="p-8 border-l-4 border-l-primary">
               <div className="space-y-4">
-                <div className="flex items-center space-x-3">
+                <div className="flex items-start space-x-3">
                   <span className="text-3xl font-bold text-primary">2</span>
                   <h2 className="text-2xl font-bold">Muscle Is Disappearing in the Background</h2>
                 </div>
@@ -116,7 +116,7 @@ const FallsListicle = () => {
             {/* Item 3 */}
             <Card className="p-8 border-l-4 border-l-primary">
               <div className="space-y-4">
-                <div className="flex items-center space-x-3">
+                <div className="flex items-start space-x-3">
                   <span className="text-3xl font-bold text-primary">3</span>
                   <h2 className="text-2xl font-bold">Stress Is Forcing Fat Onto Your Belly</h2>
                 </div>
@@ -139,7 +139,7 @@ const FallsListicle = () => {
             {/* Item 4 */}
             <Card className="p-8 border-l-4 border-l-primary">
               <div className="space-y-4">
-                <div className="flex items-center space-x-3">
+                <div className="flex items-start space-x-3">
                   <span className="text-3xl font-bold text-primary">4</span>
                   <h2 className="text-2xl font-bold">Sleep Wrecks Your Hunger Hormones</h2>
                 </div>
@@ -162,7 +162,7 @@ const FallsListicle = () => {
             {/* Item 5 */}
             <Card className="p-8 border-l-4 border-l-primary">
               <div className="space-y-4">
-                <div className="flex items-center space-x-3">
+                <div className="flex items-start space-x-3">
                   <span className="text-3xl font-bold text-primary">5</span>
                   <h2 className="text-2xl font-bold">Your Body Doesn't Handle Sugar Like It Used To</h2>
                 </div>
