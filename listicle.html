@@ -148,5 +148,53 @@
             </div>
         </div>
     </div>
+    
+    <!-- Sticky mobile CTA -->
+    <div class="sticky-cta" id="stickyCta">
+        <button class="sticky-cta-button">Take The Quiz Now</button>
+    </div>
+    
+    <script>
+        // Sticky CTA functionality
+        const stickyCta = document.getElementById('stickyCta');
+        let isVisible = false;
+        
+        function handleScroll() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercentage = (scrollTop / documentHeight) * 100;
+            
+            // Show after 40% scroll depth
+            if (scrollPercentage >= 40 && !isVisible) {
+                stickyCta.classList.add('visible');
+                isVisible = true;
+            } else if (scrollPercentage < 40 && isVisible) {
+                stickyCta.classList.remove('visible');
+                isVisible = false;
+            }
+        }
+        
+        // Throttled scroll handler for better performance
+        let ticking = false;
+        function throttledScroll() {
+            if (!ticking) {
+                requestAnimationFrame(() => {
+                    handleScroll();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }
+        
+        window.addEventListener('scroll', throttledScroll);
+        
+        // CTA button click handler
+        document.querySelector('.sticky-cta-button').addEventListener('click', function() {
+            // Scroll to main CTA or handle quiz logic
+            document.querySelector('.cta-section').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        });
+    </script>
 </body>
 </html>
