@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Article from "./pages/Article";
 import BlogPost from "./pages/BlogPost";
+import FallsListicle from "./pages/FallsListicle";
 
 
 const queryClient = new QueryClient();
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/article" element={<Article />} />
           <Route path="/blog" element={<BlogPost />} />
+          <Route path="/falls-listicle" element={<FallsListicle />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
