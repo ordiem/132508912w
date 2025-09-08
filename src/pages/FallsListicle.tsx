@@ -98,7 +98,7 @@ const FallsListicle = () => {
                   <img 
                     src="/lovable-uploads/6b4f6afd-e7f1-44a6-be3a-6fe0e65dd395.png" 
                     alt="Side-by-side comparison of muscle tissue density between 30s and 50s showing muscle deterioration with age"
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <p className="text-lg leading-relaxed">
