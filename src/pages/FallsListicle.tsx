@@ -1,7 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import StickyCTA from "@/components/StickyCTA";
 const FallsListicle = () => {
   return <div className="min-h-screen bg-background">
       {/* Header */}
@@ -29,8 +28,8 @@ const FallsListicle = () => {
             </div>
             
             <div className="flex items-center space-x-4 text-sm text-muted-foreground border-b border-border pb-6">
-              <span>By Sara Kennel</span>
-              <span>•</span>
+              
+              
               <span>Sept. 8, 2025</span>
               <span>•</span>
               <span>8 min read</span>
@@ -44,7 +43,7 @@ const FallsListicle = () => {
 
           {/* Introduction */}
           <div className="prose prose-lg max-w-none">
-            <p className="text-lg leading-relaxed mb-8">
+            <p className="text-lg leading-relaxed">
               After age 40, your hormones change. This affects how your body processes food, stores fat, and feels full. 
               Here are 5 little-known reasons why stubborn pounds are even harder to lose after 50.
             </p>
@@ -193,7 +192,7 @@ const FallsListicle = () => {
           </Card>
 
           {/* CTA */}
-          <div id="main-cta" className="text-center space-y-4 py-8">
+          <div className="text-center space-y-4 py-8">
             <Button size="lg" className="px-8 text-lg py-6">
               Start the 30-Second Quiz Now
             </Button>
@@ -207,12 +206,6 @@ const FallsListicle = () => {
           <p>&copy; 2025 The Health Times. Educational content for informational purposes.</p>
         </div>
       </footer>
-
-      {/* Sticky CTA */}
-      <StickyCTA onQuizStart={() => {
-        // Scroll to the main CTA section
-        document.querySelector('#main-cta')?.scrollIntoView({ behavior: 'smooth' });
-      }} />
     </div>;
 };
 export default FallsListicle;
