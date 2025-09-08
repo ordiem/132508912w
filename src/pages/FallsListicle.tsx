@@ -184,27 +184,52 @@ const FallsListicle = () => {
 
           </div>
 
-          {/* Conclusion */}
-          <Card className="p-8 bg-primary/5 border-primary/20">
-            <div className="space-y-4">
-              <h2 className="text-2xl font-bold">Turn the Switch Back On: Discover how your hormones might be holding you back.</h2>
-              <p className="text-lg leading-relaxed">
-                The good news? Pinpointing which hormones need the most support is quick and eye-opening.
-              </p>
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold">Take the 30‑Second Quiz</h3>
-                <p className="text-lg">Answer a handful of simple lifestyle and symptom questions.</p>
-                <p className="text-lg">Take this quick 30-second quiz. Discover how your hormones might be holding you back. Find out what steps you can take to restart natural weight loss.</p>
+          {/* Redesigned CTA Section */}
+          <Card className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-primary/5 to-background border-primary/30 shadow-lg">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent"></div>
+            <div className="relative p-8 md:p-12">
+              <div className="text-center space-y-6">
+                <div className="space-y-3">
+                  <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/20 text-primary text-sm font-medium">
+                    ⚡ Free 30-Second Assessment
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+                    Ready to Turn Your Fat-Burning Switch Back On?
+                  </h2>
+                  <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                    Discover which hormones are sabotaging your weight loss and get a personalized action plan to fix them.
+                  </p>
+                </div>
+                
+                <div className="flex flex-col md:flex-row items-center justify-center gap-6 py-4">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    Science-backed results
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    Personalized recommendations
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    Takes just 30 seconds
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <Button 
+                    size="lg" 
+                    className="w-full md:w-auto px-12 py-4 text-lg font-semibold bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
+                  >
+                    Take the Free Quiz Now →
+                  </Button>
+                  <p className="text-sm text-muted-foreground">
+                    Join 50,000+ women who've discovered their hormone solution
+                  </p>
+                </div>
               </div>
             </div>
           </Card>
-
-          {/* CTA */}
-          <div className="text-center space-y-4 py-8">
-            <Button size="lg" className="px-8 text-lg py-6">
-              Start the 30-Second Quiz Now
-            </Button>
-          </div>
         </article>
       </main>
 
