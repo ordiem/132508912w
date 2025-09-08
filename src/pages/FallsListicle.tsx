@@ -37,7 +37,7 @@ const FallsListicle = () => {
           </div>
 
           {/* Lead Image Placeholder */}
-          <div className="w-full h-64 md:h-80 rounded-lg overflow-hidden border">
+          <div className="w-full h-48 md:h-60 rounded-lg overflow-hidden border">
             <img 
               src="/lovable-uploads/f58d9cb9-e2b8-4b6a-bca4-b6a0bb9abc59.png" 
               alt="Frustrated woman in her 50s sitting with a bathroom scale, representing the weight struggles after 40"
