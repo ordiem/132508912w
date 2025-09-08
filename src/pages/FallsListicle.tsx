@@ -8,7 +8,7 @@ const FallsListicle = () => {
         <div className="max-w-4xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-bold tracking-tight">50&Beyond</div>
-            <Badge variant="secondary">Health</Badge>
+            <Badge variant="secondary">Advertorial</Badge>
           </div>
         </div>
       </header>
