@@ -13,7 +13,7 @@ const StickyCTA = ({ onQuizStart }: StickyCTAProps) => {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/95 border-t border-border shadow-lg animate-fade-in">
-      <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+      <div className="max-w-4xl mx-auto px-3 sm:px-4 py-2 sm:py-3 flex items-center justify-between gap-2 sm:gap-4">
         <div className="flex-1 min-w-0">
           <p className="text-sm font-medium text-foreground truncate">
             Discover how your hormones might be holding you back.
