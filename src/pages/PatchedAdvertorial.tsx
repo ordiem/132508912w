@@ -581,31 +581,8 @@ const PatchedAdvertorial = () => {
             </div>
           </section>
 
-          {/* Final Section */}
+          {/* Final CTA Section */}
           <section className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
-              The Final Word
-            </h2>
-
-            <blockquote className="bg-accent/10 border-l-4 border-accent p-6 rounded-r-lg mb-8">
-              <p className="text-xl font-serifBody italic text-foreground leading-relaxed">
-                "The consumer is not a moron, she is your wife."
-              </p>
-              <cite className="text-muted-foreground font-serifBody mt-2 block">— David Ogilvy</cite>
-            </blockquote>
-
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-              You're smart enough to know when you're being sold snake oil—and when you're being offered something real.
-            </p>
-
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-              Transdermal delivery isn't theory. It's proven medical science. Hospitals use it. Soldiers survived on it. And now, it can help you thrive.
-            </p>
-
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-8">
-              You've spent years paying for pills that barely absorb. Isn't it time to try a method that delivers 100% of what you're paying for?
-            </p>
-
             <div className="text-center bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 rounded-lg p-8">
               <p className="text-xl font-serifBody font-bold text-primary mb-6">
                 Try Patched today. Let science—and history—finally work in your favor.
