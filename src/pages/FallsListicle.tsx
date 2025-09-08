@@ -43,7 +43,7 @@ const FallsListicle = () => {
 
           {/* Introduction */}
           <div className="prose prose-lg max-w-none">
-            <p className="text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed mb-8">
               After age 40, your hormones change. This affects how your body processes food, stores fat, and feels full. 
               Here are 5 little-known reasons why stubborn pounds are even harder to lose after 50.
             </p>
