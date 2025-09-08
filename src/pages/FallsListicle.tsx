@@ -62,7 +62,7 @@ const FallsListicle = () => {
             {/* Item 1 */}
             <Card className="p-8 border-l-4 border-l-primary">
               <div className="space-y-4">
-                <div className="flex items-center space-x-3">
+                <div className="flex items-start space-x-3">
                   <span className="text-3xl font-bold text-primary">1</span>
                   <h2 className="text-2xl font-bold">Your Fullness Signal Has Gone Silent</h2>
                 </div>
