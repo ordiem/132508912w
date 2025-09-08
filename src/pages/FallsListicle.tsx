@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import StickyCTA from "@/components/StickyCTA";
 const FallsListicle = () => {
   return <div className="min-h-screen bg-background">
       {/* Header */}
@@ -192,7 +193,7 @@ const FallsListicle = () => {
           </Card>
 
           {/* CTA */}
-          <div className="text-center space-y-4 py-8">
+          <div id="main-cta" className="text-center space-y-4 py-8">
             <Button size="lg" className="px-8 text-lg py-6">
               Start the 30-Second Quiz Now
             </Button>
@@ -206,6 +207,12 @@ const FallsListicle = () => {
           <p>&copy; 2025 The Health Times. Educational content for informational purposes.</p>
         </div>
       </footer>
+
+      {/* Sticky CTA */}
+      <StickyCTA onQuizStart={() => {
+        // Scroll to the main CTA section
+        document.querySelector('#main-cta')?.scrollIntoView({ behavior: 'smooth' });
+      }} />
     </div>;
 };
 export default FallsListicle;
