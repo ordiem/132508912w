@@ -19,7 +19,7 @@ const StickyCTA = ({ onQuizStart }: StickyCTAProps) => {
             Find out if your hormones are holding you back
           </p>
           <p className="text-xs text-muted-foreground hidden sm:block">
-            Take the 30-second hormone quiz
+            Take the 30-second quiz.
           </p>
         </div>
         <div className="flex items-center gap-2">
