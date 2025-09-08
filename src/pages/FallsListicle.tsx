@@ -39,11 +39,7 @@ const FallsListicle = () => {
 
           {/* Lead Image Placeholder */}
           <div className="w-full h-48 md:h-60 rounded-lg overflow-hidden border">
-            <img 
-              src="/lovable-uploads/f58d9cb9-e2b8-4b6a-bca4-b6a0bb9abc59.png" 
-              alt="Frustrated woman in her 50s sitting with a bathroom scale, representing the weight struggles after 40"
-              className="w-full h-full object-cover"
-            />
+            <img src="/lovable-uploads/f58d9cb9-e2b8-4b6a-bca4-b6a0bb9abc59.png" alt="Frustrated woman in her 50s sitting with a bathroom scale, representing the weight struggles after 40" className="w-full h-full object-cover" />
           </div>
 
           {/* Introduction */}
@@ -68,11 +64,7 @@ const FallsListicle = () => {
                   <h2 className="text-2xl font-bold font-serifDisplay">Your Fullness Signal Has Gone Silent</h2>
                 </div>
                 <div className="h-48 md:h-60 rounded-lg overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/3b3e562d-49aa-4016-afce-8485de82181e.png" 
-                    alt="Woman in her 50s sitting at a dinner table with an empty plate, looking confused about not feeling full"
-                     className="w-full h-full object-cover object-top"
-                  />
+                  <img src="/lovable-uploads/3b3e562d-49aa-4016-afce-8485de82181e.png" alt="Woman in her 50s sitting at a dinner table with an empty plate, looking confused about not feeling full" className="w-full h-full object-cover object-top" />
                 </div>
                 <p className="text-lg leading-relaxed">
                   There's a hormone called GLP‑1 that tells your brain when to stop eating. It used to work with high effectiveness. 
@@ -103,11 +95,7 @@ const FallsListicle = () => {
                   <h2 className="text-2xl font-bold font-serifDisplay">Muscle Is Disappearing in the Background</h2>
                 </div>
                 <div className="h-48 md:h-60 rounded-lg overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/6b4f6afd-e7f1-44a6-be3a-6fe0e65dd395.png" 
-                    alt="Side-by-side comparison of muscle tissue density between 30s and 50s showing muscle deterioration with age"
-                    className="w-full h-full object-cover object-center"
-                  />
+                  <img src="/lovable-uploads/6b4f6afd-e7f1-44a6-be3a-6fe0e65dd395.png" alt="Side-by-side comparison of muscle tissue density between 30s and 50s showing muscle deterioration with age" className="w-full h-full object-cover object-center" />
                 </div>
                 <p className="text-lg leading-relaxed">
                   You lose muscle every year after 50 whether you notice it or not. And muscle isn't just for looks. It burns calories around the clock.
@@ -140,11 +128,7 @@ const FallsListicle = () => {
                   <h2 className="text-2xl font-bold font-serifDisplay">Stress Is Forcing Fat Onto Your Belly</h2>
                 </div>
                 <div className="h-48 md:h-60 rounded-lg overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/5178ab99-1f4c-4618-a982-6609b9c857ea.png" 
-                    alt="Stressed mature woman juggling multiple responsibilities with papers and laptop, representing cortisol-driven stress"
-                    className="w-full h-full object-cover object-right"
-                  />
+                  <img src="/lovable-uploads/5178ab99-1f4c-4618-a982-6609b9c857ea.png" alt="Stressed mature woman juggling multiple responsibilities with papers and laptop, representing cortisol-driven stress" className="w-full h-full object-cover object-right" />
                 </div>
                 <p className="text-lg leading-relaxed">
                   After 50, stress hits harder and your body gets worse at handling it. That means cortisol, your main stress hormone, stays elevated longer.
@@ -174,11 +158,7 @@ const FallsListicle = () => {
                   <h2 className="text-2xl font-bold font-serifDisplay">Sleep Wrecks Your Hunger Hormones</h2>
                 </div>
                 <div className="h-48 md:h-60 rounded-lg overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/a8aeb87b-dbee-4e98-b393-2a4a3a97c00e.png" 
-                    alt="Woman lying in bed at night with digital clock showing 2:47 AM, representing sleep disruption and restless nights"
-                    className="w-full h-full object-cover object-center"
-                  />
+                  <img src="/lovable-uploads/a8aeb87b-dbee-4e98-b393-2a4a3a97c00e.png" alt="Woman lying in bed at night with digital clock showing 2:47 AM, representing sleep disruption and restless nights" className="w-full h-full object-cover object-center" />
                 </div>
                 <p className="text-lg leading-relaxed">
                   Sleep gets lighter and more broken after 50. Blame hormones, night sweats, bathroom trips, or just an overactive mind.
@@ -207,9 +187,7 @@ const FallsListicle = () => {
                   <span className="text-3xl font-bold text-primary">5</span>
                   <h2 className="text-2xl font-bold font-serifDisplay">Your Body Doesn't Handle Sugar Like It Used To</h2>
                 </div>
-                <div className="h-48 md:h-60 bg-muted rounded-lg flex items-center justify-center">
-                  <p className="text-muted-foreground">An abstract visualization of a blood sugar roller coaster. Graph throughout the day. Line comparison by age</p>
-                </div>
+                
                 <p className="text-lg leading-relaxed">
                   Your cells become less sensitive to insulin as you age. So carbs that used to fuel you now spike your blood sugar then crash it.
                 </p>
@@ -265,10 +243,7 @@ const FallsListicle = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <Button 
-                    size="lg" 
-                    className="w-full md:w-auto px-12 py-4 text-lg font-semibold bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
-                  >
+                  <Button size="lg" className="w-full md:w-auto px-12 py-4 text-lg font-semibold bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5">
                     Take the Free Quiz Now →
                   </Button>
                   <p className="text-sm text-muted-foreground">
