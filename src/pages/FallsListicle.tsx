@@ -1,15 +1,13 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-
 const FallsListicle = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
         <div className="max-w-4xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold tracking-tight">The Health Times</div>
+            <div className="text-2xl font-bold tracking-tight">50&Beyond</div>
             <Badge variant="secondary">Health</Badge>
           </div>
         </div>
@@ -21,17 +19,16 @@ const FallsListicle = () => {
           {/* Article Header */}
           <div className="space-y-6">
             <div className="space-y-2">
-              <Badge variant="outline" className="text-xs font-medium">HEALTH CRISIS</Badge>
+              <Badge variant="outline" className="text-xs font-medium">WEIGHT LOSS
+            </Badge>
               <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
                 5 Reasons Why You're Still Gaining Weight After 40 - Even If You're Doing Everything "Right"
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                If the diet that worked at 35 suddenly stops working at 50, you're not alone. And it's not a willpower problem.
-              </p>
+              <p className="text-xl text-muted-foreground leading-relaxed">If the diet that worked at 35 suddenly stops working at 45, you're not alone. And it's not a willpower problem. The truth is, your body plays by a different set of rules as you age — and once you understand them, you can finally see results again.</p>
             </div>
             
             <div className="flex items-center space-x-4 text-sm text-muted-foreground border-b border-border pb-6">
-              <span>By Health Desk</span>
+              <span>By Sara Kennel</span>
               <span>•</span>
               <span>Sept. 8, 2025</span>
               <span>•</span>
@@ -209,8 +206,6 @@ const FallsListicle = () => {
           <p>&copy; 2025 The Health Times. Educational content for informational purposes.</p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default FallsListicle;
