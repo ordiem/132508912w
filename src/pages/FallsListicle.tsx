@@ -7,7 +7,7 @@ const FallsListicle = () => {
       <header className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
         <div className="max-w-4xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold tracking-tight">50&Beyond</div>
+            <div className="text-2xl font-bold tracking-tight font-serifDisplay">50&Beyond</div>
             <Badge variant="secondary">Advertorial</Badge>
           </div>
         </div>
@@ -21,10 +21,10 @@ const FallsListicle = () => {
             <div className="space-y-2">
               <Badge variant="outline" className="text-xs font-medium">WEIGHT LOSS
             </Badge>
-              <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
+              <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight font-serifDisplay">
                 5 Reasons Why You're Still Gaining Weight After 40 - Even If You're Doing Everything "Right"
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">If the diet that worked at 35 suddenly stops working at 45, you're not alone. And it's not a willpower problem. The truth is, your body plays by a different set of rules as you age — and once you understand them, you can finally see results again.</p>
+              <p className="text-xl text-muted-foreground leading-relaxed font-serifBody">If the diet that worked at 35 suddenly stops working at 45, you're not alone. And it's not a willpower problem. The truth is, your body plays by a different set of rules as you age — and once you understand them, you can finally see results again.</p>
             </div>
             
             <div className="flex items-center space-x-6 text-sm text-muted-foreground border-b border-border pb-6">
@@ -64,7 +64,7 @@ const FallsListicle = () => {
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <span className="text-3xl font-bold text-primary">1</span>
-                  <h2 className="text-2xl font-bold">Your Fullness Signal Has Gone Silent</h2>
+                  <h2 className="text-2xl font-bold font-serifDisplay">Your Fullness Signal Has Gone Silent</h2>
                 </div>
                 <div className="h-48 md:h-60 rounded-lg overflow-hidden">
                   <img 
@@ -92,7 +92,7 @@ const FallsListicle = () => {
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <span className="text-3xl font-bold text-primary">2</span>
-                  <h2 className="text-2xl font-bold">Muscle Is Disappearing in the Background</h2>
+                  <h2 className="text-2xl font-bold font-serifDisplay">Muscle Is Disappearing in the Background</h2>
                 </div>
                 <div className="h-48 md:h-60 rounded-lg overflow-hidden">
                   <img 
@@ -122,7 +122,7 @@ const FallsListicle = () => {
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <span className="text-3xl font-bold text-primary">3</span>
-                  <h2 className="text-2xl font-bold">Stress Is Forcing Fat Onto Your Belly</h2>
+                  <h2 className="text-2xl font-bold font-serifDisplay">Stress Is Forcing Fat Onto Your Belly</h2>
                 </div>
                 <div className="h-48 md:h-60 rounded-lg overflow-hidden">
                   <img 
@@ -149,7 +149,7 @@ const FallsListicle = () => {
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <span className="text-3xl font-bold text-primary">4</span>
-                  <h2 className="text-2xl font-bold">Sleep Wrecks Your Hunger Hormones</h2>
+                  <h2 className="text-2xl font-bold font-serifDisplay">Sleep Wrecks Your Hunger Hormones</h2>
                 </div>
                 <div className="h-48 md:h-60 rounded-lg overflow-hidden">
                   <img 
@@ -176,7 +176,7 @@ const FallsListicle = () => {
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <span className="text-3xl font-bold text-primary">5</span>
-                  <h2 className="text-2xl font-bold">Your Body Doesn't Handle Sugar Like It Used To</h2>
+                  <h2 className="text-2xl font-bold font-serifDisplay">Your Body Doesn't Handle Sugar Like It Used To</h2>
                 </div>
                 <div className="h-48 md:h-60 bg-muted rounded-lg flex items-center justify-center">
                   <p className="text-muted-foreground">An abstract visualization of a blood sugar roller coaster. Graph throughout the day. Line comparison by age</p>
@@ -205,7 +205,7 @@ const FallsListicle = () => {
                   <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/20 text-primary text-sm font-medium">
                     ⚡ Free 30-Second Assessment
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+                  <h2 className="text-3xl md:text-4xl font-bold leading-tight font-serifDisplay">
                     Ready to Turn Your Fat-Burning Switch Back On?
                   </h2>
                   <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
