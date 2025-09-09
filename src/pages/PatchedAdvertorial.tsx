@@ -48,189 +48,116 @@ const PatchedAdvertorial = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serifDisplay font-bold leading-tight mb-6 text-foreground">
-              Why Millions of Women Over 45 Are Wasting $200 a Month on Vitamins That Don't Work
+              The Natural GLP-1 Alternative That Requires No Injections
             </h1>
             
             <div className="text-xl md:text-2xl text-muted-foreground font-serifBody mb-8 leading-relaxed">
-              And the 80-Year-Old Military Secret That Delivers 100% of Nutrients Into Your Bloodstream
-            </div>
-
-            <div className="bg-gradient-to-r from-accent/5 to-primary/5 border-l-4 border-accent p-6 rounded-r-lg mb-8">
-              <p className="text-lg font-serifBody leading-relaxed text-foreground">
-                A forgotten technique from World War II is helping women shed stubborn weight, cut cravings, and feel 20 years younger—without swallowing a single pill
-              </p>
+              An 80-Year-Old Military Invention Is Helping Women Over 45 Control Cravings, Boost Energy, and Reignite Fat Loss. Without Pills, Needles, or Side Effects
             </div>
           </div>
 
           {/* Opening Hook */}
           <div className="prose prose-lg max-w-none mb-12">
             <p className="drop-cap text-lg leading-relaxed text-foreground font-serifBody">
-              If you're a woman over 45 who takes vitamins or supplements—and you're not seeing results—this may be the most important article you'll read this year.
+              If you're a woman over 45 and struggling with stubborn weight, blood sugar swings, or relentless food cravings... you may be missing the one thing that matters most: <span className="font-bold text-primary">absorption</span>.
             </p>
             
             <p className="text-lg leading-relaxed text-foreground font-serifBody">
-              Let me explain why.
+              You see, it's not just about what you take. It's about what your body can actually use.
             </p>
 
             <p className="text-lg leading-relaxed text-foreground font-serifBody">
-              Some time ago, Dr. Sarah Chen, a metabolic researcher at Stanford Medical Center, noticed something strange in her lab.
-            </p>
-
-            <p className="text-lg leading-relaxed text-foreground font-serifBody">
-              Her patients were spending hundreds—sometimes thousands—of dollars on nutritional supplements. But their blood work didn't budge.
-            </p>
-
-            <p className="text-lg leading-relaxed text-foreground font-serifBody">
-              They were still deficient.
-            </p>
-
-            <p className="text-lg leading-relaxed text-foreground font-serifBody">
-              Still tired.
-            </p>
-
-            <p className="text-lg leading-relaxed text-foreground font-serifBody">
-              Still gaining weight.
-            </p>
-
-            <p className="text-lg leading-relaxed text-foreground font-serifBody">
-              One woman, age 52, was taking $200 worth of high-end supplements every month. Yet when her blood tests came back?
-            </p>
-
-            <p className="text-lg leading-relaxed text-foreground font-serifBody font-semibold">
-              She was deficient in nearly every nutrient she was supposedly "supplementing."
-            </p>
-
-            <p className="text-lg leading-relaxed text-foreground font-serifBody">
-              Dr. Chen knew something wasn't adding up.
-            </p>
-
-            <p className="text-lg leading-relaxed text-foreground font-serifBody">
-              So she went deeper.
+              And for millions of women, especially after age 45, that's where everything starts to go wrong.
             </p>
           </div>
 
-          {/* Problem Section */}
+          {/* GLP-1 Hormone Section */}
           <section className="mb-12">
             <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
-              The 80% Problem No One Talks About
+              The Hidden Hormone Behind Your Hunger
             </h2>
 
-            <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-8 mb-8">
-              <h3 className="text-xl font-serifDisplay font-bold text-destructive mb-4">
-                Here's what she uncovered:
-              </h3>
-              <p className="text-2xl font-serifBody font-bold text-destructive leading-relaxed">
-                Most women over 45 are only absorbing 20% of the nutrients in the pills they swallow.
-              </p>
-              <p className="text-lg text-muted-foreground mt-4 font-serifBody">
-                Let that sink in.
-              </p>
-              <p className="text-xl font-serifBody font-semibold text-destructive mt-2">
-                80 cents of every dollar you spend on vitamins? Gone.
-              </p>
-            </div>
-
             <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-              Not because you're doing anything wrong—but because your body has changed.
+              You may not have heard of it, but GLP-1 is the hormone that governs nearly every aspect of your metabolism.
             </p>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-              According to Dr. Chen, it's due to a two-step digestive trap:
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/20 rounded-lg p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold">1</div>
-                  <h4 className="font-serifDisplay font-bold text-lg">Stomach Acid Destruction</h4>
+            <div className="bg-gradient-to-r from-primary/5 to-accent/10 border border-primary/20 rounded-lg p-8 mb-8">
+              <div className="grid gap-4">
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-5 h-5 text-accent" />
+                  <span className="font-serifBody text-foreground">It tells your brain when you're full</span>
                 </div>
-                <p className="text-muted-foreground font-serifBody">
-                  Stomach acid destroys up to 60% of nutrients before they even leave your gut.
-                </p>
-              </div>
-
-              <div className="bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/20 rounded-lg p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold">2</div>
-                  <h4 className="font-serifDisplay font-bold text-lg">Liver Filtration</h4>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-5 h-5 text-accent" />
+                  <span className="font-serifBody text-foreground">It regulates how quickly your stomach empties</span>
                 </div>
-                <p className="text-muted-foreground font-serifBody">
-                  Your liver filters out another 40% in what scientists call "first-pass metabolism."
-                </p>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-5 h-5 text-accent" />
+                  <span className="font-serifBody text-foreground">It controls insulin, blood sugar, and how your body stores fat</span>
+                </div>
               </div>
             </div>
 
             <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-              Add in slower digestion (especially if you're on medications like Ozempic), and that number drops even further.
+              GLP-1 is so effective, drug companies have built billion-dollar weight loss brands by synthetically mimicking it.
             </p>
 
-            <blockquote className="bg-accent/10 border-l-4 border-accent p-6 rounded-r-lg mb-8">
-              <p className="text-xl font-serifBody italic text-foreground leading-relaxed">
-                "We're asking women to spend hundreds on supplements that don't work. It's not just ineffective—it's unethical."
-              </p>
-              <cite className="text-muted-foreground font-serifBody mt-2 block">— Dr. Chen</cite>
-            </blockquote>
+            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+              But there's a catch.
+            </p>
 
             <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-              So what's the solution?
+              Those drugs are expensive. They require injections. And they often come with serious side effects.
+            </p>
+
+            <p className="text-xl font-serifBody font-bold text-primary mb-6">
+              What if you could activate your body's own GLP-1 production naturally, without drugs, without needles, and without the risks?
             </p>
 
             <p className="text-lg leading-relaxed text-foreground font-serifBody">
-              To find it, Dr. Chen went somewhere few modern doctors would dare venture.
-            </p>
-
-            <p className="text-lg leading-relaxed text-foreground font-serifBody font-semibold">
-              She opened a forgotten drawer of history: World War II military medicine.
+              Turns out… you can. Thanks to a forgotten medical innovation born during the chaos of World War II.
             </p>
           </section>
 
           {/* Historical Solution Section */}
           <section className="mb-12">
             <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
-              The Medical Breakthrough the Army Used in 1943
+              The 1943 Military Medical Breakthrough That's Changing Women's Health Today
             </h2>
 
             <div className="bg-gradient-to-r from-muted/30 to-accent/10 border border-muted rounded-lg p-8 mb-8">
               <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-                In 1943, military medics on the front lines faced a deadly dilemma.
+                In the final years of WWII, U.S. medics were faced with a brutal problem.
               </p>
 
               <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-                Wounded soldiers couldn't swallow pills. Their stomachs were too damaged. Their digestion, unreliable.
+                Wounded soldiers with stomach injuries couldn't take pills. They couldn't eat. They couldn't digest anything.
               </p>
 
               <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-                Yet they still needed life-saving medications.
+                And yet, they needed life-saving medicine fast.
               </p>
 
               <p className="text-xl font-serifBody font-bold text-primary mb-6">
-                So the army pioneered something extraordinary: Transdermal delivery.
+                The solution? Transdermal delivery—a way to send critical compounds through the skin, directly into the bloodstream.
               </p>
 
               <p className="text-lg leading-relaxed text-foreground font-serifBody">
-                Instead of going through the stomach, they placed medication on the skin—where it absorbed directly into the bloodstream.
+                It bypassed the gut entirely. No swallowing. No digestion. Just rapid, direct absorption.
               </p>
             </div>
 
             <p className="text-xl font-serifBody font-semibold text-primary mb-6">
-              And it worked.
-            </p>
-
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-8">
-              Injured soldiers who couldn't even hold down water suddenly got relief. Their pain eased. Their vitals stabilized.
+              It worked so well, this method is still used today in hospitals for:
             </p>
 
             <div className="bg-card border border-border rounded-lg p-6 mb-8">
-              <h3 className="text-xl font-serifDisplay font-bold text-foreground mb-4">
-                It was a breakthrough so effective that hospitals still use it today for:
-              </h3>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
                   'Hormone replacement therapy',
-                  'Nicotine cessation',
-                  'Motion sickness',
-                  'Pain relief (fentanyl patches)',
-                  'Heart medications (like nitroglycerin)'
+                  'Smoking cessation',
+                  'Pain management',
+                  'Heart medications'
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-accent" />
@@ -240,57 +167,174 @@ const PatchedAdvertorial = () => {
               </div>
             </div>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-              Dr. Chen had a thought: What if this proven medical technique could work for nutrients too?
-            </p>
-
             <p className="text-lg leading-relaxed text-foreground font-serifBody">
-              And more importantly…
-            </p>
-
-            <p className="text-xl font-serifBody font-bold text-primary">
-              What if it could help women over 45 finally lose weight, control cravings, and feel energized again—without swallowing a single pill?
+              Now, 80 years later, that same battlefield discovery is being used to help women stimulate GLP-1 naturally and finally get their metabolism working again.
             </p>
           </section>
 
-          {/* Science Section */}
+          {/* Why Supplements Fail Section */}
           <section className="mb-12">
             <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
-              The Four "GLP-1 Activators" That Could Change Everything
+              Why Most GLP-1 Supplements Stop Working After 45
             </h2>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-8">
-              Dr. Chen's team identified four compounds with an extraordinary effect on GLP-1, the hormone that controls appetite, metabolism, and weight gain.
+            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+              Dr. Sarah Chen, a metabolic researcher at Stanford Medical Center, first noticed the problem during routine blood tests.
+            </p>
+
+            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+              Women in their late 40s, 50s, and 60s were taking supplements—good ones, backed by science. Some were even taking prescription GLP-1 drugs.
+            </p>
+
+            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+              But their test results told a different story.
+            </p>
+
+            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+              They were still nutrient-deficient. Still gaining weight. Still fatigued.
             </p>
 
             <p className="text-lg leading-relaxed text-foreground font-serifBody mb-8">
-              Here's what the clinical research says:
+              One patient—age 52—was spending hundreds of dollars every month on high-end supplements. Yet her labs showed she was absorbing almost nothing.
+            </p>
+
+            <blockquote className="bg-accent/10 border-l-4 border-accent p-6 rounded-r-lg mb-8">
+              <p className="text-xl font-serifBody italic text-foreground leading-relaxed">
+                "These women weren't failing their supplements. Their supplements were failing them."
+              </p>
+              <cite className="text-muted-foreground font-serifBody mt-2 block">— Dr. Sarah Chen</cite>
+            </blockquote>
+
+            <h3 className="text-2xl font-serifDisplay font-bold text-foreground mb-6 flex items-center gap-3">
+              <Beaker className="w-6 h-6 text-primary" />
+              The Real Problem Is Absorption
+            </h3>
+
+            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+              As you age, your body goes through three changes that drastically reduce how well you absorb nutrients:
+            </p>
+
+            <div className="grid gap-6 mb-8">
+              {[
+                {
+                  title: 'Stomach Acid',
+                  description: 'Kills up to 60% of nutrients before they leave the gut',
+                  icon: '🔥'
+                },
+                {
+                  title: 'Liver Filtering',
+                  description: 'Removes another 40% through "first-pass metabolism"',
+                  icon: '🥘'
+                },
+                {
+                  title: 'Slowed Digestion',
+                  description: 'Especially common in women taking GLP-1 injections like Ozempic',
+                  icon: '⏰'
+                }
+              ].map((item, index) => (
+                <div key={index} className="bg-gradient-to-r from-card to-accent/5 border border-border rounded-lg p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="text-2xl">{item.icon}</div>
+                    <div>
+                      <h4 className="font-serifDisplay font-bold text-lg text-foreground mb-2">
+                        {item.title}
+                      </h4>
+                      <p className="text-muted-foreground font-serifBody">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-6 mb-8">
+              <p className="text-lg font-serifBody text-foreground">
+                In short, even the most effective nutrients can't help you if they never make it into your bloodstream.
+              </p>
+            </div>
+
+            <p className="text-lg leading-relaxed text-foreground font-serifBody">
+              That's why Dr. Chen went back to a long-lost method from 1943—and gave it a modern purpose.
+            </p>
+          </section>
+
+          {/* Solution Section */}
+          <section className="mb-12">
+            <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
+              The Patch That Helps Activate GLP-1—Naturally, Safely, and Effectively
+            </h2>
+
+            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+              After years of research, Dr. Chen and her team developed a medical-grade skin patch designed to deliver GLP-1 activating nutrients directly through the skin.
+            </p>
+
+            <div className="bg-gradient-to-r from-primary/5 to-accent/10 border border-primary/20 rounded-lg p-8 mb-8">
+              <p className="text-2xl font-serifBody font-bold text-primary mb-6">
+                It's called Patched™.
+              </p>
+
+              <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+                And it's the first of its kind: A transdermal nutrient patch made specifically for women over 45 who want to take back control of their hunger, cravings, and metabolism—without relying on synthetic injections.
+              </p>
+
+              <div className="grid md:grid-cols-3 gap-4">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-accent text-accent-foreground rounded-full flex items-center justify-center mx-auto mb-3">
+                    <X className="w-6 h-6" />
+                  </div>
+                  <p className="font-serifBody text-foreground">No pills to swallow</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-accent text-accent-foreground rounded-full flex items-center justify-center mx-auto mb-3">
+                    <X className="w-6 h-6" />
+                  </div>
+                  <p className="font-serifBody text-foreground">No digestive issues</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-accent text-accent-foreground rounded-full flex items-center justify-center mx-auto mb-3">
+                    <X className="w-6 h-6" />
+                  </div>
+                  <p className="font-serifBody text-foreground">No injections, ever</p>
+                </div>
+              </div>
+            </div>
+
+            <p className="text-lg leading-relaxed text-foreground font-serifBody">
+              Just clinically-supported nutrients, delivered straight into your bloodstream, using the same wartime medical principle that once saved soldiers' lives.
+            </p>
+          </section>
+
+          {/* Ingredients Section */}
+          <section className="mb-12">
+            <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
+              The 4 Natural Nutrients That Help Stimulate GLP-1
+            </h2>
+
+            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-8">
+              Each Patched™ patch contains a precise blend of four science-backed ingredients shown to support natural GLP-1 activation:
             </p>
 
             <div className="grid gap-6 mb-8">
               {[
                 {
                   name: 'Berberine',
-                  subtitle: 'Nature\'s Ozempic',
-                  description: 'Reduces food intake by 47.5% in clinical studies. It mimics the effects of prescription weight loss drugs—without the side effects.',
+                  description: 'Often called "Nature\'s Ozempic." Shown to reduce food intake by 47% in human trials.',
                   icon: <Beaker className="w-6 h-6" />
                 },
                 {
                   name: 'Lemon Fruit Extract',
-                  subtitle: 'Fast-Acting Appetite Control',
-                  description: 'Increases GLP-1 levels in just 30 minutes, triggering satiety and natural appetite control for up to 8 hours.',
+                  description: 'Triggers GLP-1 release in just 30 minutes—helping you feel full faster and longer.',
                   icon: <Clock className="w-6 h-6" />
                 },
                 {
                   name: 'Red Orange Complex',
-                  subtitle: 'Belly Fat Targeting',
-                  description: 'Targets belly fat at the cellular level. In double-blind trials, women lost 15% more weight than the control group.',
+                  description: 'Targets stubborn belly fat. Shown to reduce waist circumference in clinical studies.',
                   icon: <Shield className="w-6 h-6" />
                 },
                 {
                   name: 'Saffron Extract',
-                  subtitle: 'The Craving Killer',
-                  description: 'Clinical trials show a 70% drop in appetite, a 69% decrease in hunger, and 65% fewer sugar cravings.',
+                  description: 'Reduces emotional eating and sugar cravings by up to 70%.',
                   icon: <CheckCircle className="w-6 h-6" />
                 }
               ].map((ingredient, index) => (
@@ -300,12 +344,12 @@ const PatchedAdvertorial = () => {
                       {ingredient.icon}
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-serifDisplay font-bold text-foreground mb-2">
-                        {ingredient.name}
-                      </h3>
-                      <p className="text-accent font-serifBody font-semibold mb-3">
-                        {ingredient.subtitle}
-                      </p>
+                      <div className="flex items-center gap-2 mb-3">
+                        <CheckCircle className="w-5 h-5 text-accent" />
+                        <h3 className="text-xl font-serifDisplay font-bold text-foreground">
+                          {ingredient.name}
+                        </h3>
+                      </div>
                       <p className="text-muted-foreground font-serifBody leading-relaxed">
                         {ingredient.description}
                       </p>
@@ -315,304 +359,206 @@ const PatchedAdvertorial = () => {
               ))}
             </div>
 
-            <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-6">
-              <p className="text-lg font-serifBody text-foreground mb-4">
-                All four ingredients were proven in labs.
-              </p>
-              <p className="text-xl font-serifBody font-bold text-destructive">
-                The problem?
-              </p>
-              <p className="text-xl font-serifBody font-bold text-destructive">
-                None of them work if they don't reach your bloodstream.
+            <div className="bg-gradient-to-r from-primary/5 to-accent/10 border border-primary/20 rounded-lg p-6">
+              <p className="text-lg font-serifBody text-foreground">
+                Together, they work to support your body's natural metabolic rhythm—the one your body used to follow before hormones, stress, and time got in the way.
               </p>
             </div>
-          </section>
-
-          {/* Solution Section */}
-          <section className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
-              The Patch That Changed Everything
-            </h2>
-
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-              That's when Dr. Chen had her second breakthrough.
-            </p>
-
-            <p className="text-xl font-serifBody font-semibold text-primary mb-8">
-              What if you could combine all four compounds into a medical-grade patch—delivering a steady, 8-hour supply directly into the bloodstream, bypassing the digestive system entirely?
-            </p>
-
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-              That's exactly what she did.
-            </p>
-
-            <div className="bg-gradient-to-r from-primary/5 to-accent/10 border border-primary/20 rounded-lg p-8 mb-8">
-              <p className="text-xl font-serifBody font-bold text-primary mb-6">
-                The result is a product called Patched.
-              </p>
-
-              <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-                You simply place the patch on your skin each morning. It gets to work silently, steadily—no pills, no nausea, no sugar crashes.
-              </p>
-
-              <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-                And most importantly?
-              </p>
-
-              <p className="text-2xl font-serifBody font-bold text-accent">
-                100% absorption.
-              </p>
-            </div>
-
-            <blockquote className="bg-accent/10 border-l-4 border-accent p-6 rounded-r-lg">
-              <p className="text-xl font-serifBody italic text-foreground leading-relaxed">
-                "We already know patches work. They've helped millions stop smoking. Now we're using the same delivery method to help women naturally regulate appetite, cravings, and energy."
-              </p>
-              <cite className="text-muted-foreground font-serifBody mt-2 block">— Dr. Chen</cite>
-            </blockquote>
           </section>
 
           {/* Results Section */}
           <section className="mb-12">
             <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
-              847 Women. One Breakthrough. Remarkable Results.
+              Backed by Research. Proven by Women.
             </h2>
 
             <p className="text-lg leading-relaxed text-foreground font-serifBody mb-8">
-              In a 6-month observational study of 847 women using the GLP-1 support patch, the results stunned the Stanford team.
+              In a 6-month observational study conducted with 847 women using Patched™ daily, the results were impossible to ignore:
             </p>
 
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
-              <div className="bg-gradient-to-br from-accent/10 to-primary/5 border border-accent/20 rounded-lg p-6">
-                <h3 className="text-xl font-serifDisplay font-bold text-accent mb-4">Appetite Control:</h3>
-                <ul className="space-y-2 font-serifBody text-foreground">
-                  <li>• 73% reduction in between-meal hunger</li>
-                  <li>• 65% drop in sugar cravings</li>
-                  <li>• 55% less late-night snacking</li>
-                  <li>• 81% felt full after normal-sized meals</li>
-                </ul>
-              </div>
-
-              <div className="bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20 rounded-lg p-6">
-                <h3 className="text-xl font-serifDisplay font-bold text-primary mb-4">Weight Loss:</h3>
-                <ul className="space-y-2 font-serifBody text-foreground">
-                  <li>• Average: 22.4 pounds lost</li>
-                  <li>• 3.9 inches off the waist</li>
-                  <li>• 3.4 inches off the hips</li>
-                  <li>• 3.8-point drop in BMI</li>
-                </ul>
-              </div>
-
-              <div className="bg-gradient-to-br from-muted/20 to-accent/10 border border-muted rounded-lg p-6">
-                <h3 className="text-xl font-serifDisplay font-bold text-foreground mb-4">Energy & Health:</h3>
-                <ul className="space-y-2 font-serifBody text-foreground">
-                  <li>• 67% saw better blood sugar levels</li>
-                  <li>• 54% had improved blood pressure</li>
-                  <li>• 71% reported higher energy</li>
-                  <li>• Nearly half reduced other medications*</li>
-                </ul>
-                <p className="text-xs text-muted-foreground mt-2">*with doctor approval</p>
-              </div>
-            </div>
-          </section>
-
-          {/* Testimonial Section */}
-          <section className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
-              One Woman's Story: "It Gave Me My Life Back"
-            </h2>
-
-            <div className="bg-gradient-to-r from-card to-muted/10 border border-border rounded-lg p-8">
-              <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-                Sarah Thompson, 52, from Denver, had tried everything.
-              </p>
-
-              <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-                She was taking Ozempic but developed gastroparesis—a condition that made digestion painfully slow. She couldn't hold down vitamins, let alone meals.
-              </p>
-
-              <blockquote className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-6">
-                <p className="text-xl font-serifBody italic text-foreground leading-relaxed">
-                  "I was literally flushing $200 of supplements down the toilet every month."
-                </p>
-              </blockquote>
-
-              <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-                Then she discovered Patched.
-              </p>
-
-              <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-                In just 5 months, she lost 47 pounds, had more energy than she had in a decade, and—most importantly—her blood work came back perfect.
-              </p>
-
-              <blockquote className="bg-accent/10 border-l-4 border-accent p-6 rounded-r-lg">
-                <p className="text-xl font-serifBody italic text-foreground leading-relaxed">
-                  "It was the only thing that worked. And I never swallowed a single pill."
-                </p>
-              </blockquote>
-            </div>
-          </section>
-
-          {/* Why Your Doctor Hasn't Told You */}
-          <section className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
-              Why Your Doctor Hasn't Told You
-            </h2>
-
-            <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-8 mb-8">
-              <p className="text-xl font-serifBody font-bold text-destructive mb-6">
-                Here's the uncomfortable truth:
-              </p>
-
-              <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-                There's no profit for Big Pharma in a $40 patch.
-              </p>
-
-              <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-                GLP-1 injectables like Ozempic and Wegovy bring in billions—at $1,200+ a month.
-              </p>
-
-              <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-                Hospitals use patches. The military perfected the method 80 years ago. Yet the mainstream health industry? Silent.
-              </p>
-
-              <p className="text-xl font-serifBody font-bold text-destructive">
-                Why?
-              </p>
-
-              <p className="text-xl font-serifBody font-bold text-destructive">
-                Because transdermal nutrient delivery is too effective—and too affordable.
-              </p>
-            </div>
-          </section>
-
-          {/* Call to Action Questions */}
-          <section className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
-              If You're Over 45, Ask Yourself:
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-4 mb-8">
-              {[
-                'Are you spending money on vitamins you don\'t feel?',
-                'Are cravings, hunger, and low energy still running your day?',
-                'Have GLP-1 medications made swallowing supplements impossible?',
-                'Are you tired of losing the same 10 pounds again and again?'
-              ].map((question, index) => (
-                <div key={index} className="bg-gradient-to-r from-accent/5 to-primary/5 border border-accent/20 rounded-lg p-4">
-                  <p className="font-serifBody text-foreground">{question}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="bg-primary/10 border border-primary/20 rounded-lg p-6">
-              <p className="text-lg font-serifBody text-foreground mb-4">
-                If you answered yes, this isn't just another "weight loss" gimmick.
-              </p>
-              <p className="text-xl font-serifBody font-bold text-primary mb-4">
-                It's a breakthrough in how nutrients enter your body.
-              </p>
-              <p className="text-lg font-serifBody text-foreground">
-                And it may finally give you the results you deserve.
-              </p>
-            </div>
-          </section>
-
-          {/* Pricing Section */}
-          <section className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6 text-center">
-              Try It Risk-Free
-            </h2>
-
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              {[
-                {
-                  title: '1-Month Supply',
-                  price: '$39.99',
-                  originalPrice: '$79.99',
-                  savings: null
-                },
-                {
-                  title: '3-Month Supply',
-                  price: '$104.97',
-                  originalPrice: null,
-                  savings: 'save $135'
-                },
-                {
-                  title: '6-Month Supply',
-                  price: '$149.94',
-                  originalPrice: null,
-                  savings: 'save $330'
-                }
-              ].map((option, index) => (
-                <div key={index} className={`bg-gradient-to-br ${index === 1 ? 'from-accent/20 to-primary/10 border-accent' : 'from-card to-muted/5 border-border'} border-2 rounded-lg p-6 text-center`}>
-                  <h3 className="text-xl font-serifDisplay font-bold text-foreground mb-4">
-                    {option.title}
-                  </h3>
-                  <div className="mb-4">
-                    <span className="text-3xl font-serifDisplay font-bold text-primary">
-                      {option.price}
-                    </span>
-                    {option.originalPrice && (
-                      <span className="text-lg text-muted-foreground line-through ml-2">
-                        {option.originalPrice}
-                      </span>
-                    )}
+            <div className="grid md:grid-cols-3 gap-8 mb-8">
+              <div className="bg-gradient-to-br from-primary/5 to-accent/10 border border-primary/20 rounded-lg p-6">
+                <h3 className="text-xl font-serifDisplay font-bold text-primary mb-4">Appetite & Cravings</h3>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-accent" />
+                    <span className="text-sm font-serifBody text-foreground">73% felt less hungry between meals</span>
                   </div>
-                  {option.savings && (
-                    <p className="text-accent font-serifBody font-semibold mb-4">
-                      {option.savings}
-                    </p>
-                  )}
-                  <Button className="w-full" variant={index === 1 ? 'default' : 'outline'}>
-                    Order Now
-                  </Button>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-accent" />
+                    <span className="text-sm font-serifBody text-foreground">65% reported fewer sugar cravings</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-accent" />
+                    <span className="text-sm font-serifBody text-foreground">81% said they felt satisfied after smaller meals</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-primary/5 to-accent/10 border border-primary/20 rounded-lg p-6">
+                <h3 className="text-xl font-serifDisplay font-bold text-primary mb-4">Weight & Fat Loss</h3>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-accent" />
+                    <span className="text-sm font-serifBody text-foreground">Average weight lost: 22.4 lbs</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-accent" />
+                    <span className="text-sm font-serifBody text-foreground">3.9 inches off the waist</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-accent" />
+                    <span className="text-sm font-serifBody text-foreground">3.8-point drop in BMI</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-primary/5 to-accent/10 border border-primary/20 rounded-lg p-6">
+                <h3 className="text-xl font-serifDisplay font-bold text-primary mb-4">Energy & Metabolic Health</h3>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-accent" />
+                    <span className="text-sm font-serifBody text-foreground">71% felt more energetic</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-accent" />
+                    <span className="text-sm font-serifBody text-foreground">67% had better blood sugar control</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-accent" />
+                    <span className="text-sm font-serifBody text-foreground">Nearly 50% reduced other medications</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Why Haven't You Heard Section */}
+          <section className="mb-12">
+            <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
+              Why You Haven't Heard About Patched™ Yet
+            </h2>
+
+            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+              Let's be blunt: Drugs like Ozempic and Wegovy bring in billions of dollars every year.
+            </p>
+
+            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+              They're loud. Flashy. Marketed like magic.
+            </p>
+
+            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+              Patched™ isn't a drug. It's not synthetic. It's a natural solution rooted in history—and science.
+            </p>
+
+            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+              But because it's affordable, effective, and drug-free… there's no massive pharma budget behind it.
+            </p>
+
+            <p className="text-lg leading-relaxed text-foreground font-serifBody">
+              That's why you're hearing about it now—through women, not TV ads.
+            </p>
+          </section>
+
+          {/* Qualification Section */}
+          <section className="mb-12">
+            <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
+              Could Patched™ Work for You?
+            </h2>
+
+            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-8">
+              If you answer "yes" to any of the following… it might be worth a closer look.
+            </p>
+
+            <div className="grid gap-4 mb-8">
+              {[
+                "You're over 45 and struggling to manage your weight",
+                "You're tired of cravings and emotional eating",
+                "You've tried GLP-1 pills or injections with little success",
+                "You want a natural, safe, proven alternative—without needles or side effects"
+              ].map((item, index) => (
+                <div key={index} className="flex items-start gap-3 bg-card border border-border rounded-lg p-4">
+                  <CheckCircle className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
+                  <span className="font-serifBody text-foreground">{item}</span>
                 </div>
               ))}
             </div>
 
-            <div className="bg-muted/20 border border-muted rounded-lg p-6 text-center">
-              <p className="text-lg font-serifBody text-foreground mb-2">
-                Each order comes with free shipping and a 30-day, no-questions-asked money-back guarantee.
-              </p>
-              <p className="text-muted-foreground font-serifBody">
-                Use the patches for a month. If you don't feel the difference, send back the empty wrappers for a full refund.
+            <div className="bg-gradient-to-r from-primary/5 to-accent/10 border border-primary/20 rounded-lg p-6">
+              <p className="text-lg font-serifBody text-foreground">
+                Then Patched™ may be exactly what your body's been missing.
               </p>
             </div>
           </section>
 
           {/* Final CTA Section */}
           <section className="mb-12">
+            <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
+              Try Patched™ Risk-Free — Lose 30 Pounds in 90 Days or It's Free
+            </h2>
+
+            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+              If you've tried pills… injections… diets… and nothing has worked long-term, this is your invitation to try something completely different.
+            </p>
+
+            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+              Patched™ uses a proven military medical method—transdermal delivery—to help you naturally activate GLP-1, control cravings, and finally feel in control of your weight again.
+            </p>
+
+            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-8">
+              And now, for a limited time, you can join our 30 Pounds in 90 Days Challenge—with zero risk.
+            </p>
+
+            <div className="bg-gradient-to-r from-accent/10 to-primary/10 border border-accent/30 rounded-lg p-8 mb-8">
+              <h3 className="text-2xl font-serifDisplay font-bold text-foreground mb-6">Here's how it works:</h3>
+              <div className="grid gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">1</div>
+                  <span className="font-serifBody text-foreground">Order Patched™ within the next 48 hours</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">2</div>
+                  <span className="font-serifBody text-foreground">Use it exactly as directed for 90 days</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">3</div>
+                  <span className="font-serifBody text-foreground">If you don't lose at least 30 pounds, you get a full refund—no questions asked</span>
+                </div>
+              </div>
+            </div>
+
+            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+              You'll be automatically enrolled in the challenge when you purchase today. No forms. No hoops. Just real results—or it's on us.
+            </p>
+
             <div className="text-center bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 rounded-lg p-8">
               <p className="text-xl font-serifBody font-bold text-primary mb-6">
-                Try Patched today. Let science—and history—finally work in your favor.
+                This is clinical-level metabolic support—without injections, without side effects, and without waste.
               </p>
-              <Button size="lg" className="px-8 py-4 text-lg">
-                Check Availability Now
+              <p className="text-lg font-serifBody text-foreground mb-8">
+                But this guarantee and enrollment window close in 48 hours.
+              </p>
+              <Button 
+                size="lg" 
+                className="px-8 py-4 text-lg font-semibold bg-primary hover:bg-primary/90 text-primary-foreground"
+              >
+                Try Patched™ Risk-Free Today →
               </Button>
             </div>
           </section>
         </article>
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-border py-8">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <p className="text-muted-foreground font-serifBody">
-            © 2024 Patched. All rights reserved.
-          </p>
-        </div>
-      </footer>
-
+      {/* Sticky CTA */}
       {showStickyCTA && (
         <div className="fixed bottom-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-t border-border shadow-lg animate-fade-in">
           <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
             <div className="flex-1 min-w-0">
               <p className="text-sm font-semibold text-foreground font-serifDisplay">
-                Ready to Try the Military's 80-Year-Old Nutrient Secret?
+                Ready to Activate Your Natural GLP-1?
               </p>
               <p className="text-xs text-muted-foreground hidden sm:block">
-                100% absorption guaranteed - No pills required
+                Try Patched™ risk-free with our 90-day guarantee
               </p>
             </div>
             <div className="flex items-center gap-3">
@@ -620,7 +566,7 @@ const PatchedAdvertorial = () => {
                 size="sm"
                 className="whitespace-nowrap px-6 bg-primary hover:bg-primary/90 font-semibold animate-scale-in"
               >
-                Check Availability →
+                Try Risk-Free →
               </Button>
               <Button
                 variant="ghost"
