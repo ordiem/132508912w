@@ -186,17 +186,19 @@ const PatchedAdvertorial = () => {
             </p>
           </section>
 
-          {/* Image Placeholder 2 */}
+          {/* Historical Military Medical Image */}
           <section className="mb-12">
-            <div className="bg-gradient-to-r from-muted/20 to-accent/10 border-2 border-dashed border-muted-foreground/20 rounded-lg p-12 text-center">
-              <div className="w-16 h-16 bg-muted rounded-lg mx-auto mb-4 flex items-center justify-center">
-                <svg className="w-8 h-8 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
+            <div className="rounded-lg overflow-hidden border border-border">
+              <img 
+                src="/lovable-uploads/ac3d4059-6944-438c-8f4a-116d60d88850.png"
+                alt="Historical black and white photograph of military medics treating a wounded soldier during World War II, demonstrating early battlefield medical innovations"
+                className="w-full h-auto object-cover"
+              />
+              <div className="p-4 bg-muted/20">
+                <p className="text-sm text-muted-foreground font-serifBody italic text-center">
+                  World War II medics pioneered transdermal delivery methods to treat wounded soldiers when traditional medicine couldn't be administered orally.
+                </p>
               </div>
-              <p className="text-muted-foreground font-serifBody">
-                [Image: Historical photo of WWII medics using transdermal patches on wounded soldiers]
-              </p>
             </div>
           </section>
 
