@@ -404,7 +404,7 @@ const PatchedAdvertorial = () => {
               <img 
                 src="/lovable-uploads/44568e39-635a-4642-b6f5-6429c8bb905f.png"
                 alt="Scientific comparison diagram showing transdermal patch delivery versus pills and supplements, illustrating 8-hour sustained release through skin absorption versus short-term oral absorption with liver damage"
-                className="w-full h-auto object-cover"
+                className="w-full h-96 object-cover object-center"
               />
               <div className="p-4 bg-muted/20">
                 <p className="text-sm text-muted-foreground font-serifBody italic text-center">
