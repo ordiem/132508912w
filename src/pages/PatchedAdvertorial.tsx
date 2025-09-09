@@ -19,7 +19,7 @@ const PatchedAdvertorial = () => {
         <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <h1 className="text-lg font-serifDisplay font-bold text-primary">PATCHED</h1>
-            <span className="text-xs px-2 py-1 bg-accent/20 text-accent-foreground rounded uppercase tracking-wider font-medium">
+            <span className="text-xs px-2 py-1 bg-accent/50 text-accent-foreground rounded uppercase tracking-wider font-medium">
               Advertorial
             </span>
           </div>
