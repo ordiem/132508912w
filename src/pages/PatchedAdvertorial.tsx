@@ -42,9 +42,9 @@ const PatchedAdvertorial = () => {
             {/* Hero Image */}
             <div className="relative mb-8 rounded-lg overflow-hidden">
               <img 
-                src={heroImage} 
+                src="/lovable-uploads/5fd12bde-144d-44a8-bf22-340cdae61a4d.png" 
                 alt="Confident woman in her 50s representing natural health and wellness empowerment" 
-                className="w-full h-[400px] md:h-[500px] object-cover"
+                className="w-full h-[300px] md:h-[350px] object-cover object-right"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
             </div>
