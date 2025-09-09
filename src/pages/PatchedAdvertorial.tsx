@@ -18,8 +18,8 @@ const PatchedAdvertorial = () => {
       <header className="sticky top-0 z-40 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <h1 className="text-lg font-serifDisplay font-bold text-primary">PATCHED</h1>
-            <span className="text-xs px-2 py-1 bg-accent/20 text-muted-foreground/60 rounded uppercase tracking-wider font-medium">
+            <h1 className="text-lg font-serifDisplay font-bold text-primary">50&Beyond</h1>
+            <span className="text-xs px-2 py-1 bg-accent/20 text-accent-foreground rounded uppercase tracking-wider font-medium">
               Advertorial
             </span>
           </div>
@@ -48,15 +48,6 @@ const PatchedAdvertorial = () => {
             
             <div className="text-xl md:text-2xl text-muted-foreground font-serifBody mb-8 leading-relaxed">
               An 80-Year-Old Military Invention Is Helping Women Over 45 Control Cravings, Boost Energy, and Reignite Fat Loss. Without Pills, Needles, or Side Effects
-            </div>
-
-            {/* Hero Image */}
-            <div className="rounded-lg overflow-hidden border border-border mb-8">
-              <img 
-                src="/lovable-uploads/c226a9d5-d327-4d67-9c75-9d8baf4b3f06.png" 
-                alt="Confident woman in her 50s representing health and wellness transformation through breakthrough medical innovation" 
-                className="w-full h-96 object-cover object-center"
-              />
             </div>
           </div>
 
