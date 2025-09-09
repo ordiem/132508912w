@@ -398,17 +398,19 @@ const PatchedAdvertorial = () => {
             </div>
           </section>
 
-          {/* Image Placeholder 3 */}
+          {/* Transdermal Delivery Benefits */}
           <section className="mb-12">
-            <div className="bg-gradient-to-r from-muted/20 to-accent/10 border-2 border-dashed border-muted-foreground/20 rounded-lg p-12 text-center">
-              <div className="w-16 h-16 bg-muted rounded-lg mx-auto mb-4 flex items-center justify-center">
-                <svg className="w-8 h-8 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
+            <div className="rounded-lg overflow-hidden border border-border">
+              <img 
+                src="/lovable-uploads/44568e39-635a-4642-b6f5-6429c8bb905f.png"
+                alt="Scientific comparison diagram showing transdermal patch delivery versus pills and supplements, illustrating 8-hour sustained release through skin absorption versus short-term oral absorption with liver damage"
+                className="w-full h-auto object-cover"
+              />
+              <div className="p-4 bg-muted/20">
+                <p className="text-sm text-muted-foreground font-serifBody italic text-center">
+                  Why transdermal patches deliver superior results: 8+ hours of sustained absorption while bypassing digestive limitations.
+                </p>
               </div>
-              <p className="text-muted-foreground font-serifBody">
-                [Image: Patched transdermal patch product shot with natural ingredients overlay]
-              </p>
             </div>
           </section>
 
