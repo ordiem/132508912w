@@ -1,24 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { CheckCircle, Clock, Shield, Beaker, X } from 'lucide-react';
-
 const PatchedAdvertorial = () => {
   const [showStickyCTA, setShowStickyCTA] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.scrollY;
       const height = document.documentElement.scrollHeight - window.innerHeight;
-      const scrollPercent = (scrolled / height) * 100;
+      const scrollPercent = scrolled / height * 100;
       setShowStickyCTA(scrollPercent > 40);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="sticky top-0 z-40 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -121,18 +116,7 @@ const PatchedAdvertorial = () => {
 
           {/* Transdermal vs Pills Comparison */}
           <section className="mb-12">
-            <div className="rounded-lg overflow-hidden border border-border">
-              <img 
-                src="/lovable-uploads/44568e39-635a-4642-b6f5-6429c8bb905f.png"
-                alt="Scientific comparison diagram showing transdermal patch delivery versus pills and supplements, illustrating 8-hour sustained release through skin absorption versus short-term oral absorption with liver damage"
-                className="w-full h-auto object-cover"
-              />
-              <div className="p-4 bg-muted/20">
-                <p className="text-sm text-muted-foreground font-serifBody italic text-center">
-                  Transdermal patches deliver sustained nutrient absorption for 8+ hours while bypassing digestive issues that reduce pill effectiveness.
-                </p>
-              </div>
-            </div>
+            
           </section>
 
           {/* Historical Solution Section */}
@@ -169,17 +153,10 @@ const PatchedAdvertorial = () => {
 
             <div className="bg-card border border-border rounded-lg p-6 mb-8">
               <div className="grid md:grid-cols-2 gap-4">
-                {[
-                  'Hormone replacement therapy',
-                  'Smoking cessation',
-                  'Pain management',
-                  'Heart medications'
-                ].map((item, index) => (
-                  <div key={index} className="flex items-center gap-3">
+                {['Hormone replacement therapy', 'Smoking cessation', 'Pain management', 'Heart medications'].map((item, index) => <div key={index} className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-accent" />
                     <span className="font-serifBody text-foreground">{item}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
 
@@ -191,11 +168,7 @@ const PatchedAdvertorial = () => {
           {/* Historical Military Medical Image */}
           <section className="mb-12">
             <div className="rounded-lg overflow-hidden border border-border">
-              <img 
-                src="/lovable-uploads/ac3d4059-6944-438c-8f4a-116d60d88850.png"
-                alt="Historical black and white photograph of military medics treating a wounded soldier during World War II, demonstrating early battlefield medical innovations"
-                className="w-full h-auto object-cover"
-              />
+              <img src="/lovable-uploads/ac3d4059-6944-438c-8f4a-116d60d88850.png" alt="Historical black and white photograph of military medics treating a wounded soldier during World War II, demonstrating early battlefield medical innovations" className="w-full h-auto object-cover" />
               <div className="p-4 bg-muted/20">
                 <p className="text-sm text-muted-foreground font-serifBody italic text-center">
                   World War II medics pioneered transdermal delivery methods to treat wounded soldiers when traditional medicine couldn't be administered orally.
@@ -247,24 +220,19 @@ const PatchedAdvertorial = () => {
             </p>
 
             <div className="grid gap-6 mb-8">
-              {[
-                {
-                  title: 'Stomach Acid',
-                  description: 'Kills up to 60% of nutrients before they leave the gut',
-                  icon: '🔥'
-                },
-                {
-                  title: 'Liver Filtering',
-                  description: 'Removes another 40% through "first-pass metabolism"',
-                  icon: '🥘'
-                },
-                {
-                  title: 'Slowed Digestion',
-                  description: 'Especially common in women taking GLP-1 injections like Ozempic',
-                  icon: '⏰'
-                }
-              ].map((item, index) => (
-                <div key={index} className="bg-gradient-to-r from-card to-accent/5 border border-border rounded-lg p-6">
+              {[{
+              title: 'Stomach Acid',
+              description: 'Kills up to 60% of nutrients before they leave the gut',
+              icon: '🔥'
+            }, {
+              title: 'Liver Filtering',
+              description: 'Removes another 40% through "first-pass metabolism"',
+              icon: '🥘'
+            }, {
+              title: 'Slowed Digestion',
+              description: 'Especially common in women taking GLP-1 injections like Ozempic',
+              icon: '⏰'
+            }].map((item, index) => <div key={index} className="bg-gradient-to-r from-card to-accent/5 border border-border rounded-lg p-6">
                   <div className="flex items-start gap-4">
                     <div className="text-2xl">{item.icon}</div>
                     <div>
@@ -276,8 +244,7 @@ const PatchedAdvertorial = () => {
                       </p>
                     </div>
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-6 mb-8">
@@ -348,29 +315,23 @@ const PatchedAdvertorial = () => {
             </p>
 
             <div className="grid gap-6 mb-8">
-              {[
-                {
-                  name: 'Berberine',
-                  description: 'Often called "Nature\'s Ozempic." Shown to reduce food intake by 47% in human trials.',
-                  icon: <Beaker className="w-6 h-6" />
-                },
-                {
-                  name: 'Lemon Fruit Extract',
-                  description: 'Triggers GLP-1 release in just 30 minutes—helping you feel full faster and longer.',
-                  icon: <Clock className="w-6 h-6" />
-                },
-                {
-                  name: 'Red Orange Complex',
-                  description: 'Targets stubborn belly fat. Shown to reduce waist circumference in clinical studies.',
-                  icon: <Shield className="w-6 h-6" />
-                },
-                {
-                  name: 'Saffron Extract',
-                  description: 'Reduces emotional eating and sugar cravings by up to 70%.',
-                  icon: <CheckCircle className="w-6 h-6" />
-                }
-              ].map((ingredient, index) => (
-                <div key={index} className="bg-gradient-to-r from-card to-accent/5 border border-border rounded-lg p-6 hover-scale">
+              {[{
+              name: 'Berberine',
+              description: 'Often called "Nature\'s Ozempic." Shown to reduce food intake by 47% in human trials.',
+              icon: <Beaker className="w-6 h-6" />
+            }, {
+              name: 'Lemon Fruit Extract',
+              description: 'Triggers GLP-1 release in just 30 minutes—helping you feel full faster and longer.',
+              icon: <Clock className="w-6 h-6" />
+            }, {
+              name: 'Red Orange Complex',
+              description: 'Targets stubborn belly fat. Shown to reduce waist circumference in clinical studies.',
+              icon: <Shield className="w-6 h-6" />
+            }, {
+              name: 'Saffron Extract',
+              description: 'Reduces emotional eating and sugar cravings by up to 70%.',
+              icon: <CheckCircle className="w-6 h-6" />
+            }].map((ingredient, index) => <div key={index} className="bg-gradient-to-r from-card to-accent/5 border border-border rounded-lg p-6 hover-scale">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-primary text-primary-foreground rounded-lg flex items-center justify-center flex-shrink-0">
                       {ingredient.icon}
@@ -387,8 +348,7 @@ const PatchedAdvertorial = () => {
                       </p>
                     </div>
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             <div className="bg-gradient-to-r from-primary/5 to-accent/10 border border-primary/20 rounded-lg p-6">
@@ -401,11 +361,7 @@ const PatchedAdvertorial = () => {
           {/* Transdermal Delivery Benefits */}
           <section className="mb-12">
             <div className="rounded-lg overflow-hidden border border-border">
-              <img 
-                src="/lovable-uploads/44568e39-635a-4642-b6f5-6429c8bb905f.png"
-                alt="Scientific comparison diagram showing transdermal patch delivery versus pills and supplements, illustrating 8-hour sustained release through skin absorption versus short-term oral absorption with liver damage"
-                className="w-full h-96 object-cover object-center"
-              />
+              <img src="/lovable-uploads/44568e39-635a-4642-b6f5-6429c8bb905f.png" alt="Scientific comparison diagram showing transdermal patch delivery versus pills and supplements, illustrating 8-hour sustained release through skin absorption versus short-term oral absorption with liver damage" className="w-full h-96 object-cover object-center" />
               <div className="p-4 bg-muted/20">
                 <p className="text-sm text-muted-foreground font-serifBody italic text-center">
                   Why transdermal patches deliver superior results: 8+ hours of sustained absorption while bypassing digestive limitations.
@@ -519,17 +475,10 @@ const PatchedAdvertorial = () => {
             </p>
 
             <div className="grid gap-4 mb-8">
-              {[
-                "You're over 45 and struggling to manage your weight",
-                "You're tired of cravings and emotional eating",
-                "You've tried GLP-1 pills or injections with little success",
-                "You want a natural, safe, proven alternative—without needles or side effects"
-              ].map((item, index) => (
-                <div key={index} className="flex items-start gap-3 bg-card border border-border rounded-lg p-4">
+              {["You're over 45 and struggling to manage your weight", "You're tired of cravings and emotional eating", "You've tried GLP-1 pills or injections with little success", "You want a natural, safe, proven alternative—without needles or side effects"].map((item, index) => <div key={index} className="flex items-start gap-3 bg-card border border-border rounded-lg p-4">
                   <CheckCircle className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
                   <span className="font-serifBody text-foreground">{item}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             <div className="bg-gradient-to-r from-primary/5 to-accent/10 border border-primary/20 rounded-lg p-6">
@@ -586,10 +535,7 @@ const PatchedAdvertorial = () => {
               <p className="text-lg font-serifBody text-foreground mb-8">
                 But this guarantee and enrollment window close in 48 hours.
               </p>
-              <Button 
-                size="lg" 
-                className="w-full sm:w-auto px-4 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold bg-primary hover:bg-primary/90 text-primary-foreground"
-              >
+              <Button size="lg" className="w-full sm:w-auto px-4 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold bg-primary hover:bg-primary/90 text-primary-foreground">
                 Try Patched Risk-Free Today →
               </Button>
             </div>
@@ -598,8 +544,7 @@ const PatchedAdvertorial = () => {
       </main>
 
       {/* Sticky CTA */}
-      {showStickyCTA && (
-        <div className="fixed bottom-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-t border-border shadow-lg animate-fade-in">
+      {showStickyCTA && <div className="fixed bottom-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-t border-border shadow-lg animate-fade-in">
           <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
             <div className="flex-1 min-w-0">
               <p className="text-sm font-semibold text-foreground font-serifDisplay">
@@ -610,27 +555,16 @@ const PatchedAdvertorial = () => {
               </p>
             </div>
             <div className="flex items-center gap-3">
-              <Button 
-                size="sm"
-                className="whitespace-nowrap px-6 bg-primary hover:bg-primary/90 font-semibold animate-scale-in"
-              >
+              <Button size="sm" className="whitespace-nowrap px-6 bg-primary hover:bg-primary/90 font-semibold animate-scale-in">
                 Try Risk-Free →
               </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => setShowStickyCTA(false)}
-                className="h-8 w-8 p-0 hover:bg-muted"
-              >
+              <Button variant="ghost" size="sm" onClick={() => setShowStickyCTA(false)} className="h-8 w-8 p-0 hover:bg-muted">
                 <X className="h-4 w-4" />
                 <span className="sr-only">Close</span>
               </Button>
             </div>
           </div>
-        </div>
-      )}
-    </div>
-  );
+        </div>}
+    </div>;
 };
-
 export default PatchedAdvertorial;
