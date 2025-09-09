@@ -298,8 +298,8 @@ const PatchedAdvertorial = () => {
             </p>
 
             <div className="bg-gradient-to-r from-primary/5 to-accent/10 border border-primary/20 rounded-lg p-8 mb-8">
-              <p className="text-2xl font-serifBody font-bold text-primary mb-6">
-                It's called Patched™.
+              <p className="text-2xl font-serifBody font-bold text-primary mb-6 text-center">
+                It's called Patched™
               </p>
 
               <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
