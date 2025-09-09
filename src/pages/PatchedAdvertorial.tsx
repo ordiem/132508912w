@@ -53,7 +53,7 @@ const PatchedAdvertorial = () => {
               HEALTH • WOMEN'S WELLNESS • BREAKTHROUGH RESEARCH
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6 text-foreground">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold leading-tight mb-6 text-foreground">
               The Natural GLP-1 Alternative That Requires No Injections
             </h1>
             
