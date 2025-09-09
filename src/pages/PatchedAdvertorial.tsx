@@ -443,9 +443,7 @@ const PatchedAdvertorial = () => {
               Why You Haven't Heard About Patched Yet
             </h2>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-              Let's be blunt: Drugs like Ozempic and Wegovy bring in billions of dollars every year.
-            </p>
+            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">Let's be blunt: Drug companies bring in billions of dollars every year.</p>
 
             <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
               They're loud. Flashy. Marketed like magic.
@@ -547,12 +545,8 @@ const PatchedAdvertorial = () => {
       {showStickyCTA && <div className="fixed bottom-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-t border-border shadow-lg animate-fade-in">
           <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
             <div className="flex-1 min-w-0">
-              <p className="text-sm font-semibold text-foreground font-serifDisplay">
-                Ready to Activate Your Natural GLP-1?
-              </p>
-              <p className="text-xs text-muted-foreground hidden sm:block">
-                Try Patched risk-free with our 90-day guarantee
-              </p>
+              <p className="text-sm font-semibold text-foreground font-serifDisplay">Try Patched Risk-Free</p>
+              <p className="text-xs text-muted-foreground hidden sm:block">Lose 30 Pounds in 90 Days or It's Free</p>
             </div>
             <div className="flex items-center gap-3">
               <Button size="sm" className="whitespace-nowrap px-6 bg-primary hover:bg-primary/90 font-semibold animate-scale-in">
