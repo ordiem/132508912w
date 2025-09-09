@@ -582,7 +582,7 @@ const PatchedAdvertorial = () => {
               </p>
               <Button 
                 size="lg" 
-                className="px-8 py-4 text-lg font-semibold bg-primary hover:bg-primary/90 text-primary-foreground"
+                className="w-full sm:w-auto px-4 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold bg-primary hover:bg-primary/90 text-primary-foreground"
               >
                 Try Patched Risk-Free Today →
               </Button>
