@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { CheckCircle, Clock, Shield, Beaker, X } from 'lucide-react';
-import heroImage from '@/assets/hero-patched.jpg';
 const PatchedAdvertorial = () => {
   const [showStickyCTA, setShowStickyCTA] = useState(false);
   useEffect(() => {
@@ -54,7 +53,7 @@ const PatchedAdvertorial = () => {
             {/* Hero Image */}
             <div className="rounded-lg overflow-hidden border border-border mb-8">
               <img 
-                src={heroImage} 
+                src="/lovable-uploads/c226a9d5-d327-4d67-9c75-9d8baf4b3f06.png" 
                 alt="Confident woman in her 50s representing health and wellness transformation through breakthrough medical innovation" 
                 className="w-full h-96 object-cover object-center"
               />
