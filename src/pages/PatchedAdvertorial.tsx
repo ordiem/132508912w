@@ -299,7 +299,7 @@ const PatchedAdvertorial = () => {
 
             <div className="bg-gradient-to-r from-primary/5 to-accent/10 border border-primary/20 rounded-lg p-8 mb-8">
               <p className="text-2xl font-serifBody font-bold text-primary mb-6 text-center">
-                It's called Patched™
+                It's called Patched
               </p>
 
               <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
@@ -340,7 +340,7 @@ const PatchedAdvertorial = () => {
             </h2>
 
             <p className="text-lg leading-relaxed text-foreground font-serifBody mb-8">
-              Each Patched™ patch contains a precise blend of four science-backed ingredients shown to support natural GLP-1 activation:
+              Each Patched patch contains a precise blend of four science-backed ingredients shown to support natural GLP-1 activation:
             </p>
 
             <div className="grid gap-6 mb-8">
@@ -403,7 +403,7 @@ const PatchedAdvertorial = () => {
                 </svg>
               </div>
               <p className="text-muted-foreground font-serifBody">
-                [Image: Patched™ transdermal patch product shot with natural ingredients overlay]
+                [Image: Patched transdermal patch product shot with natural ingredients overlay]
               </p>
             </div>
           </section>
@@ -415,7 +415,7 @@ const PatchedAdvertorial = () => {
             </h2>
 
             <p className="text-lg leading-relaxed text-foreground font-serifBody mb-8">
-              In a 6-month observational study conducted with 847 women using Patched™ daily, the results were impossible to ignore:
+              In a 6-month observational study conducted with 847 women using Patched daily, the results were impossible to ignore:
             </p>
 
             <div className="grid md:grid-cols-3 gap-8 mb-8">
@@ -478,7 +478,7 @@ const PatchedAdvertorial = () => {
           {/* Why Haven't You Heard Section */}
           <section className="mb-12">
             <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
-              Why You Haven't Heard About Patched™ Yet
+              Why You Haven't Heard About Patched Yet
             </h2>
 
             <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
@@ -490,7 +490,7 @@ const PatchedAdvertorial = () => {
             </p>
 
             <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-              Patched™ isn't a drug. It's not synthetic. It's a natural solution rooted in history—and science.
+              Patched isn't a drug. It's not synthetic. It's a natural solution rooted in history—and science.
             </p>
 
             <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
@@ -505,7 +505,7 @@ const PatchedAdvertorial = () => {
           {/* Qualification Section */}
           <section className="mb-12">
             <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
-              Could Patched™ Work for You?
+              Could Patched Work for You?
             </h2>
 
             <p className="text-lg leading-relaxed text-foreground font-serifBody mb-8">
@@ -528,7 +528,7 @@ const PatchedAdvertorial = () => {
 
             <div className="bg-gradient-to-r from-primary/5 to-accent/10 border border-primary/20 rounded-lg p-6">
               <p className="text-lg font-serifBody text-foreground">
-                Then Patched™ may be exactly what your body's been missing.
+                Then Patched may be exactly what your body's been missing.
               </p>
             </div>
           </section>
@@ -536,7 +536,7 @@ const PatchedAdvertorial = () => {
           {/* Final CTA Section */}
           <section className="mb-12">
             <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
-              Try Patched™ Risk-Free — Lose 30 Pounds in 90 Days or It's Free
+              Try Patched Risk-Free — Lose 30 Pounds in 90 Days or It's Free
             </h2>
 
             <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
@@ -544,7 +544,7 @@ const PatchedAdvertorial = () => {
             </p>
 
             <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
-              Patched™ uses a proven military medical method—transdermal delivery—to help you naturally activate GLP-1, control cravings, and finally feel in control of your weight again.
+              Patched uses a proven military medical method—transdermal delivery—to help you naturally activate GLP-1, control cravings, and finally feel in control of your weight again.
             </p>
 
             <p className="text-lg leading-relaxed text-foreground font-serifBody mb-8">
@@ -556,7 +556,7 @@ const PatchedAdvertorial = () => {
               <div className="grid gap-4">
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">1</div>
-                  <span className="font-serifBody text-foreground">Order Patched™ within the next 48 hours</span>
+                  <span className="font-serifBody text-foreground">Order Patched within the next 48 hours</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">2</div>
@@ -584,7 +584,7 @@ const PatchedAdvertorial = () => {
                 size="lg" 
                 className="px-8 py-4 text-lg font-semibold bg-primary hover:bg-primary/90 text-primary-foreground"
               >
-                Try Patched™ Risk-Free Today →
+                Try Patched Risk-Free Today →
               </Button>
             </div>
           </section>
@@ -600,7 +600,7 @@ const PatchedAdvertorial = () => {
                 Ready to Activate Your Natural GLP-1?
               </p>
               <p className="text-xs text-muted-foreground hidden sm:block">
-                Try Patched™ risk-free with our 90-day guarantee
+                Try Patched risk-free with our 90-day guarantee
               </p>
             </div>
             <div className="flex items-center gap-3">
