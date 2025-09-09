@@ -100,7 +100,7 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-serifBody;
+    @apply bg-background text-foreground font-body;
   }
 }
 
@@ -108,7 +108,7 @@ All colors MUST be HSL.
 @layer utilities {
   .drop-cap::first-letter {
     float: left;
-    font-family: theme(fontFamily.serifDisplay);
+    font-family: theme(fontFamily.display);
     font-size: 3.5rem;
     line-height: 1;
     padding-right: 0.25rem;

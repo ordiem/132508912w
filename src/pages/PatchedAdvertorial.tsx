@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { CheckCircle, Clock, Shield, Beaker, X } from 'lucide-react';
+import heroImage from '@/assets/hero-wellness.jpg';
 const PatchedAdvertorial = () => {
   const [showStickyCTA, setShowStickyCTA] = useState(false);
   useEffect(() => {
@@ -18,7 +19,7 @@ const PatchedAdvertorial = () => {
       <header className="sticky top-0 z-40 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <h1 className="text-lg font-serifDisplay font-bold text-primary">50&Beyond</h1>
+            <h1 className="text-lg font-display font-bold text-primary">50&Beyond</h1>
             <span className="text-xs px-2 py-1 bg-accent/20 text-accent-foreground rounded uppercase tracking-wider font-medium">
               Advertorial
             </span>
@@ -38,41 +39,51 @@ const PatchedAdvertorial = () => {
         <article className="animate-fade-in">
           {/* Hero Section */}
           <div className="mb-12">
+            {/* Hero Image */}
+            <div className="relative mb-8 rounded-lg overflow-hidden">
+              <img 
+                src={heroImage} 
+                alt="Confident woman in her 50s representing natural health and wellness empowerment" 
+                className="w-full h-[400px] md:h-[500px] object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
+            </div>
+            
             <div className="text-xs text-muted-foreground mb-4 uppercase tracking-wide">
               HEALTH • WOMEN'S WELLNESS • BREAKTHROUGH RESEARCH
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serifDisplay font-bold leading-tight mb-6 text-foreground">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6 text-foreground">
               The Natural GLP-1 Alternative That Requires No Injections
             </h1>
             
-            <div className="text-xl md:text-2xl text-muted-foreground font-serifBody mb-8 leading-relaxed">
+            <div className="text-xl md:text-2xl text-muted-foreground font-body mb-8 leading-relaxed">
               An 80-Year-Old Military Invention Is Helping Women Over 45 Control Cravings, Boost Energy, and Reignite Fat Loss. Without Pills, Needles, or Side Effects
             </div>
           </div>
 
           {/* Opening Hook */}
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="drop-cap text-lg leading-relaxed text-foreground font-serifBody">
+            <p className="drop-cap text-lg leading-relaxed text-foreground font-body">
               If you're a woman over 45 and struggling with stubborn weight, blood sugar swings, or relentless food cravings... you may be missing the one thing that matters most: <span className="font-bold text-primary">absorption</span>.
             </p>
             
-            <p className="text-lg leading-relaxed text-foreground font-serifBody">
+            <p className="text-lg leading-relaxed text-foreground font-body">
               You see, it's not just about what you take. It's about what your body can actually use.
             </p>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody">
+            <p className="text-lg leading-relaxed text-foreground font-body">
               And for millions of women, especially after age 45, that's where everything starts to go wrong.
             </p>
           </div>
 
           {/* GLP-1 Hormone Section */}
           <section className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
               The Hidden Hormone Behind Your Hunger
             </h2>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+            <p className="text-lg leading-relaxed text-foreground font-body mb-6">
               You may not have heard of it, but GLP-1 is the hormone that governs nearly every aspect of your metabolism.
             </p>
 
@@ -80,36 +91,36 @@ const PatchedAdvertorial = () => {
               <div className="grid gap-4">
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-accent" />
-                  <span className="font-serifBody text-foreground">It tells your brain when you're full</span>
+                  <span className="font-body text-foreground">It tells your brain when you're full</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-accent" />
-                  <span className="font-serifBody text-foreground">It regulates how quickly your stomach empties</span>
+                  <span className="font-body text-foreground">It regulates how quickly your stomach empties</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-accent" />
-                  <span className="font-serifBody text-foreground">It controls insulin, blood sugar, and how your body stores fat</span>
+                  <span className="font-body text-foreground">It controls insulin, blood sugar, and how your body stores fat</span>
                 </div>
               </div>
             </div>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+            <p className="text-lg leading-relaxed text-foreground font-body mb-6">
               GLP-1 is so effective, drug companies have built billion-dollar weight loss brands by synthetically mimicking it.
             </p>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+            <p className="text-lg leading-relaxed text-foreground font-body mb-6">
               But there's a catch.
             </p>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+            <p className="text-lg leading-relaxed text-foreground font-body mb-6">
               Those drugs are expensive. They require injections. And they often come with serious side effects.
             </p>
 
-            <p className="text-xl font-serifBody font-bold text-primary mb-6">
+            <p className="text-xl font-body font-bold text-primary mb-6">
               What if you could activate your body's own GLP-1 production naturally, without drugs, without needles, and without the risks?
             </p>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody">
+            <p className="text-lg leading-relaxed text-foreground font-body">
               Turns out… you can. Thanks to a forgotten medical innovation born during the chaos of World War II.
             </p>
           </section>
@@ -121,33 +132,33 @@ const PatchedAdvertorial = () => {
 
           {/* Historical Solution Section */}
           <section className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
               The 1943 Military Medical Breakthrough That's Changing Women's Health Today
             </h2>
 
             <div className="bg-gradient-to-r from-muted/30 to-accent/10 border border-muted rounded-lg p-8 mb-8">
-              <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+              <p className="text-lg leading-relaxed text-foreground font-body mb-6">
                 In the final years of WWII, U.S. medics were faced with a brutal problem.
               </p>
 
-              <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+              <p className="text-lg leading-relaxed text-foreground font-body mb-6">
                 Wounded soldiers with stomach injuries couldn't take pills. They couldn't eat. They couldn't digest anything.
               </p>
 
-              <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+              <p className="text-lg leading-relaxed text-foreground font-body mb-6">
                 And yet, they needed life-saving medicine fast.
               </p>
 
-              <p className="text-xl font-serifBody font-bold text-primary mb-6">
+              <p className="text-xl font-body font-bold text-primary mb-6">
                 The solution? Transdermal delivery—a way to send critical compounds through the skin, directly into the bloodstream.
               </p>
 
-              <p className="text-lg leading-relaxed text-foreground font-serifBody">
+              <p className="text-lg leading-relaxed text-foreground font-body">
                 It bypassed the gut entirely. No swallowing. No digestion. Just rapid, direct absorption.
               </p>
             </div>
 
-            <p className="text-xl font-serifBody font-semibold text-primary mb-6">
+            <p className="text-xl font-body font-semibold text-primary mb-6">
               It worked so well, this method is still used today in hospitals for:
             </p>
 
@@ -155,12 +166,12 @@ const PatchedAdvertorial = () => {
               <div className="grid md:grid-cols-2 gap-4">
                 {['Hormone replacement therapy', 'Smoking cessation', 'Pain management', 'Heart medications'].map((item, index) => <div key={index} className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-accent" />
-                    <span className="font-serifBody text-foreground">{item}</span>
+                    <span className="font-body text-foreground">{item}</span>
                   </div>)}
               </div>
             </div>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody">
+            <p className="text-lg leading-relaxed text-foreground font-body">
               Now, 80 years later, that same battlefield discovery is being used to help women stimulate GLP-1 naturally and finally get their metabolism working again.
             </p>
           </section>
@@ -170,7 +181,7 @@ const PatchedAdvertorial = () => {
             <div className="rounded-lg overflow-hidden border border-border">
               <img src="/lovable-uploads/ac3d4059-6944-438c-8f4a-116d60d88850.png" alt="Historical black and white photograph of military medics treating a wounded soldier during World War II, demonstrating early battlefield medical innovations" className="w-full h-auto object-cover" />
               <div className="p-4 bg-muted/20">
-                <p className="text-sm text-muted-foreground font-serifBody italic text-center">
+                <p className="text-sm text-muted-foreground font-body italic text-center">
                   World War II medics pioneered transdermal delivery methods to treat wounded soldiers when traditional medicine couldn't be administered orally.
                 </p>
               </div>
@@ -179,43 +190,43 @@ const PatchedAdvertorial = () => {
 
           {/* Why Supplements Fail Section */}
           <section className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
               Why Most GLP-1 Supplements Stop Working After 45
             </h2>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+            <p className="text-lg leading-relaxed text-foreground font-body mb-6">
               Dr. Sarah Chen, a metabolic researcher at Stanford Medical Center, first noticed the problem during routine blood tests.
             </p>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+            <p className="text-lg leading-relaxed text-foreground font-body mb-6">
               Women in their late 40s, 50s, and 60s were taking supplements—good ones, backed by science. Some were even taking prescription GLP-1 drugs.
             </p>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+            <p className="text-lg leading-relaxed text-foreground font-body mb-6">
               But their test results told a different story.
             </p>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+            <p className="text-lg leading-relaxed text-foreground font-body mb-6">
               They were still nutrient-deficient. Still gaining weight. Still fatigued.
             </p>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-8">
+            <p className="text-lg leading-relaxed text-foreground font-body mb-8">
               One patient—age 52—was spending hundreds of dollars every month on high-end supplements. Yet her labs showed she was absorbing almost nothing.
             </p>
 
             <blockquote className="bg-accent/10 border-l-4 border-accent p-6 rounded-r-lg mb-8">
-              <p className="text-xl font-serifBody italic text-foreground leading-relaxed">
+              <p className="text-xl font-body italic text-foreground leading-relaxed">
                 "These women weren't failing their supplements. Their supplements were failing them."
               </p>
-              <cite className="text-muted-foreground font-serifBody mt-2 block">— Dr. Sarah Chen</cite>
+              <cite className="text-muted-foreground font-body mt-2 block">— Dr. Sarah Chen</cite>
             </blockquote>
 
-            <h3 className="text-2xl font-serifDisplay font-bold text-foreground mb-6 flex items-center gap-3">
+            <h3 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-3">
               <Beaker className="w-6 h-6 text-primary" />
               The Real Problem Is Absorption
             </h3>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+            <p className="text-lg leading-relaxed text-foreground font-body mb-6">
               As you age, your body goes through three changes that drastically reduce how well you absorb nutrients:
             </p>
 
@@ -236,10 +247,10 @@ const PatchedAdvertorial = () => {
                   <div className="flex items-start gap-4">
                     <div className="text-2xl">{item.icon}</div>
                     <div>
-                      <h4 className="font-serifDisplay font-bold text-lg text-foreground mb-2">
+                      <h4 className="font-display font-bold text-lg text-foreground mb-2">
                         {item.title}
                       </h4>
-                      <p className="text-muted-foreground font-serifBody">
+                      <p className="text-muted-foreground font-body">
                         {item.description}
                       </p>
                     </div>
@@ -248,32 +259,32 @@ const PatchedAdvertorial = () => {
             </div>
 
             <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-6 mb-8">
-              <p className="text-lg font-serifBody text-foreground">
+              <p className="text-lg font-body text-foreground">
                 In short, even the most effective nutrients can't help you if they never make it into your bloodstream.
               </p>
             </div>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody">
+            <p className="text-lg leading-relaxed text-foreground font-body">
               That's why Dr. Chen went back to a long-lost method from 1943—and gave it a modern purpose.
             </p>
           </section>
 
           {/* Solution Section */}
           <section className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-serifDisplay font-bold text-foreground mb-6">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
               The Patch That Helps Activate GLP-1—Naturally, Safely, and Effectively
             </h2>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+            <p className="text-lg leading-relaxed text-foreground font-body mb-6">
               After years of research, Dr. Chen and her team developed a medical-grade skin patch designed to deliver GLP-1 activating nutrients directly through the skin.
             </p>
 
             <div className="bg-gradient-to-r from-primary/5 to-accent/10 border border-primary/20 rounded-lg p-8 mb-8">
-              <p className="text-2xl font-serifBody font-bold text-primary mb-6 text-center">
+              <p className="text-2xl font-body font-bold text-primary mb-6 text-center">
                 It's called Patched
               </p>
 
-              <p className="text-lg leading-relaxed text-foreground font-serifBody mb-6">
+              <p className="text-lg leading-relaxed text-foreground font-body mb-6">
                 And it's the first of its kind: A transdermal nutrient patch made specifically for women over 45 who want to take back control of their hunger, cravings, and metabolism—without relying on synthetic injections.
               </p>
 
@@ -282,24 +293,24 @@ const PatchedAdvertorial = () => {
                   <div className="w-12 h-12 bg-accent text-accent-foreground rounded-full flex items-center justify-center mx-auto mb-3">
                     <X className="w-6 h-6" />
                   </div>
-                  <p className="font-serifBody text-foreground">No pills to swallow</p>
+                  <p className="font-body text-foreground">No pills to swallow</p>
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-accent text-accent-foreground rounded-full flex items-center justify-center mx-auto mb-3">
                     <X className="w-6 h-6" />
                   </div>
-                  <p className="font-serifBody text-foreground">No digestive issues</p>
+                  <p className="font-body text-foreground">No digestive issues</p>
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-accent text-accent-foreground rounded-full flex items-center justify-center mx-auto mb-3">
                     <X className="w-6 h-6" />
                   </div>
-                  <p className="font-serifBody text-foreground">No injections, ever</p>
+                  <p className="font-body text-foreground">No injections, ever</p>
                 </div>
               </div>
             </div>
 
-            <p className="text-lg leading-relaxed text-foreground font-serifBody">
+            <p className="text-lg leading-relaxed text-foreground font-body">
               Just clinically-supported nutrients, delivered straight into your bloodstream, using the same wartime medical principle that once saved soldiers' lives.
             </p>
           </section>

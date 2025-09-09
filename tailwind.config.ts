@@ -64,9 +64,9 @@ export default {
 				}
 			},
 			fontFamily: {
-				serifDisplay: ['Playfair Display', 'serif'],
-				serifBody: ['"Source Serif 4"', 'serif'],
 				sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+				display: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+				body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
