@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { CheckCircle, Clock, Shield, Beaker, X } from 'lucide-react';
+import heroImage from '@/assets/hero-patched.jpg';
 const PatchedAdvertorial = () => {
   const [showStickyCTA, setShowStickyCTA] = useState(false);
   useEffect(() => {
@@ -48,6 +49,15 @@ const PatchedAdvertorial = () => {
             
             <div className="text-xl md:text-2xl text-muted-foreground font-serifBody mb-8 leading-relaxed">
               An 80-Year-Old Military Invention Is Helping Women Over 45 Control Cravings, Boost Energy, and Reignite Fat Loss. Without Pills, Needles, or Side Effects
+            </div>
+
+            {/* Hero Image */}
+            <div className="rounded-lg overflow-hidden border border-border mb-8">
+              <img 
+                src={heroImage} 
+                alt="Confident woman in her 50s representing health and wellness transformation through breakthrough medical innovation" 
+                className="w-full h-96 object-cover object-center"
+              />
             </div>
           </div>
 
