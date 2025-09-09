@@ -4,16 +4,11 @@ const Index = () => {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-96 overflow-hidden">
-        <img 
-          src={heroImage} 
-          alt="Health and wellness hero image" 
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <div className="text-center text-white">
+      <section className="relative h-96 overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="text-center text-foreground">
             <h1 className="text-5xl font-serifDisplay font-bold mb-4">Welcome to the Ordiem Design Hub for Patched</h1>
-            <p className="text-xl mb-6">Check your design suggestions here</p>
+            <p className="text-xl mb-6 text-muted-foreground">Check your design suggestions here</p>
           </div>
         </div>
       </section>
