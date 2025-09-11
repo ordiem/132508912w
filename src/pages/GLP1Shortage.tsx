@@ -18,7 +18,7 @@ const GLP1Shortage = () => {
       <header className="sticky top-0 z-40 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <h1 className="text-lg font-display font-bold text-primary">HEALTHY LIVING</h1>
+            <h1 className="text-lg font-display font-bold text-primary">UNITED NEWS</h1>
             <span className="text-xs px-2 py-1 bg-accent/10 text-accent-foreground/50 rounded uppercase tracking-wider font-medium opacity-50">
               Advertorial
             </span>
@@ -40,11 +40,12 @@ const GLP1Shortage = () => {
           <div className="mb-12">
             {/* Hero Image */}
             <div className="relative mb-8 rounded-lg overflow-hidden">
-              <img 
-                src="/lovable-uploads/f29e0bcc-1fcc-414d-a3a0-af0869273cff.png" 
-                alt="Pharmacy scene showing concerned patients and pharmacist discussing GLP-1 medication shortage with 'out of stock' sign visible, illustrating the current crisis in medication availability"
-                className="w-full h-[300px] md:h-[400px] object-cover"
-              />
+              <div className="w-full h-[300px] md:h-[400px] bg-gradient-to-r from-muted/50 to-accent/20 flex items-center justify-center">
+                <div className="text-center p-8">
+                  <div className="text-4xl mb-4">🏥</div>
+                  <p className="text-muted-foreground font-body">Empty pharmacy shelves representing the GLP-1 medication shortage crisis</p>
+                </div>
+              </div>
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
             </div>
             
@@ -62,7 +63,15 @@ const GLP1Shortage = () => {
           </div>
 
           {/* Crisis Alert */}
-          
+          <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-6 mb-12 flex items-start gap-4">
+            <AlertTriangle className="w-6 h-6 text-destructive flex-shrink-0 mt-1" />
+            <div>
+              <h3 className="font-bold text-destructive mb-2">CRISIS ALERT</h3>
+              <p className="text-foreground font-body">
+                The FDA has issued a statement calling the GLP-1 shortage "unprecedented." Pharmacies in all 50 states report waitlists extending 5–7 months.
+              </p>
+            </div>
+          </div>
 
           {/* Opening Section */}
           <section className="mb-12">
@@ -168,12 +177,13 @@ const GLP1Shortage = () => {
             </p>
 
             {/* Manufacturing Crisis Image */}
-            <div className="my-8 rounded-lg overflow-hidden border-2 border-primary/20">
-              <img 
-                src="/lovable-uploads/f1a4b5c6-25ea-4775-b3ea-8a7427d5bfca.png" 
-                alt="Pharmaceutical manufacturing facility with workers processing medication bottles on conveyor belts, illustrating the complex supply chain challenges causing GLP-1 shortages"
-                className="w-full h-auto"
-              />
+            <div className="my-8 rounded-lg overflow-hidden border border-border">
+              <div className="w-full h-[250px] bg-gradient-to-r from-destructive/10 to-muted/20 flex items-center justify-center">
+                <div className="text-center p-6">
+                  <div className="text-3xl mb-3">🏭</div>
+                  <p className="text-muted-foreground font-body">Pharmaceutical manufacturing facility showing supply chain bottlenecks</p>
+                </div>
+              </div>
             </div>
           </section>
 
@@ -251,12 +261,13 @@ const GLP1Shortage = () => {
             </p>
 
             {/* Natural Solution Image */}
-            <div className="my-8 rounded-lg overflow-hidden border-2 border-primary/20">
-              <img 
-                src="/lovable-uploads/4df81861-6916-4ccd-85e3-907b4123d70e.png" 
-                alt="Comparison diagram showing GLP-1 patches vs pills and supplements - demonstrating transdermal delivery with 8-hour sustained release through skin absorption"
-                className="w-full h-auto"
-              />
+            <div className="my-8 rounded-lg overflow-hidden border border-border">
+              <div className="w-full h-[250px] bg-gradient-to-r from-primary/10 to-accent/20 flex items-center justify-center">
+                <div className="text-center p-6">
+                  <div className="text-3xl mb-3">🌿</div>
+                  <p className="text-muted-foreground font-body">Natural botanical ingredients being formulated into a transdermal patch</p>
+                </div>
+              </div>
             </div>
           </section>
 
