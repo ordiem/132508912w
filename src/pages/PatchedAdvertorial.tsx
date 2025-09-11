@@ -41,11 +41,7 @@ const PatchedAdvertorial = () => {
           <div className="mb-12">
             {/* Hero Image */}
             <div className="relative mb-8 rounded-lg overflow-hidden">
-              <img 
-                src="/lovable-uploads/5fd12bde-144d-44a8-bf22-340cdae61a4d.png" 
-                alt="Confident woman in her 50s representing natural health and wellness empowerment" 
-                className="w-full h-[300px] md:h-[350px] object-cover object-right"
-              />
+              <img src="/lovable-uploads/5fd12bde-144d-44a8-bf22-340cdae61a4d.png" alt="Confident woman in her 50s representing natural health and wellness empowerment" className="w-full h-[300px] md:h-[350px] object-cover object-right" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
             </div>
             
@@ -179,7 +175,7 @@ const PatchedAdvertorial = () => {
           {/* Historical Military Medical Image */}
           <section className="mb-12">
             <div className="rounded-lg overflow-hidden border border-border">
-              <img src="/lovable-uploads/ac3d4059-6944-438c-8f4a-116d60d88850.png" alt="Historical black and white photograph of military medics treating a wounded soldier during World War II, demonstrating early battlefield medical innovations" className="w-full h-64 md:h-72 object-cover object-bottom" />
+              <img src="/lovable-uploads/ac3d4059-6944-438c-8f4a-116d60d88850.png" alt="Historical black and white photograph of military medics treating a wounded soldier during World War II, demonstrating early battlefield medical innovations" className="w-full h-auto object-cover" />
               <div className="p-4 bg-muted/20">
                 <p className="text-sm text-muted-foreground font-body italic text-center">
                   World War II medics pioneered transdermal delivery methods to treat wounded soldiers when traditional medicine couldn't be administered orally.
@@ -280,9 +276,7 @@ const PatchedAdvertorial = () => {
             </p>
 
             <div className="bg-gradient-to-r from-primary/5 to-accent/10 border border-primary/20 rounded-lg p-8 mb-8">
-              <p className="text-2xl font-body font-bold text-primary mb-6 text-center">
-                It's called Patched
-              </p>
+              
 
               <p className="text-lg leading-relaxed text-foreground font-body mb-6">
                 And it's the first of its kind: A transdermal nutrient patch made specifically for women over 45 who want to take back control of their hunger, cravings, and metabolism—without relying on synthetic injections.
