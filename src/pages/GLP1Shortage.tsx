@@ -257,7 +257,7 @@ const GLP1Shortage = () => {
               <img 
                 src="/lovable-uploads/4df81861-6916-4ccd-85e3-907b4123d70e.png" 
                 alt="Comparison diagram showing GLP-1 patches vs pills and supplements - demonstrating transdermal delivery with 8-hour sustained release through skin absorption"
-                className="w-full h-auto"
+                className="w-full h-[300px] object-cover object-center"
               />
             </div>
           </section>
