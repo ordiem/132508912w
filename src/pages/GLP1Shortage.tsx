@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { CheckCircle, Clock, Shield, Beaker, X, AlertTriangle } from 'lucide-react';
+import { CheckCircle, Clock, Shield, Beaker, X, AlertTriangle, Zap, Citrus, Flower, Apple } from 'lucide-react';
 const GLP1Shortage = () => {
   const [showStickyCTA, setShowStickyCTA] = useState(false);
   useEffect(() => {
@@ -202,19 +202,19 @@ const GLP1Shortage = () => {
               {[{
               name: 'Berberine',
               description: 'An alkaloid shown to support healthy glucose metabolism.*',
-              icon: <Beaker className="w-6 h-6" />
+              icon: <Zap className="w-6 h-6" />
             }, {
               name: 'Lemon Fruit Extract',
               description: 'Rich in polyphenols that may assist digestive signaling.*',
-              icon: <Clock className="w-6 h-6" />
+              icon: <Citrus className="w-6 h-6" />
             }, {
               name: 'Saffron Extract',
               description: 'Studied for its potential to reduce snacking and emotional eating.*',
-              icon: <Shield className="w-6 h-6" />
+              icon: <Flower className="w-6 h-6" />
             }, {
               name: 'Red Orange Extract',
               description: 'Known to support metabolic balance and oxidative health.*',
-              icon: <CheckCircle className="w-6 h-6" />
+              icon: <Apple className="w-6 h-6" />
             }].map((ingredient, index) => <div key={index} className="bg-gradient-to-r from-card to-accent/5 border border-border rounded-lg p-6 hover-scale">
                   <div className="flex items-start gap-4">
                     <div className="text-primary flex-shrink-0">
