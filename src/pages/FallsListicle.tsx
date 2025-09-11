@@ -255,7 +255,7 @@ const FallsListicle = () => {
                     Take the Free Quiz Now →
                   </Button>
                   <p className="text-sm text-muted-foreground">
-                    Join 50,000+ women who've discovered their hormone solution
+                    Join 50,000+ people who've discovered their hormone solution
                   </p>
                 </div>
               </div>
