@@ -40,11 +40,7 @@ const GLP1Shortage = () => {
           <div className="mb-12">
             {/* Hero Image */}
             <div className="relative mb-8 rounded-lg overflow-hidden">
-              <img 
-                src="/lovable-uploads/f29e0bcc-1fcc-414d-a3a0-af0869273cff.png" 
-                alt="Pharmacy scene showing concerned patients and pharmacist discussing GLP-1 medication shortage with 'out of stock' sign visible, illustrating the current crisis in medication availability"
-                className="w-full h-[300px] md:h-[400px] object-cover"
-              />
+              <img src="/lovable-uploads/f29e0bcc-1fcc-414d-a3a0-af0869273cff.png" alt="Pharmacy scene showing concerned patients and pharmacist discussing GLP-1 medication shortage with 'out of stock' sign visible, illustrating the current crisis in medication availability" className="w-full h-[300px] md:h-[400px] object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
             </div>
             
@@ -138,9 +134,7 @@ const GLP1Shortage = () => {
 
           {/* Why the Shortage */}
           <section className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-              Why the Shortage Happened—and Why It Won't End Soon
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">Why the Shortage Happened and Why It Won't End Soon</h2>
 
             <p className="text-lg leading-relaxed text-foreground font-body mb-6">
               Pharmaceutical insiders call it "a perfect storm."
@@ -168,12 +162,8 @@ const GLP1Shortage = () => {
             </p>
 
             {/* Manufacturing Crisis Image */}
-            <div className="my-8 h-64 md:h-80 rounded-lg overflow-hidden border-2 border-primary/20">
-              <img 
-                src="/lovable-uploads/f1a4b5c6-25ea-4775-b3ea-8a7427d5bfca.png" 
-                alt="Pharmaceutical manufacturing facility with workers processing medication bottles on conveyor belts, illustrating the complex supply chain challenges causing GLP-1 shortages"
-                className="w-full h-full object-cover object-center"
-              />
+            <div className="my-8 rounded-lg overflow-hidden border-2 border-primary/20">
+              <img src="/lovable-uploads/f1a4b5c6-25ea-4775-b3ea-8a7427d5bfca.png" alt="Pharmaceutical manufacturing facility with workers processing medication bottles on conveyor belts, illustrating the complex supply chain challenges causing GLP-1 shortages" className="w-full h-auto" />
             </div>
           </section>
 
@@ -252,11 +242,7 @@ const GLP1Shortage = () => {
 
             {/* Natural Solution Image */}
             <div className="my-8 rounded-lg overflow-hidden border-2 border-primary/20">
-              <img 
-                src="/lovable-uploads/4df81861-6916-4ccd-85e3-907b4123d70e.png" 
-                alt="Comparison diagram showing GLP-1 patches vs pills and supplements - demonstrating transdermal delivery with 8-hour sustained release through skin absorption"
-                className="w-full h-auto"
-              />
+              <img src="/lovable-uploads/4df81861-6916-4ccd-85e3-907b4123d70e.png" alt="Comparison diagram showing GLP-1 patches vs pills and supplements - demonstrating transdermal delivery with 8-hour sustained release through skin absorption" className="w-full h-auto" />
             </div>
           </section>
 
@@ -394,20 +380,7 @@ const GLP1Shortage = () => {
             </p>
 
             <div className="bg-gradient-to-r from-primary/5 to-accent/10 border border-primary/20 rounded-lg p-8 mb-8">
-              <div className="grid md:grid-cols-3 gap-4 text-center mb-6">
-                <div className="bg-background rounded-lg p-4">
-                  <div className="text-2xl font-bold text-primary mb-2">1-month supply</div>
-                  <div className="text-3xl font-bold text-foreground">$39.99</div>
-                </div>
-                <div className="bg-background rounded-lg p-4">
-                  <div className="text-2xl font-bold text-primary mb-2">3-month bundle</div>
-                  <div className="text-3xl font-bold text-foreground">$104.97</div>
-                </div>
-                <div className="bg-background rounded-lg p-4">
-                  <div className="text-2xl font-bold text-primary mb-2">6-month bundle</div>
-                  <div className="text-3xl font-bold text-foreground">$149.94</div>
-                </div>
-              </div>
+              
 
               <div className="text-center">
                 <p className="text-xl font-body font-bold text-primary mb-4">
