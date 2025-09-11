@@ -40,12 +40,11 @@ const GLP1Shortage = () => {
           <div className="mb-12">
             {/* Hero Image */}
             <div className="relative mb-8 rounded-lg overflow-hidden">
-              <div className="w-full h-[300px] md:h-[400px] bg-gradient-to-r from-muted/50 to-accent/20 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="text-4xl mb-4">🏥</div>
-                  <p className="text-muted-foreground font-body">Empty pharmacy shelves representing the GLP-1 medication shortage crisis</p>
-                </div>
-              </div>
+              <img 
+                src="/lovable-uploads/f29e0bcc-1fcc-414d-a3a0-af0869273cff.png" 
+                alt="Pharmacy scene showing concerned patients and pharmacist discussing GLP-1 medication shortage with 'out of stock' sign visible, illustrating the current crisis in medication availability"
+                className="w-full h-[300px] md:h-[400px] object-cover"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
             </div>
             
