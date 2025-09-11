@@ -396,7 +396,7 @@ const GLP1Shortage = () => {
             </div>
 
             <div className="text-center">
-              <Button size="lg" className="text-lg px-8 py-4 mb-4">
+              <Button size="lg" className="text-sm md:text-lg px-4 md:px-8 py-3 md:py-4 mb-4 w-full max-w-md">
                 Learn More and Order the GLP-1 Patch Today
               </Button>
               <p className="text-muted-foreground font-body">
