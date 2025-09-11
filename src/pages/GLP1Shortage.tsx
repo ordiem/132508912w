@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { CheckCircle, Clock, Shield, Beaker, X, AlertTriangle } from 'lucide-react';
-
 const GLP1Shortage = () => {
   const [showStickyCTA, setShowStickyCTA] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.scrollY;
@@ -12,13 +10,10 @@ const GLP1Shortage = () => {
       const scrollPercent = scrolled / height * 100;
       setShowStickyCTA(scrollPercent > 40);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="sticky top-0 z-40 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -146,12 +141,7 @@ const GLP1Shortage = () => {
 
             {/* Patient Story Image */}
             <div className="my-8 rounded-lg overflow-hidden border border-border">
-              <div className="w-full h-[250px] bg-gradient-to-r from-muted/30 to-accent/10 flex items-center justify-center">
-                <div className="text-center p-6">
-                  <div className="text-3xl mb-3">😰</div>
-                  <p className="text-muted-foreground font-body">Frustrated patients facing medication shortages and empty pharmacy shelves</p>
-                </div>
-              </div>
+              
             </div>
           </section>
 
@@ -229,29 +219,23 @@ const GLP1Shortage = () => {
             </p>
 
             <div className="grid gap-6 mb-8">
-              {[
-                {
-                  name: 'Berberine',
-                  description: 'An alkaloid shown to support healthy glucose metabolism.*',
-                  icon: <Beaker className="w-6 h-6" />
-                },
-                {
-                  name: 'Lemon Fruit Extract',
-                  description: 'Rich in polyphenols that may assist digestive signaling.*',
-                  icon: <Clock className="w-6 h-6" />
-                },
-                {
-                  name: 'Saffron Extract',
-                  description: 'Studied for its potential to reduce snacking and emotional eating.*',
-                  icon: <Shield className="w-6 h-6" />
-                },
-                {
-                  name: 'Red Orange Extract',
-                  description: 'Known to support metabolic balance and oxidative health.*',
-                  icon: <CheckCircle className="w-6 h-6" />
-                }
-              ].map((ingredient, index) => (
-                <div key={index} className="bg-gradient-to-r from-card to-accent/5 border border-border rounded-lg p-6 hover-scale">
+              {[{
+              name: 'Berberine',
+              description: 'An alkaloid shown to support healthy glucose metabolism.*',
+              icon: <Beaker className="w-6 h-6" />
+            }, {
+              name: 'Lemon Fruit Extract',
+              description: 'Rich in polyphenols that may assist digestive signaling.*',
+              icon: <Clock className="w-6 h-6" />
+            }, {
+              name: 'Saffron Extract',
+              description: 'Studied for its potential to reduce snacking and emotional eating.*',
+              icon: <Shield className="w-6 h-6" />
+            }, {
+              name: 'Red Orange Extract',
+              description: 'Known to support metabolic balance and oxidative health.*',
+              icon: <CheckCircle className="w-6 h-6" />
+            }].map((ingredient, index) => <div key={index} className="bg-gradient-to-r from-card to-accent/5 border border-border rounded-lg p-6 hover-scale">
                   <div className="flex items-start gap-4">
                     <div className="text-primary flex-shrink-0">
                       {ingredient.icon}
@@ -265,8 +249,7 @@ const GLP1Shortage = () => {
                       </p>
                     </div>
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             <p className="text-lg leading-relaxed text-foreground font-body mb-6">
@@ -366,17 +349,22 @@ const GLP1Shortage = () => {
             </p>
 
             <div className="grid gap-4 mb-8">
-              {[
-                { timeframe: 'Week 1–2', result: 'Noticeable appetite reduction*' },
-                { timeframe: 'Week 3–4', result: 'Enhanced natural GLP-1 support*' },
-                { timeframe: 'Week 5–8', result: 'Improved metabolism support*' },
-                { timeframe: 'Week 9–12', result: 'Visible improvements in body composition*' }
-              ].map((item, index) => (
-                <div key={index} className="flex items-center gap-4 bg-accent/5 p-4 rounded-lg">
+              {[{
+              timeframe: 'Week 1–2',
+              result: 'Noticeable appetite reduction*'
+            }, {
+              timeframe: 'Week 3–4',
+              result: 'Enhanced natural GLP-1 support*'
+            }, {
+              timeframe: 'Week 5–8',
+              result: 'Improved metabolism support*'
+            }, {
+              timeframe: 'Week 9–12',
+              result: 'Visible improvements in body composition*'
+            }].map((item, index) => <div key={index} className="flex items-center gap-4 bg-accent/5 p-4 rounded-lg">
                   <div className="font-bold text-primary min-w-fit">{item.timeframe}:</div>
                   <div className="text-foreground font-body">{item.result}</div>
-                </div>
-              ))}
+                </div>)}
             </div>
           </section>
 
@@ -391,18 +379,10 @@ const GLP1Shortage = () => {
             </p>
 
             <div className="grid gap-4 mb-8">
-              {[
-                'Talk to your doctor about supporting your GLP-1 levels naturally',
-                'Avoid black market medications. The risks outweigh the rewards',
-                'Explore clinical data behind natural appetite-regulating compounds*',
-                'Consider alternatives that use advanced delivery systems',
-                'Stay informed—this crisis is evolving by the week'
-              ].map((item, index) => (
-                <div key={index} className="flex items-start gap-3">
+              {['Talk to your doctor about supporting your GLP-1 levels naturally', 'Avoid black market medications. The risks outweigh the rewards', 'Explore clinical data behind natural appetite-regulating compounds*', 'Consider alternatives that use advanced delivery systems', 'Stay informed—this crisis is evolving by the week'].map((item, index) => <div key={index} className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
                   <span className="font-body text-foreground">{item}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             <p className="text-lg leading-relaxed text-foreground font-body">
@@ -476,8 +456,7 @@ const GLP1Shortage = () => {
       </main>
 
       {/* Sticky CTA */}
-      {showStickyCTA && (
-        <div className="fixed bottom-0 left-0 right-0 bg-primary text-primary-foreground p-4 z-50 shadow-lg">
+      {showStickyCTA && <div className="fixed bottom-0 left-0 right-0 bg-primary text-primary-foreground p-4 z-50 shadow-lg">
           <div className="max-w-4xl mx-auto flex items-center justify-between">
             <div>
               <p className="font-bold">Ready to try the GLP-1 Patch?</p>
@@ -487,10 +466,7 @@ const GLP1Shortage = () => {
               Order Now
             </Button>
           </div>
-        </div>
-      )}
-    </div>
-  );
+        </div>}
+    </div>;
 };
-
 export default GLP1Shortage;
