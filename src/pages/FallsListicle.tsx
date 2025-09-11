@@ -187,7 +187,13 @@ const FallsListicle = () => {
                   <span className="text-3xl font-bold text-primary">5</span>
                   <h2 className="text-2xl font-bold font-serifDisplay">Your Body Doesn't Handle Sugar Like It Used To</h2>
                 </div>
-                
+                <div className="h-48 md:h-60 rounded-lg overflow-hidden border-2 border-primary/20">
+                  <img 
+                    src="/lovable-uploads/34cdea4c-fbab-469e-8352-46ec715c90e7.png" 
+                    alt="Mature man with concerned expression surrounded by health-related icons including clock, molecular structure, scale, and brain, illustrating the complex factors affecting metabolism after 40"
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
                 <p className="text-lg leading-relaxed">
                   Your cells become less sensitive to insulin as you age. So carbs that used to fuel you now spike your blood sugar then crash it.
                 </p>
