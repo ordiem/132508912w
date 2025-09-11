@@ -18,7 +18,7 @@ const GLP1Shortage = () => {
       <header className="sticky top-0 z-40 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <h1 className="text-lg font-display font-bold text-primary">HEALTHY LIVING</h1>
+            <h1 className="text-lg font-display font-bold text-primary">UNITED NEWS</h1>
             <span className="text-xs px-2 py-1 bg-accent/10 text-accent-foreground/50 rounded uppercase tracking-wider font-medium opacity-50">
               Advertorial
             </span>
