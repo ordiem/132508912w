@@ -18,7 +18,7 @@ const GLP1Shortage = () => {
       <header className="sticky top-0 z-40 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <h1 className="text-lg font-display font-bold text-primary">50&Beyond</h1>
+            <h1 className="text-lg font-display font-bold text-primary">HEALTHY LIVING</h1>
             <span className="text-xs px-2 py-1 bg-accent/10 text-accent-foreground/50 rounded uppercase tracking-wider font-medium opacity-50">
               Advertorial
             </span>
@@ -63,15 +63,7 @@ const GLP1Shortage = () => {
           </div>
 
           {/* Crisis Alert */}
-          <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-6 mb-12 flex items-start gap-4">
-            <AlertTriangle className="w-6 h-6 text-destructive flex-shrink-0 mt-1" />
-            <div>
-              <h3 className="font-bold text-destructive mb-2">CRISIS ALERT</h3>
-              <p className="text-foreground font-body">
-                The FDA has issued a statement calling the GLP-1 shortage "unprecedented." Pharmacies in all 50 states report waitlists extending 5–7 months.
-              </p>
-            </div>
-          </div>
+          
 
           {/* Opening Section */}
           <section className="mb-12">
