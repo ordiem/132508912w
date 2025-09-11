@@ -253,13 +253,12 @@ const GLP1Shortage = () => {
             </p>
 
             {/* Natural Solution Image */}
-            <div className="my-8 rounded-lg overflow-hidden border border-border">
-              <div className="w-full h-[250px] bg-gradient-to-r from-primary/10 to-accent/20 flex items-center justify-center">
-                <div className="text-center p-6">
-                  <div className="text-3xl mb-3">🌿</div>
-                  <p className="text-muted-foreground font-body">Natural botanical ingredients being formulated into a transdermal patch</p>
-                </div>
-              </div>
+            <div className="my-8 rounded-lg overflow-hidden border-2 border-primary/20">
+              <img 
+                src="/lovable-uploads/4df81861-6916-4ccd-85e3-907b4123d70e.png" 
+                alt="Comparison diagram showing GLP-1 patches vs pills and supplements - demonstrating transdermal delivery with 8-hour sustained release through skin absorption"
+                className="w-full h-auto"
+              />
             </div>
           </section>
 
