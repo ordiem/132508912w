@@ -38,7 +38,7 @@ const FallsListicle = () => {
           </div>
 
           {/* Lead Image */}
-          <div className="w-full h-80 md:h-96 rounded-lg overflow-hidden border-2 border-primary/20">
+          <div className="w-full h-96 md:h-[28rem] rounded-lg overflow-hidden border-2 border-primary/20">
             <img 
               src="/lovable-uploads/34cdea4c-fbab-469e-8352-46ec715c90e7.png" 
               alt="Mature man with concerned expression surrounded by health-related icons including clock, molecular structure, scale, and brain, illustrating the complex factors affecting weight gain after 40"
@@ -67,7 +67,7 @@ const FallsListicle = () => {
                   <span className="text-3xl font-bold text-primary">1</span>
                   <h2 className="text-2xl font-bold font-serifDisplay">Your Fullness Signal Has Gone Silent</h2>
                 </div>
-                <div className="h-60 md:h-72 rounded-lg overflow-hidden">
+                <div className="h-72 md:h-80 rounded-lg overflow-hidden">
                   <img src="/lovable-uploads/c3f58640-cd92-4ec1-a2d0-62dd147626ed.png" alt="Man sitting at a dinner table with an empty plate, looking contemplative about not feeling satisfied after eating" className="w-full h-full object-cover object-center" />
                 </div>
                 <p className="text-lg leading-relaxed">
@@ -98,7 +98,7 @@ const FallsListicle = () => {
                   <span className="text-3xl font-bold text-primary">2</span>
                   <h2 className="text-2xl font-bold font-serifDisplay">Muscle Is Disappearing in the Background</h2>
                 </div>
-                <div className="h-48 md:h-60 rounded-lg overflow-hidden">
+                <div className="h-60 md:h-72 rounded-lg overflow-hidden">
                   <img src="/lovable-uploads/59f25e1d-761c-43a0-b644-2560c388ced5.png" alt="Man flexing his bicep showing muscle strength and definition" className="w-full h-full object-cover object-center" />
                 </div>
                 <p className="text-lg leading-relaxed">
@@ -131,7 +131,7 @@ const FallsListicle = () => {
                   <span className="text-3xl font-bold text-primary">3</span>
                   <h2 className="text-2xl font-bold font-serifDisplay">Stress Is Forcing Fat Onto Your Belly</h2>
                 </div>
-                <div className="h-48 md:h-60 rounded-lg overflow-hidden">
+                <div className="h-60 md:h-72 rounded-lg overflow-hidden">
                   <img src="/lovable-uploads/e941b83f-4c89-478a-a2c5-93518d84ba6a.png" alt="Stressed man holding his head with storm clouds and lightning in background, representing cortisol-driven stress" className="w-full h-full object-cover object-center" />
                 </div>
                 <p className="text-lg leading-relaxed">
@@ -161,7 +161,7 @@ const FallsListicle = () => {
                   <span className="text-3xl font-bold text-primary">4</span>
                   <h2 className="text-2xl font-bold font-serifDisplay">Sleep Wrecks Your Hunger Hormones</h2>
                 </div>
-                <div className="h-48 md:h-60 rounded-lg overflow-hidden">
+                <div className="h-60 md:h-72 rounded-lg overflow-hidden">
                   <img src="/lovable-uploads/41eb540d-a8b7-4a5a-a57d-47b35b825ee4.png" alt="Tired man sitting at table with head in hand, clock showing sleep symbols (ZZZ), representing sleep disruption and exhaustion" className="w-full h-full object-cover object-center" />
                 </div>
                 <p className="text-lg leading-relaxed">
@@ -192,7 +192,7 @@ const FallsListicle = () => {
                   <h2 className="text-2xl font-bold font-serifDisplay">Your Body Doesn't Handle Sugar Like It Used To</h2>
                 </div>
                 
-                <div className="h-48 md:h-60 rounded-lg overflow-hidden">
+                <div className="h-60 md:h-72 rounded-lg overflow-hidden">
                   <img src="/lovable-uploads/42a5913f-1be4-41a0-acbb-891e456790ce.png" alt="Man looking contemplatively at a piece of cake with rising chart in background, representing blood sugar spikes and insulin resistance" className="w-full h-full object-cover object-center" />
                 </div>
                 
