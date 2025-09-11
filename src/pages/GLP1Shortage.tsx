@@ -424,7 +424,7 @@ const GLP1Shortage = () => {
           <div className="max-w-4xl mx-auto flex items-center justify-between">
             <div>
               <p className="font-bold">Ready to try the GLP-1 Patch?</p>
-              <p className="text-sm opacity-90 hidden md:block">No prescription required • 90-day guarantee</p>
+              <p className="text-sm opacity-90 hidden md:block">Get them before they are sold out</p>
             </div>
             <Button variant="secondary" size="lg">
               Order Now
