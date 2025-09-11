@@ -168,11 +168,11 @@ const GLP1Shortage = () => {
             </p>
 
             {/* Manufacturing Crisis Image */}
-            <div className="my-8 rounded-lg overflow-hidden border-2 border-primary/20">
+            <div className="my-8 h-64 md:h-80 rounded-lg overflow-hidden border-2 border-primary/20">
               <img 
                 src="/lovable-uploads/f1a4b5c6-25ea-4775-b3ea-8a7427d5bfca.png" 
                 alt="Pharmaceutical manufacturing facility with workers processing medication bottles on conveyor belts, illustrating the complex supply chain challenges causing GLP-1 shortages"
-                className="w-full h-auto"
+                className="w-full h-full object-cover object-center"
               />
             </div>
           </section>
