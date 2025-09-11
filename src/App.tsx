@@ -9,6 +9,7 @@ import Article from "./pages/Article";
 import BlogPost from "./pages/BlogPost";
 import FallsListicle from "./pages/FallsListicle";
 import PatchedAdvertorial from "./pages/PatchedAdvertorial";
+import GLP1Shortage from "./pages/GLP1Shortage";
 
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/blog" element={<BlogPost />} />
           <Route path="/falls-listicle" element={<FallsListicle />} />
           <Route path="/patched" element={<PatchedAdvertorial />} />
+          <Route path="/glp1-shortage" element={<GLP1Shortage />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
