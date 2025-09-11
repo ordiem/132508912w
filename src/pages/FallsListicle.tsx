@@ -38,7 +38,7 @@ const FallsListicle = () => {
           </div>
 
           {/* Lead Image */}
-          <div className="w-full h-64 md:h-80 rounded-lg overflow-hidden border-2 border-primary/20">
+          <div className="w-full h-80 md:h-96 rounded-lg overflow-hidden border-2 border-primary/20">
             <img 
               src="/lovable-uploads/34cdea4c-fbab-469e-8352-46ec715c90e7.png" 
               alt="Mature man with concerned expression surrounded by health-related icons including clock, molecular structure, scale, and brain, illustrating the complex factors affecting weight gain after 40"
