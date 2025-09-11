@@ -67,8 +67,8 @@ const FallsListicle = () => {
                   <span className="text-3xl font-bold text-primary">1</span>
                   <h2 className="text-2xl font-bold font-serifDisplay">Your Fullness Signal Has Gone Silent</h2>
                 </div>
-                <div className="h-48 md:h-60 rounded-lg overflow-hidden">
-                  <img src="/lovable-uploads/3b3e562d-49aa-4016-afce-8485de82181e.png" alt="Woman in her 50s sitting at a dinner table with an empty plate, looking confused about not feeling full" className="w-full h-full object-cover object-top" />
+                <div className="h-60 md:h-72 rounded-lg overflow-hidden">
+                  <img src="/lovable-uploads/c3f58640-cd92-4ec1-a2d0-62dd147626ed.png" alt="Man sitting at a dinner table with an empty plate, looking contemplative about not feeling satisfied after eating" className="w-full h-full object-cover object-center" />
                 </div>
                 <p className="text-lg leading-relaxed">
                   There's a hormone called GLP‑1 that tells your brain when to stop eating. It used to work with high effectiveness. 
