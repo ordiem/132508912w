@@ -43,6 +43,17 @@ const GLP1Shortage = () => {
         <article className="animate-fade-in">
           {/* Hero Section */}
           <div className="mb-12">
+            {/* Hero Image */}
+            <div className="relative mb-8 rounded-lg overflow-hidden">
+              <div className="w-full h-[300px] md:h-[400px] bg-gradient-to-r from-muted/50 to-accent/20 flex items-center justify-center">
+                <div className="text-center p-8">
+                  <div className="text-4xl mb-4">🏥</div>
+                  <p className="text-muted-foreground font-body">Empty pharmacy shelves representing the GLP-1 medication shortage crisis</p>
+                </div>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
+            </div>
+            
             <div className="text-xs text-muted-foreground mb-4 uppercase tracking-wide">
               BREAKING NEWS • HEALTH CRISIS • PHARMACEUTICAL SHORTAGE
             </div>
@@ -132,6 +143,16 @@ const GLP1Shortage = () => {
             <p className="text-lg leading-relaxed text-foreground font-body">
               For many, the medication was more than a tool—it was a lifeline. And now, it's gone.
             </p>
+
+            {/* Patient Story Image */}
+            <div className="my-8 rounded-lg overflow-hidden border border-border">
+              <div className="w-full h-[250px] bg-gradient-to-r from-muted/30 to-accent/10 flex items-center justify-center">
+                <div className="text-center p-6">
+                  <div className="text-3xl mb-3">😰</div>
+                  <p className="text-muted-foreground font-body">Frustrated patients facing medication shortages and empty pharmacy shelves</p>
+                </div>
+              </div>
+            </div>
           </section>
 
           {/* Why the Shortage */}
@@ -164,6 +185,16 @@ const GLP1Shortage = () => {
             <p className="text-lg leading-relaxed text-foreground font-body">
               And those who do? Often told it's their last refill for the foreseeable future.
             </p>
+
+            {/* Manufacturing Crisis Image */}
+            <div className="my-8 rounded-lg overflow-hidden border border-border">
+              <div className="w-full h-[250px] bg-gradient-to-r from-destructive/10 to-muted/20 flex items-center justify-center">
+                <div className="text-center p-6">
+                  <div className="text-3xl mb-3">🏭</div>
+                  <p className="text-muted-foreground font-body">Pharmaceutical manufacturing facility showing supply chain bottlenecks</p>
+                </div>
+              </div>
+            </div>
           </section>
 
           {/* Natural GLP-1 Science */}
@@ -245,6 +276,16 @@ const GLP1Shortage = () => {
             <p className="text-xl font-body font-bold text-primary">
               Her solution? Deliver them through the skin.
             </p>
+
+            {/* Natural Solution Image */}
+            <div className="my-8 rounded-lg overflow-hidden border border-border">
+              <div className="w-full h-[250px] bg-gradient-to-r from-primary/10 to-accent/20 flex items-center justify-center">
+                <div className="text-center p-6">
+                  <div className="text-3xl mb-3">🌿</div>
+                  <p className="text-muted-foreground font-body">Natural botanical ingredients being formulated into a transdermal patch</p>
+                </div>
+              </div>
+            </div>
           </section>
 
           {/* The Patch Solution */}
