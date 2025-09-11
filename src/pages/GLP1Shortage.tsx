@@ -202,23 +202,25 @@ const GLP1Shortage = () => {
               {[{
               name: 'Berberine',
               description: 'An alkaloid shown to support healthy glucose metabolism.*',
-              icon: <Zap className="w-6 h-6" />
+              number: 1
             }, {
               name: 'Lemon Fruit Extract',
               description: 'Rich in polyphenols that may assist digestive signaling.*',
-              icon: <Citrus className="w-6 h-6" />
+              number: 2
             }, {
               name: 'Saffron Extract',
               description: 'Studied for its potential to reduce snacking and emotional eating.*',
-              icon: <Flower className="w-6 h-6" />
+              number: 3
             }, {
               name: 'Red Orange Extract',
               description: 'Known to support metabolic balance and oxidative health.*',
-              icon: <Apple className="w-6 h-6" />
+              number: 4
             }].map((ingredient, index) => <div key={index} className="bg-gradient-to-r from-card to-accent/5 border border-border rounded-lg p-6 hover-scale">
                   <div className="flex items-start gap-4">
                     <div className="text-primary flex-shrink-0">
-                      {ingredient.icon}
+                      <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold">
+                        {ingredient.number}
+                      </div>
                     </div>
                     <div>
                       <h4 className="font-display font-bold text-lg text-foreground mb-2">
