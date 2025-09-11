@@ -179,7 +179,7 @@ const PatchedAdvertorial = () => {
           {/* Historical Military Medical Image */}
           <section className="mb-12">
             <div className="rounded-lg overflow-hidden border border-border">
-              <img src="/lovable-uploads/ac3d4059-6944-438c-8f4a-116d60d88850.png" alt="Historical black and white photograph of military medics treating a wounded soldier during World War II, demonstrating early battlefield medical innovations" className="w-full h-64 md:h-72 object-cover object-center-bottom" />
+              <img src="/lovable-uploads/ac3d4059-6944-438c-8f4a-116d60d88850.png" alt="Historical black and white photograph of military medics treating a wounded soldier during World War II, demonstrating early battlefield medical innovations" className="w-full h-64 md:h-72 object-cover object-bottom" />
               <div className="p-4 bg-muted/20">
                 <p className="text-sm text-muted-foreground font-body italic text-center">
                   World War II medics pioneered transdermal delivery methods to treat wounded soldiers when traditional medicine couldn't be administered orally.
