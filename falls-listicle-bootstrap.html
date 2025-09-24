@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>5 Reasons Why You're Still Gaining Weight After 40 - 50&Beyond</title>
-    <meta name="description" content="Discover the 5 little-known reasons why stubborn pounds are harder to lose after 40, and what you can do to turn your fat-burning switch back on.">
+    <meta name="description" content="Discover the 5 hidden reasons why you're gaining weight after 40, even when doing everything right. Science-backed solutions to turn your fat-burning switch back on.">
     
     <!-- Bootstrap 4.5 CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
@@ -16,139 +16,234 @@
         :root {
             --primary-color: #2563eb;
             --primary-light: rgba(37, 99, 235, 0.1);
+            --primary-lighter: rgba(37, 99, 235, 0.05);
+            --text-color: #1f2937;
             --text-muted: #6b7280;
             --border-color: #e5e7eb;
+            --background-color: #ffffff;
+            --card-background: #ffffff;
+            --gradient-primary: linear-gradient(135deg, var(--primary-color), #1d4ed8);
         }
-        
+
         body {
             font-family: 'Crimson Text', serif;
+            color: var(--text-color);
             line-height: 1.6;
-            color: #374151;
+            background-color: var(--background-color);
         }
-        
+
         .font-serif-display {
             font-family: 'Playfair Display', serif;
         }
-        
+
         .font-serif-body {
             font-family: 'Crimson Text', serif;
         }
-        
+
+        /* Header Styles */
         .sticky-header {
             position: sticky;
             top: 0;
-            z-index: 1020;
+            z-index: 1000;
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             border-bottom: 1px solid var(--border-color);
         }
-        
-        .badge-outline {
-            border: 1px solid var(--primary-color);
+
+        .site-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+        }
+
+        .badge-advertorial {
+            background-color: var(--primary-light);
             color: var(--primary-color);
-            background: transparent;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.375rem;
+            border: 1px solid rgba(37, 99, 235, 0.2);
         }
-        
-        .badge-secondary {
-            background-color: #f3f4f6;
-            color: #374151;
-        }
-        
-        .text-primary-custom {
-            color: var(--primary-color);
-        }
-        
-        .border-primary-left {
-            border-left: 4px solid var(--primary-color);
-        }
-        
-        .bg-primary-light {
-            background: var(--primary-light);
-        }
-        
-        .text-muted-custom {
+
+        .badge-category {
+            background-color: transparent;
             color: var(--text-muted);
+            font-size: 0.75rem;
+            font-weight: 500;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.375rem;
+            border: 1px solid var(--border-color);
         }
-        
-        .number-circle {
-            width: 3rem;
-            height: 3rem;
-            background: var(--primary-color);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            font-weight: bold;
-            flex-shrink: 0;
+
+        /* Article Styles */
+        .article-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.025em;
+            margin-bottom: 1rem;
         }
-        
-        .action-step {
-            background: linear-gradient(to right, var(--primary-light), rgba(37, 99, 235, 0.05));
-            border-left: 4px solid var(--primary-color);
+
+        .article-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 2rem;
         }
-        
-        .checkmark-circle {
-            width: 1.5rem;
-            height: 1.5rem;
-            background: rgba(37, 99, 235, 0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
+
+        .article-meta {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
         }
-        
-        .cta-gradient {
-            background: linear-gradient(135deg, var(--primary-light), rgba(37, 99, 235, 0.05));
-            border: 2px solid rgba(37, 99, 235, 0.3);
-        }
-        
-        .btn-primary-custom {
-            background-color: var(--primary-color);
-            border-color: var(--primary-color);
-            transition: all 0.3s ease;
-        }
-        
-        .btn-primary-custom:hover {
-            background-color: #1d4ed8;
-            border-color: #1d4ed8;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
-        }
-        
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            background-color: #10b981;
-            border-radius: 50%;
-        }
-        
-        .img-responsive {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-        
+
+        /* Image Styles */
         .hero-image {
-            height: 400px;
+            width: 100%;
+            height: 24rem;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 0.5rem;
             border: 2px solid rgba(37, 99, 235, 0.2);
         }
-        
-        .content-image {
-            height: 250px;
+
+        .listicle-image {
+            width: 100%;
+            height: 18rem;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 0.5rem;
         }
-        
-        @media (max-width: 768px) {
-            .hero-image {
-                height: 300px;
-            }
-            .content-image {
-                height: 200px;
-            }
+
+        /* Card Styles */
+        .listicle-card {
+            border-left: 4px solid var(--primary-color);
+            background: var(--card-background);
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
-        
+
+        .listicle-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-right: 1rem;
+        }
+
+        .listicle-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .listicle-text {
+            font-size: 1.125rem;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        /* Action Step Styles */
+        .action-step {
+            background: linear-gradient(135deg, var(--primary-light), var(--primary-lighter));
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .action-check {
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            background-color: rgba(37, 99, 235, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-right: 0.75rem;
+            margin-top: 0.125rem;
+        }
+
+        .action-check-icon {
+            color: var(--primary-color);
+            font-size: 0.875rem;
+            font-weight: 700;
+        }
+
+        /* CTA Styles */
+        .cta-card {
+            background: linear-gradient(135deg, var(--primary-light), var(--primary-lighter), var(--background-color));
+            border: 1px solid rgba(37, 99, 235, 0.3);
+            border-radius: 0.5rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.05), transparent);
+        }
+
+        .cta-badge {
+            background-color: rgba(37, 99, 235, 0.2);
+            color: var(--primary-color);
+            font-size: 0.875rem;
+            font-weight: 500;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .cta-title {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 1rem 0;
+        }
+
+        .cta-description {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-dot {
+            width: 0.5rem;
+            height: 0.5rem;
+            background-color: #10b981;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+        }
+
+        .cta-button {
+            background: var(--primary-color);
+            color: white;
+            font-size: 1.125rem;
+            font-weight: 600;
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: #1d4ed8;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+            color: white;
+        }
+
+        /* Sticky CTA Styles */
         .sticky-cta {
             position: fixed;
             bottom: 0;
@@ -156,49 +251,167 @@
             right: 0;
             background: white;
             border-top: 1px solid var(--border-color);
-            z-index: 1030;
-            padding: 1rem 0;
-            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+            padding: 1rem;
         }
-        
-        .animate-fade-in {
-            animation: fadeIn 0.6s ease-in;
+
+        .sticky-cta.visible {
+            transform: translateY(0);
         }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+
+        .sticky-cta-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .sticky-cta-text h3 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin: 0;
+            color: var(--text-color);
+        }
+
+        .sticky-cta-text p {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .sticky-cta-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .sticky-cta-button {
+            background: var(--primary-color);
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .sticky-cta-button:hover {
+            background: #1d4ed8;
+            color: white;
+        }
+
+        .sticky-cta-dismiss {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1.25rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            line-height: 1;
+        }
+
+        .sticky-cta-dismiss:hover {
+            color: var(--text-color);
+        }
+
+        /* Intro Box */
+        .intro-box {
+            background-color: var(--primary-light);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin: 2rem 0;
+        }
+
+        /* Footer */
+        .footer {
+            border-top: 1px solid var(--border-color);
+            background-color: rgba(249, 250, 251, 0.3);
+            padding: 2rem 0;
+        }
+
+        .footer-text {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .article-title {
+                font-size: 2rem;
+            }
+            
+            .hero-image {
+                height: 20rem;
+            }
+            
+            .listicle-image {
+                height: 15rem;
+            }
+            
+            .cta-title {
+                font-size: 1.75rem;
+            }
+            
+            .sticky-cta-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.6s ease forwards;
         }
     </style>
 </head>
-
 <body>
     <!-- Header -->
     <header class="sticky-header">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center py-3">
-                <h1 class="h3 mb-0 font-serif-display font-weight-bold">50&Beyond</h1>
-                <span class="badge badge-secondary">Advertorial</span>
+                <div class="site-title font-serif-display">50&Beyond</div>
+                <span class="badge-advertorial">Advertorial</span>
             </div>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="container my-5">
-        <article class="animate-fade-in">
+    <main class="container py-5">
+        <article class="fade-in">
             <!-- Article Header -->
             <div class="mb-5">
                 <div class="mb-4">
-                    <span class="badge badge-outline small font-weight-normal mb-3">WEIGHT LOSS</span>
-                    <h1 class="display-4 font-serif-display font-weight-bold mb-4">
+                    <span class="badge-category">WEIGHT LOSS</span>
+                    <h1 class="article-title font-serif-display mt-3">
                         5 Reasons Why You're Still Gaining Weight After 40 - Even If You're Doing Everything "Right"
                     </h1>
-                    <p class="lead text-muted-custom font-serif-body">
+                    <p class="article-subtitle font-serif-body">
                         If the diet that worked at 35 suddenly stops working at 45, you're not alone. And it's not a willpower problem. The truth is, your body plays by a different set of rules as you age — and once you understand them, you can finally see results again.
                     </p>
                 </div>
                 
-                <div class="d-flex align-items-center text-muted-custom small border-bottom pb-4 mb-5">
+                <div class="article-meta">
                     <span>Sept. 8, 2025</span>
                     <span class="mx-2">•</span>
                     <span>8 min read</span>
@@ -207,186 +420,174 @@
 
             <!-- Lead Image -->
             <div class="mb-5">
-                <div class="hero-image rounded overflow-hidden">
-                    <img src="/lovable-uploads/34cdea4c-fbab-469e-8352-46ec715c90e7.png" 
-                         alt="Mature man with concerned expression surrounded by health-related icons including clock, molecular structure, scale, and brain, illustrating the complex factors affecting weight gain after 40"
-                         class="img-responsive">
-                </div>
+                <img src="/lovable-uploads/34cdea4c-fbab-469e-8352-46ec715c90e7.png" 
+                     alt="Mature man with concerned expression surrounded by health-related icons including clock, molecular structure, scale, and brain, illustrating the complex factors affecting weight gain after 40" 
+                     class="hero-image">
             </div>
 
             <!-- Introduction -->
             <div class="mb-5">
-                <p class="h6 mb-4">
+                <p class="listicle-text mb-4">
                     After age 40, your hormones change. This affects how your body processes food, stores fat, and feels full. 
                     Here are 5 little-known reasons why stubborn pounds are even harder to lose after 50.
                 </p>
-                <div class="bg-primary-light p-4 rounded border-primary-left">
-                    <p class="font-weight-bold h6 mb-2">Find out what you can do today to turn your fat-burning switch back on.</p>
+                <div class="intro-box">
+                    <p class="font-weight-bold h5 mb-2">Find out what you can do today to turn your fat-burning switch back on.</p>
                     <p class="mb-0">And why it has nothing to do with discipline.</p>
                 </div>
             </div>
 
             <!-- Listicle Items -->
-            <div class="space-y-5">
+            <div class="mb-5">
                 <!-- Item 1 -->
-                <div class="card border-primary-left mb-5">
-                    <div class="card-body p-4 p-md-5">
-                        <div class="d-flex align-items-start mb-4">
-                            <div class="number-circle mr-3">1</div>
-                            <h2 class="h3 font-serif-display font-weight-bold mb-0">Your Fullness Signal Has Gone Silent</h2>
-                        </div>
-                        <div class="content-image rounded overflow-hidden mb-4">
-                            <img src="/lovable-uploads/c3f58640-cd92-4ec1-a2d0-62dd147626ed.png" 
-                                 alt="Man sitting at a dinner table with an empty plate, looking contemplative about not feeling satisfied after eating" 
-                                 class="img-responsive">
-                        </div>
-                        <p class="h6 mb-4">
-                            There's a hormone called GLP‑1 that tells your brain when to stop eating. It used to work with high effectiveness. 
-                            But after 45, it drops off and meals stop feeling as satisfying.
-                        </p>
-                        <p class="h6 mb-4">
-                            That's why you can eat a full plate and still feel hungry an hour later. You're not greedy. Your body's chemical "off switch" is weaker.
-                        </p>
-                        <div class="action-step p-4 rounded">
-                            <div class="d-flex align-items-start">
-                                <div class="checkmark-circle mr-3 mt-1">
-                                    <span class="text-primary-custom small font-weight-bold">✓</span>
-                                </div>
-                                <div>
-                                    <p class="font-weight-bold mb-2">Action Step:</p>
-                                    <p class="text-muted-custom mb-0">Add more protein, fiber, and real fat to meals. They help activate GLP‑1 naturally and keep you full longer.</p>
-                                </div>
+                <div class="listicle-card">
+                    <div class="d-flex align-items-start mb-4">
+                        <span class="listicle-number">1</span>
+                        <h2 class="listicle-title font-serif-display">Your Fullness Signal Has Gone Silent</h2>
+                    </div>
+                    <div class="mb-4">
+                        <img src="/lovable-uploads/c3f58640-cd92-4ec1-a2d0-62dd147626ed.png" 
+                             alt="Man sitting at a dinner table with an empty plate, looking contemplative about not feeling satisfied after eating" 
+                             class="listicle-image">
+                    </div>
+                    <p class="listicle-text">
+                        There's a hormone called GLP‑1 that tells your brain when to stop eating. It used to work with high effectiveness. 
+                        But after 45, it drops off and meals stop feeling as satisfying.
+                    </p>
+                    <p class="listicle-text">
+                        That's why you can eat a full plate and still feel hungry an hour later. You're not greedy. Your body's chemical "off switch" is weaker.
+                    </p>
+                    <div class="action-step">
+                        <div class="d-flex align-items-start">
+                            <div class="action-check">
+                                <span class="action-check-icon">✓</span>
+                            </div>
+                            <div>
+                                <p class="font-weight-bold mb-2">Action Step:</p>
+                                <p class="mb-0 text-muted">Add more protein, fiber, and real fat to meals. They help activate GLP‑1 naturally and keep you full longer.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Item 2 -->
-                <div class="card border-primary-left mb-5">
-                    <div class="card-body p-4 p-md-5">
-                        <div class="d-flex align-items-start mb-4">
-                            <div class="number-circle mr-3">2</div>
-                            <h2 class="h3 font-serif-display font-weight-bold mb-0">Muscle Is Disappearing in the Background</h2>
-                        </div>
-                        <div class="content-image rounded overflow-hidden mb-4">
-                            <img src="/lovable-uploads/59f25e1d-761c-43a0-b644-2560c388ced5.png" 
-                                 alt="Man flexing his bicep showing muscle strength and definition" 
-                                 class="img-responsive">
-                        </div>
-                        <p class="h6 mb-4">
-                            You lose muscle every year after 50 whether you notice it or not. And muscle isn't just for looks. It burns calories around the clock.
-                        </p>
-                        <p class="h6 mb-4">
-                            So with less muscle, your metabolism slows. You're burning fewer calories doing the exact same things you've always done.
-                        </p>
-                        <p class="h6 mb-4">
-                            The kicker? Most diets make this worse by causing muscle loss on top of fat.
-                        </p>
-                        <div class="action-step p-4 rounded">
-                            <div class="d-flex align-items-start">
-                                <div class="checkmark-circle mr-3 mt-1">
-                                    <span class="text-primary-custom small font-weight-bold">✓</span>
-                                </div>
-                                <div>
-                                    <p class="font-weight-bold mb-2">Action Step:</p>
-                                    <p class="text-muted-custom mb-0">Lift weights. Eat enough protein. Muscle is your metabolism's best friend.</p>
-                                </div>
+                <div class="listicle-card">
+                    <div class="d-flex align-items-start mb-4">
+                        <span class="listicle-number">2</span>
+                        <h2 class="listicle-title font-serif-display">Muscle Is Disappearing in the Background</h2>
+                    </div>
+                    <div class="mb-4">
+                        <img src="/lovable-uploads/59f25e1d-761c-43a0-b644-2560c388ced5.png" 
+                             alt="Man flexing his bicep showing muscle strength and definition" 
+                             class="listicle-image">
+                    </div>
+                    <p class="listicle-text">
+                        You lose muscle every year after 50 whether you notice it or not. And muscle isn't just for looks. It burns calories around the clock.
+                    </p>
+                    <p class="listicle-text">
+                        So with less muscle, your metabolism slows. You're burning fewer calories doing the exact same things you've always done.
+                    </p>
+                    <p class="listicle-text">
+                        The kicker? Most diets make this worse by causing muscle loss on top of fat.
+                    </p>
+                    <div class="action-step">
+                        <div class="d-flex align-items-start">
+                            <div class="action-check">
+                                <span class="action-check-icon">✓</span>
+                            </div>
+                            <div>
+                                <p class="font-weight-bold mb-2">Action Step:</p>
+                                <p class="mb-0 text-muted">Lift weights. Eat enough protein. Muscle is your metabolism's best friend.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Item 3 -->
-                <div class="card border-primary-left mb-5">
-                    <div class="card-body p-4 p-md-5">
-                        <div class="d-flex align-items-start mb-4">
-                            <div class="number-circle mr-3">3</div>
-                            <h2 class="h3 font-serif-display font-weight-bold mb-0">Stress Is Forcing Fat Onto Your Belly</h2>
-                        </div>
-                        <div class="content-image rounded overflow-hidden mb-4">
-                            <img src="/lovable-uploads/e941b83f-4c89-478a-a2c5-93518d84ba6a.png" 
-                                 alt="Stressed man holding his head with storm clouds and lightning in background, representing cortisol-driven stress" 
-                                 class="img-responsive">
-                        </div>
-                        <p class="h6 mb-4">
-                            After 50, stress hits harder and your body gets worse at handling it. That means cortisol, your main stress hormone, stays elevated longer.
-                        </p>
-                        <p class="h6 mb-4">
-                            High cortisol tells your body to store fat, especially around your middle. It also drives cravings for sugar, salt, and comfort food, whether you're actually hungry or not.
-                        </p>
-                        <div class="action-step p-4 rounded">
-                            <div class="d-flex align-items-start">
-                                <div class="checkmark-circle mr-3 mt-1">
-                                    <span class="text-primary-custom small font-weight-bold">✓</span>
-                                </div>
-                                <div>
-                                    <p class="font-weight-bold mb-2">Action Step:</p>
-                                    <p class="text-muted-custom mb-0">Managing stress isn't a luxury. It's a weight-loss tool. Walk, breathe, lift, sleep on a daily basis.</p>
-                                </div>
+                <div class="listicle-card">
+                    <div class="d-flex align-items-start mb-4">
+                        <span class="listicle-number">3</span>
+                        <h2 class="listicle-title font-serif-display">Stress Is Forcing Fat Onto Your Belly</h2>
+                    </div>
+                    <div class="mb-4">
+                        <img src="/lovable-uploads/e941b83f-4c89-478a-a2c5-93518d84ba6a.png" 
+                             alt="Stressed man holding his head with storm clouds and lightning in background, representing cortisol-driven stress" 
+                             class="listicle-image">
+                    </div>
+                    <p class="listicle-text">
+                        After 50, stress hits harder and your body gets worse at handling it. That means cortisol, your main stress hormone, stays elevated longer.
+                    </p>
+                    <p class="listicle-text">
+                        High cortisol tells your body to store fat, especially around your middle. It also drives cravings for sugar, salt, and comfort food, whether you're actually hungry or not.
+                    </p>
+                    <div class="action-step">
+                        <div class="d-flex align-items-start">
+                            <div class="action-check">
+                                <span class="action-check-icon">✓</span>
+                            </div>
+                            <div>
+                                <p class="font-weight-bold mb-2">Action Step:</p>
+                                <p class="mb-0 text-muted">Managing stress isn't a luxury. It's a weight-loss tool. Walk, breathe, lift, sleep on a daily basis.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Item 4 -->
-                <div class="card border-primary-left mb-5">
-                    <div class="card-body p-4 p-md-5">
-                        <div class="d-flex align-items-start mb-4">
-                            <div class="number-circle mr-3">4</div>
-                            <h2 class="h3 font-serif-display font-weight-bold mb-0">Sleep Wrecks Your Hunger Hormones</h2>
-                        </div>
-                        <div class="content-image rounded overflow-hidden mb-4">
-                            <img src="/lovable-uploads/41eb540d-a8b7-4a5a-a57d-47b35b825ee4.png" 
-                                 alt="Tired man sitting at table with head in hand, clock showing sleep symbols (ZZZ), representing sleep disruption and exhaustion" 
-                                 class="img-responsive">
-                        </div>
-                        <p class="h6 mb-4">
-                            Sleep gets lighter and more broken after 50. Blame hormones, night sweats, bathroom trips, or just an overactive mind.
-                        </p>
-                        <p class="h6 mb-4">
-                            Poor sleep doesn't just make you tired; it changes your appetite. It increases ghrelin, which makes you feel hungry. At the same time, it lowers leptin, the hormone that makes you feel full. As a result, you eat more and crave unhealthy foods, even if you aim to eat healthy.
-                        </p>
-                        <div class="action-step p-4 rounded">
-                            <div class="d-flex align-items-start">
-                                <div class="checkmark-circle mr-3 mt-1">
-                                    <span class="text-primary-custom small font-weight-bold">✓</span>
-                                </div>
-                                <div>
-                                    <p class="font-weight-bold mb-2">Action Step:</p>
-                                    <p class="text-muted-custom mb-0">Focus on sleep like a workout. Dark room. Cool temperature. No screens.</p>
-                                </div>
+                <div class="listicle-card">
+                    <div class="d-flex align-items-start mb-4">
+                        <span class="listicle-number">4</span>
+                        <h2 class="listicle-title font-serif-display">Sleep Wrecks Your Hunger Hormones</h2>
+                    </div>
+                    <div class="mb-4">
+                        <img src="/lovable-uploads/41eb540d-a8b7-4a5a-a57d-47b35b825ee4.png" 
+                             alt="Tired man sitting at table with head in hand, clock showing sleep symbols (ZZZ), representing sleep disruption and exhaustion" 
+                             class="listicle-image">
+                    </div>
+                    <p class="listicle-text">
+                        Sleep gets lighter and more broken after 50. Blame hormones, night sweats, bathroom trips, or just an overactive mind.
+                    </p>
+                    <p class="listicle-text">
+                        Poor sleep doesn't just make you tired; it changes your appetite. It increases ghrelin, which makes you feel hungry. At the same time, it lowers leptin, the hormone that makes you feel full. As a result, you eat more and crave unhealthy foods, even if you aim to eat healthy.
+                    </p>
+                    <div class="action-step">
+                        <div class="d-flex align-items-start">
+                            <div class="action-check">
+                                <span class="action-check-icon">✓</span>
+                            </div>
+                            <div>
+                                <p class="font-weight-bold mb-2">Action Step:</p>
+                                <p class="mb-0 text-muted">Focus on sleep like a workout. Dark room. Cool temperature. No screens.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Item 5 -->
-                <div class="card border-primary-left mb-5">
-                    <div class="card-body p-4 p-md-5">
-                        <div class="d-flex align-items-start mb-4">
-                            <div class="number-circle mr-3">5</div>
-                            <h2 class="h3 font-serif-display font-weight-bold mb-0">Your Body Doesn't Handle Sugar Like It Used To</h2>
-                        </div>
-                        <div class="content-image rounded overflow-hidden mb-4">
-                            <img src="/lovable-uploads/42a5913f-1be4-41a0-acbb-891e456790ce.png" 
-                                 alt="Man looking contemplatively at a piece of cake with rising chart in background, representing blood sugar spikes and insulin resistance" 
-                                 class="img-responsive">
-                        </div>
-                        <p class="h6 mb-4">
-                            Your cells become less sensitive to insulin as you age. So carbs that used to fuel you now spike your blood sugar then crash it.
-                        </p>
-                        <p class="h6 mb-4">
-                            You feel wired… then drained. And when that crash hits? Your body screams for fast sugar. That's the roller coaster that keeps weight loss out of reach.
-                        </p>
-                        <div class="action-step p-4 rounded">
-                            <div class="d-flex align-items-start">
-                                <div class="checkmark-circle mr-3 mt-1">
-                                    <span class="text-primary-custom small font-weight-bold">✓</span>
-                                </div>
-                                <div>
-                                    <p class="font-weight-bold mb-2">Action Step:</p>
-                                    <p class="text-muted-custom mb-0">Don't fear carbs; balance them. Pair every carb with protein or fat to keep blood sugar steady.</p>
-                                </div>
+                <div class="listicle-card">
+                    <div class="d-flex align-items-start mb-4">
+                        <span class="listicle-number">5</span>
+                        <h2 class="listicle-title font-serif-display">Your Body Doesn't Handle Sugar Like It Used To</h2>
+                    </div>
+                    <div class="mb-4">
+                        <img src="/lovable-uploads/42a5913f-1be4-41a0-acbb-891e456790ce.png" 
+                             alt="Man looking contemplatively at a piece of cake with rising chart in background, representing blood sugar spikes and insulin resistance" 
+                             class="listicle-image">
+                    </div>
+                    <p class="listicle-text">
+                        Your cells become less sensitive to insulin as you age. So carbs that used to fuel you now spike your blood sugar then crash it.
+                    </p>
+                    <p class="listicle-text">
+                        You feel wired… then drained. And when that crash hits? Your body screams for fast sugar. That's the roller coaster that keeps weight loss out of reach.
+                    </p>
+                    <div class="action-step">
+                        <div class="d-flex align-items-start">
+                            <div class="action-check">
+                                <span class="action-check-icon">✓</span>
+                            </div>
+                            <div>
+                                <p class="font-weight-bold mb-2">Action Step:</p>
+                                <p class="mb-0 text-muted">Don't fear carbs; balance them. Pair every carb with protein or fat to keep blood sugar steady.</p>
                             </div>
                         </div>
                     </div>
@@ -394,66 +595,126 @@
             </div>
 
             <!-- CTA Section -->
-            <div class="card cta-gradient mb-5">
-                <div class="card-body p-4 p-md-5 text-center">
+            <div class="cta-card p-4 p-md-5 mb-5">
+                <div class="cta-overlay"></div>
+                <div class="position-relative text-center">
                     <div class="mb-4">
-                        <span class="badge badge-primary mb-3">⚡ Free 30-Second Assessment</span>
-                        <h2 class="h2 font-serif-display font-weight-bold mb-3">
+                        <span class="cta-badge">
+                            ⚡ Free 30-Second Assessment
+                        </span>
+                        <h2 class="cta-title font-serif-display">
                             Ready to Turn Your Fat-Burning Switch Back On?
                         </h2>
-                        <p class="lead text-muted-custom mx-auto" style="max-width: 600px;">
+                        <p class="cta-description">
                             Discover which hormones are sabotaging your weight loss and get a personalized action plan to fix them.
                         </p>
                     </div>
                     
                     <div class="d-flex flex-column flex-md-row align-items-center justify-content-center mb-4">
                         <div class="d-flex align-items-center mb-2 mb-md-0 mr-md-4">
-                            <div class="status-dot mr-2"></div>
-                            <small class="text-muted-custom">Science-backed results</small>
+                            <div class="feature-dot"></div>
+                            <small class="text-muted">Science-backed results</small>
                         </div>
                         <div class="d-flex align-items-center mb-2 mb-md-0 mr-md-4">
-                            <div class="status-dot mr-2"></div>
-                            <small class="text-muted-custom">Personalized recommendations</small>
+                            <div class="feature-dot"></div>
+                            <small class="text-muted">Personalized recommendations</small>
                         </div>
-                        <div class="d-flex align-items-center">
-                            <div class="status-dot mr-2"></div>
-                            <small class="text-muted-custom">Takes just 30 seconds</small>
+                        <div class="d-flex align-items-center mb-2 mb-md-0">
+                            <div class="feature-dot"></div>
+                            <small class="text-muted">Takes just 30 seconds</small>
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <button class="btn btn-primary-custom btn-lg px-5 py-3 font-weight-bold">
+                        <button class="cta-button" onclick="handleQuizStart()">
                             Take the Free Quiz Now →
                         </button>
                     </div>
-                    <small class="text-muted-custom">
+                    <p class="small text-muted mb-0">
                         Join 50,000+ people who've discovered their hormone solution
-                    </small>
+                    </p>
                 </div>
             </div>
         </article>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-light border-top py-4">
-        <div class="container text-center">
-            <small class="text-muted-custom">&copy; 2025 The Health Times. Educational content for informational purposes.</small>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text mb-0">
+                &copy; 2025 The Health Times. Educational content for informational purposes.
+            </p>
         </div>
     </footer>
 
     <!-- Sticky CTA -->
-    <div class="sticky-cta d-md-none">
-        <div class="container">
-            <div class="text-center">
-                <button class="btn btn-primary-custom btn-block font-weight-bold">
-                    Take the Free Quiz Now →
+    <div class="sticky-cta" id="stickyCTA">
+        <div class="sticky-cta-content">
+            <div class="sticky-cta-text">
+                <h3>Ready to Turn Your Fat-Burning Switch Back On?</h3>
+                <p>Take our free 30-second hormone assessment</p>
+            </div>
+            <div class="sticky-cta-actions">
+                <button class="sticky-cta-button" onclick="handleQuizStart()">
+                    Take Quiz Now
+                </button>
+                <button class="sticky-cta-dismiss" onclick="dismissStickyCTA()">
+                    ×
                 </button>
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap 4.5 JS -->
+    <!-- Bootstrap 4.5 JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Sticky CTA functionality
+        let isVisible = false;
+        let isDismissed = false;
+
+        function handleScroll() {
+            if (isDismissed) return;
+
+            const scrolled = window.pageYOffset;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            const scrollPercentage = (scrolled / (documentHeight - windowHeight)) * 100;
+
+            const shouldShow = scrollPercentage > 25;
+            
+            if (shouldShow !== isVisible) {
+                isVisible = shouldShow;
+                const stickyCTA = document.getElementById('stickyCTA');
+                if (stickyCTA) {
+                    stickyCTA.classList.toggle('visible', isVisible);
+                }
+            }
+        }
+
+        function dismissStickyCTA() {
+            isDismissed = true;
+            const stickyCTA = document.getElementById('stickyCTA');
+            if (stickyCTA) {
+                stickyCTA.classList.remove('visible');
+            }
+        }
+
+        function handleQuizStart() {
+            // Add your quiz logic here
+            console.log('Quiz started!');
+            alert('Quiz functionality would be implemented here.');
+        }
+
+        // Event listeners
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleScroll);
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            handleScroll();
+        });
+    </script>
 </body>
 </html>
