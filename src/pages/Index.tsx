@@ -11,6 +11,7 @@ const Index = () => {
           <a href="/blog" className="story-link text-primary block">Pharmacist Reveals $39.99 Alternative to Costly GLP-1 Medications</a>
           <a href="/falls-listicle" className="story-link text-primary block">5 Reasons Why You're Still Gaining Weight After 40</a>
           <a href="/patched" className="story-link text-primary block">Military Secret That Delivers 100% of Nutrients (New Advertorial Style)</a>
+          <a href="/glp1-shortage" className="story-link text-primary block">GLP-1 Shortage Page</a>
           
         </div>
       </article>
