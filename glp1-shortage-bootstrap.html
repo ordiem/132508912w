@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREAKING: GLP-1 SHORTAGE HITS CRISIS LEVEL — What Smart Patients Are Doing Instead</title>
+    
+    <!-- Bootstrap 4.5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* CSS Variables for Design System */
+        :root {
+            --primary-hue: 221;
+            --primary-saturation: 83%;
+            --primary-lightness: 53%;
+            --primary: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness));
+            --primary-foreground: hsl(210, 40%, 98%);
+            
+            --accent-hue: 210;
+            --accent-saturation: 40%;
+            --accent-lightness: 98%;
+            --accent: hsl(var(--accent-hue), var(--accent-saturation), var(--accent-lightness));
+            --accent-foreground: hsl(222.2, 84%, 4.9%);
+            
+            --background: hsl(0, 0%, 100%);
+            --foreground: hsl(222.2, 84%, 4.9%);
+            
+            --muted: hsl(210, 40%, 96%);
+            --muted-foreground: hsl(215.4, 16.3%, 46.9%);
+            
+            --card: hsl(0, 0%, 100%);
+            --card-foreground: hsl(222.2, 84%, 4.9%);
+            
+            --border: hsl(214.3, 31.8%, 91.4%);
+            
+            --gradient-primary: linear-gradient(135deg, var(--primary), hsl(var(--primary-hue), var(--primary-saturation), 65%));
+            --gradient-subtle: linear-gradient(180deg, var(--background), var(--muted));
+            
+            --shadow-elegant: 0 10px 30px -10px hsla(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), 0.3);
+            --shadow-glow: 0 0 40px hsla(var(--primary-hue), var(--primary-saturation), 75%, 0.4);
+            
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Dark mode variables */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background: hsl(222.2, 84%, 4.9%);
+                --foreground: hsl(210, 40%, 98%);
+                --card: hsl(222.2, 84%, 4.9%);
+                --card-foreground: hsl(210, 40%, 98%);
+                --muted: hsl(217.2, 32.6%, 17.5%);
+                --muted-foreground: hsl(215, 20.2%, 65.1%);
+                --border: hsl(217.2, 32.6%, 17.5%);
+                --accent: hsl(217.2, 32.6%, 17.5%);
+                --accent-foreground: hsl(210, 40%, 98%);
+            }
+        }
+
+        /* Base styles */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--foreground);
+            background-color: var(--background);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Typography */
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .font-body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+
+        /* Sticky Header */
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 40;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .site-title {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .advertorial-badge {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            background: rgba(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.1);
+            color: var(--muted-foreground);
+            border-radius: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 500;
+            opacity: 0.5;
+        }
+
+        /* Hero Image */
+        .hero-image {
+            position: relative;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        @media (min-width: 768px) {
+            .hero-image img {
+                height: 400px;
+            }
+        }
+
+        .hero-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(255, 255, 255, 0.8) 0%, transparent 50%, transparent 100%);
+        }
+
+        /* Typography Styles */
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 4rem;
+            line-height: 3rem;
+            margin: 0.5rem 0.5rem 0 0;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Gradient Cards */
+        .gradient-card {
+            background: linear-gradient(135deg, rgba(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), 0.05) 0%, rgba(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.1) 100%);
+            border: 1px solid rgba(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), 0.2);
+            border-radius: 0.5rem;
+            padding: 2rem;
+        }
+
+        .muted-gradient-card {
+            background: linear-gradient(135deg, rgba(var(--muted-hue, 210), 40%, 96%, 0.3) 0%, rgba(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.1) 100%);
+            border: 1px solid var(--muted);
+            border-radius: 0.5rem;
+            padding: 2rem;
+        }
+
+        /* Quote Styles */
+        .blockquote-accent {
+            background: rgba(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.1);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: 0 0.5rem 0.5rem 0;
+            margin: 2rem 0;
+        }
+
+        /* Ingredient Cards */
+        .ingredient-card {
+            background: linear-gradient(135deg, var(--card) 0%, rgba(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.05) 100%);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            transition: var(--transition-smooth);
+        }
+
+        .ingredient-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-elegant);
+        }
+
+        .ingredient-number {
+            width: 2rem;
+            height: 2rem;
+            background: var(--primary);
+            color: var(--primary-foreground);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        /* No-Feature Icons */
+        .no-feature-icon {
+            width: 3rem;
+            height: 3rem;
+            background: var(--accent);
+            color: var(--accent-foreground);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+
+        /* Statistics Cards */
+        .stats-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Timeline Items */
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.05);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Buttons */
+        .btn-primary-custom {
+            background: var(--primary);
+            color: var(--primary-foreground);
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: var(--transition-smooth);
+            font-size: 1rem;
+        }
+
+        .btn-primary-custom:hover {
+            background: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--primary-lightness) - 5%));
+            color: var(--primary-foreground);
+            text-decoration: none;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary-custom {
+            background: var(--accent);
+            color: var(--accent-foreground);
+            border: 1px solid var(--border);
+            padding: 0.75rem 2rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: var(--transition-smooth);
+        }
+
+        .btn-secondary-custom:hover {
+            background: var(--muted);
+            color: var(--foreground);
+            text-decoration: none;
+        }
+
+        /* Sticky CTA */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--primary);
+            color: var(--primary-foreground);
+            padding: 1rem;
+            z-index: 50;
+            box-shadow: var(--shadow-elegant);
+            display: none;
+        }
+
+        .sticky-cta.show {
+            display: block;
+            animation: slideUp 0.3s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        /* Disclaimer */
+        .disclaimer {
+            background: rgba(var(--muted-hue, 210), 40%, 96%, 0.2);
+            border: 1px solid var(--muted);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            font-size: 0.875rem;
+            color: var(--muted-foreground);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.25rem;
+            }
+            
+            .ingredient-card {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        /* Animation utilities */
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Check icon style */
+        .check-icon {
+            color: var(--primary);
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+        <div class="container">
+            <div class="row align-items-center py-3">
+                <div class="col">
+                    <div class="d-flex align-items-center">
+                        <h1 class="site-title mb-0 mr-3">UNITED NEWS</h1>
+                        <span class="advertorial-badge">Advertorial</span>
+                    </div>
+                </div>
+                <div class="col-auto d-md-none">
+                    <button class="btn btn-link p-2">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <article class="fade-in" style="max-width: 800px; margin: 0 auto;">
+            <!-- Hero Section -->
+            <div class="mb-5">
+                <!-- Hero Image -->
+                <div class="hero-image">
+                    <img src="/lovable-uploads/f29e0bcc-1fcc-414d-a3a0-af0869273cff.png" alt="Pharmacy scene showing concerned patients and pharmacist discussing GLP-1 medication shortage with 'out of stock' sign visible, illustrating the current crisis in medication availability" class="img-fluid">
+                </div>
+                
+                <div class="text-uppercase text-muted mb-3" style="font-size: 0.75rem; letter-spacing: 0.1em;">
+                    BREAKING NEWS • HEALTH CRISIS • PHARMACEUTICAL SHORTAGE
+                </div>
+                
+                <h1 class="font-display font-weight-bold mb-4" style="font-size: 2.5rem; line-height: 1.2;">
+                    BREAKING: GLP-1 SHORTAGE HITS CRISIS LEVEL — What Smart Patients Are Doing Instead
+                </h1>
+                
+                <div class="hero-subtitle text-muted mb-4" style="font-size: 1.5rem;">
+                    A quiet crisis is unfolding in pharmacies across America. Prescriptions are being written—but not filled.
+                </div>
+            </div>
+
+            <!-- Opening Section -->
+            <section class="mb-5">
+                <p class="drop-cap" style="font-size: 1.125rem;">
+                    The cause? A critical shortage of GLP-1 medications that millions relied on to support appetite regulation and metabolic health.
+                </p>
+                
+                <p class="mb-4" style="font-size: 1.125rem;">
+                    Demand for these injectables—once the domain of specialists—has surged. Now, general practitioners, weight clinics, and even telehealth apps prescribe them by the thousands each day.
+                </p>
+
+                <p class="mb-4" style="font-size: 1.125rem;">
+                    And the system is buckling.
+                </p>
+
+                <p class="mb-4" style="font-size: 1.125rem;">
+                    Patients with valid prescriptions are being turned away. No alternatives. No timelines. Just silence.
+                </p>
+
+                <p class="font-weight-bold text-primary mb-4" style="font-size: 1.25rem;">
+                    The promise of GLP-1 support has run headfirst into pharmaceutical reality.
+                </p>
+            </section>
+
+            <!-- Patient Story -->
+            <section class="mb-5">
+                <h2 class="font-display font-weight-bold mb-4" style="font-size: 2.5rem;">
+                    "I Had to Cut My Dose in Half… Then Again… Then I Gave Up."
+                </h2>
+
+                <div class="muted-gradient-card mb-4">
+                    <p class="mb-4" style="font-size: 1.125rem;">
+                        Jennifer Fields, 39, didn't expect to ration her medication like it was the last can of soup in a storm shelter.
+                    </p>
+
+                    <blockquote class="font-italic mb-4" style="font-size: 1.25rem;">
+                        "I went from feeling in control to feeling like I was free-falling."
+                    </blockquote>
+
+                    <p class="mb-4" style="font-size: 1.125rem;">
+                        First, the pharmacy delays. Then, her insurance stopped covering refills. With supply dwindling, she stretched a month's dose across three.
+                    </p>
+
+                    <p style="font-size: 1.125rem;">
+                        She's not alone.
+                    </p>
+                </div>
+
+                <p class="mb-4" style="font-size: 1.125rem;">
+                    Thousands of patients now face skyrocketing out-of-pocket costs, insurance denials, and the return of symptoms they thought they'd left behind.
+                </p>
+
+                <p class="mb-4" style="font-size: 1.125rem;">
+                    Some fly to other states in search of supply. Others turn to grey markets—risky at best, dangerous at worst.
+                </p>
+
+                <div class="blockquote-accent">
+                    <p class="font-italic mb-2" style="font-size: 1.25rem;">
+                        "Patients describe a creeping anxiety—like something vital was taken from them."
+                    </p>
+                    <cite class="text-muted">— Dr. Corey Nguyen, Behavioral Specialist</cite>
+                </div>
+
+                <p style="font-size: 1.125rem;">
+                    For many, the medication was more than a tool—it was a lifeline. And now, it's gone.
+                </p>
+            </section>
+
+            <!-- Why the Shortage -->
+            <section class="mb-5">
+                <h2 class="font-display font-weight-bold mb-4" style="font-size: 2.5rem;">Why the Shortage Happened and Why It Won't End Soon</h2>
+
+                <p class="mb-4" style="font-size: 1.125rem;">
+                    Pharmaceutical insiders call it "a perfect storm."
+                </p>
+
+                <p class="mb-4" style="font-size: 1.125rem;">
+                    When demand for GLP-1 injectables tripled in under 18 months, manufacturers couldn't keep up. Production of synthetic peptides is precise, expensive, and time-consuming.
+                </p>
+
+                <div class="stats-card mb-4">
+                    <p class="font-weight-bold text-primary mb-3" style="font-size: 1.25rem;">
+                        You can't make these drugs in a garage.
+                    </p>
+                    <p style="font-size: 1.125rem;">
+                        Add global shipping delays, raw material bottlenecks, and ambiguous FDA guidance on off-label use, and the result is a supply chain so fragile, it snapped.
+                    </p>
+                </div>
+
+                <p class="mb-4" style="font-size: 1.125rem;">
+                    Even patients willing to pay full price can't get access.
+                </p>
+
+                <p style="font-size: 1.125rem;">
+                    And those who do? Often told it's their last refill for the foreseeable future.
+                </p>
+
+                <!-- Manufacturing Crisis Image -->
+                <div class="my-4 rounded border" style="border-color: rgba(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), 0.2) !important; border-width: 2px;">
+                    <img src="/lovable-uploads/f1a4b5c6-25ea-4775-b3ea-8a7427d5bfca.png" alt="Pharmaceutical manufacturing facility with workers processing medication bottles on conveyor belts, illustrating the complex supply chain challenges causing GLP-1 shortages" class="img-fluid">
+                </div>
+            </section>
+
+            <!-- Natural GLP-1 Science -->
+            <section class="mb-5">
+                <h2 class="font-display font-weight-bold mb-4" style="font-size: 2.5rem;">
+                    What Science Says About Natural GLP-1 Support
+                </h2>
+
+                <p class="mb-4" style="font-size: 1.125rem;">
+                    Here's what most people don't know: GLP-1 is not a drug. It's a natural hormone your body produces after eating.
+                </p>
+
+                <div class="gradient-card mb-4">
+                    <p class="font-weight-bold text-primary mb-4" style="font-size: 1.25rem;">
+                        Its role? Signal fullness. Reduce appetite. Support metabolism.
+                    </p>
+                    
+                    <div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-check-circle check-icon"></i>
+                            <span>Pharmaceuticals mimic GLP-1</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle check-icon"></i>
+                            <span>But we may be able to support our body's own GLP-1 production—naturally</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="mb-4" style="font-size: 1.125rem;">
+                    A 2023 clinical review in the Journal of Metabolic Health highlighted four plant-based compounds that may support GLP-1 pathways*:
+                </p>
+
+                <div class="row mb-4">
+                    <div class="col-md-6 mb-3">
+                        <div class="ingredient-card h-100">
+                            <div class="d-flex align-items-start">
+                                <div class="ingredient-number mr-3 mt-1">1</div>
+                                <div>
+                                    <h4 class="font-display font-weight-bold mb-2">Berberine</h4>
+                                    <p class="text-muted mb-0">An alkaloid shown to support healthy glucose metabolism.*</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="ingredient-card h-100">
+                            <div class="d-flex align-items-start">
+                                <div class="ingredient-number mr-3 mt-1">2</div>
+                                <div>
+                                    <h4 class="font-display font-weight-bold mb-2">Lemon Fruit Extract</h4>
+                                    <p class="text-muted mb-0">Rich in polyphenols that may assist digestive signaling.*</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="ingredient-card h-100">
+                            <div class="d-flex align-items-start">
+                                <div class="ingredient-number mr-3 mt-1">3</div>
+                                <div>
+                                    <h4 class="font-display font-weight-bold mb-2">Saffron Extract</h4>
+                                    <p class="text-muted mb-0">Studied for its potential to reduce snacking and emotional eating.*</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="ingredient-card h-100">
+                            <div class="d-flex align-items-start">
+                                <div class="ingredient-number mr-3 mt-1">4</div>
+                                <div>
+                                    <h4 class="font-display font-weight-bold mb-2">Red Orange Extract</h4>
+                                    <p class="text-muted mb-0">Known to support metabolic balance and oxidative health.*</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="mb-4" style="font-size: 1.125rem;">
+                    Dr. Heather Mitchell, a former NIH nutritional biochemist, studied these ingredients—but saw one problem: oral supplements often lose potency in the digestive tract.
+                </p>
+
+                <p class="font-weight-bold text-primary" style="font-size: 1.25rem;">
+                    Her solution? Deliver them through the skin.
+                </p>
+
+                <!-- Natural Solution Image -->
+                <div class="my-4 rounded border" style="border-color: rgba(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), 0.2) !important; border-width: 2px;">
+                    <img src="/lovable-uploads/4df81861-6916-4ccd-85e3-907b4123d70e.png" alt="Comparison diagram showing GLP-1 patches vs pills and supplements - demonstrating transdermal delivery with 8-hour sustained release through skin absorption" class="img-fluid">
+                </div>
+            </section>
+
+            <!-- The Patch Solution -->
+            <section class="mb-5">
+                <h2 class="font-display font-weight-bold mb-4" style="font-size: 2.5rem;">
+                    The GLP-1 Patch: A Smarter Way to Support Your Body's Natural Appetite Signals
+                </h2>
+
+                <p class="mb-4" style="font-size: 1.125rem;">
+                    After two years of formulation and testing, Dr. Mitchell and her team developed a transdermal patch—a topical delivery system that bypasses digestion and offers 8 hours of steady, controlled release.
+                </p>
+
+                <div class="gradient-card mb-4">
+                    <p class="font-weight-bold text-primary text-center mb-4" style="font-size: 2rem;">
+                        It's called the GLP-1 Patch.
+                    </p>
+
+                    <p class="mb-4" style="font-size: 1.125rem;">
+                        Unlike pills or powders, this patch is discreet, adhesive, and effortless. Peel. Apply. Go about your day.
+                    </p>
+
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-3">
+                            <div class="no-feature-icon">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <p class="mb-0">No injections</p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="no-feature-icon">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <p class="mb-0">No waiting lists</p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="no-feature-icon">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <p class="mb-0">No digestive distress</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="font-size: 1.125rem;">
+                    Just a patch.
+                </p>
+            </section>
+
+            <!-- Results Section -->
+            <section class="mb-5">
+                <h3 class="font-display font-weight-bold mb-4" style="font-size: 2rem;">
+                    What Early Users Reported
+                </h3>
+
+                <p class="mb-4" style="font-size: 1.125rem;">
+                    Here's what early users reported in a controlled consumer trial:
+                </p>
+
+                <div class="stats-card mb-4">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <div class="stat-number">69%</div>
+                            <div class="text-muted">decrease in hunger*</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="stat-number">55%</div>
+                            <div class="text-muted">fewer snacking episodes*</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="stat-number">47.5%</div>
+                            <div class="text-muted">reduction in overall food intake*</div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="mb-4" style="font-size: 1.125rem;">
+                    And the benefits build over time:
+                </p>
+
+                <div class="mb-4">
+                    <div class="timeline-item">
+                        <div class="font-weight-bold text-primary">Week 1–2:</div>
+                        <div>Noticeable appetite reduction*</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="font-weight-bold text-primary">Week 3–4:</div>
+                        <div>Enhanced natural GLP-1 support*</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="font-weight-bold text-primary">Week 5–8:</div>
+                        <div>Improved metabolism support*</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="font-weight-bold text-primary">Week 9–12:</div>
+                        <div>Visible improvements in body composition*</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- What To Do Section -->
+            <section class="mb-5">
+                <h2 class="font-display font-weight-bold mb-4" style="font-size: 2.5rem;">
+                    What To Do If You've Been Affected by the GLP-1 Shortage
+                </h2>
+
+                <p class="mb-4" style="font-size: 1.125rem;">
+                    You have more options than you think.
+                </p>
+
+                <div class="mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <i class="fas fa-check-circle check-icon mt-1"></i>
+                        <span>Talk to your doctor about supporting your GLP-1 levels naturally</span>
+                    </div>
+                    <div class="d-flex align-items-start mb-3">
+                        <i class="fas fa-check-circle check-icon mt-1"></i>
+                        <span>Avoid black market medications. The risks outweigh the rewards</span>
+                    </div>
+                    <div class="d-flex align-items-start mb-3">
+                        <i class="fas fa-check-circle check-icon mt-1"></i>
+                        <span>Explore clinical data behind natural appetite-regulating compounds*</span>
+                    </div>
+                    <div class="d-flex align-items-start mb-3">
+                        <i class="fas fa-check-circle check-icon mt-1"></i>
+                        <span>Consider alternatives that use advanced delivery systems</span>
+                    </div>
+                    <div class="d-flex align-items-start mb-3">
+                        <i class="fas fa-check-circle check-icon mt-1"></i>
+                        <span>Stay informed—this crisis is evolving by the week</span>
+                    </div>
+                </div>
+
+                <p style="font-size: 1.125rem;">
+                    For thousands, the GLP-1 Patch has become a compelling part of their daily appetite support routine.
+                </p>
+            </section>
+
+            <!-- Pricing Section -->
+            <section class="mb-5">
+                <h2 class="font-display font-weight-bold mb-4" style="font-size: 2.5rem;">
+                    The Logical Next Step
+                </h2>
+
+                <p class="mb-4" style="font-size: 1.125rem;">
+                    Pharmaceutical pipelines are years away from catching up.
+                </p>
+
+                <p class="mb-4" style="font-size: 1.125rem;">
+                    If you're ready to support your body's natural GLP-1 activity*—without relying on an unstable supply chain—the GLP-1 Patch offers a science-backed, non-invasive option.
+                </p>
+
+                <div class="gradient-card mb-4">
+                    <div class="text-center">
+                        <p class="font-weight-bold text-primary mb-3" style="font-size: 1.25rem;">
+                            Results Guarantee
+                        </p>
+                        <p class="mb-4" style="font-size: 1.125rem;">
+                            If you don't lose 30 pounds in 90 days while using the GLP-1 Patch as directed—it's free.
+                        </p>
+                        <p>
+                            No fine print. No hoops. If you're not satisfied with your results, you'll get a full refund. Simple as that.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="#" class="btn-primary-custom d-inline-block mb-3" style="width: 100%; max-width: 400px; padding: 1rem 2rem; font-size: 1.125rem;">
+                        Learn More and Order the GLP-1 Patch Today
+                    </a>
+                    <p class="text-muted">
+                        Available now. No prescription required.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Disclaimer -->
+            <div class="disclaimer">
+                <p class="mb-2">
+                    *These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary.
+                </p>
+                <p class="mb-0">
+                    **Results from consumer trial. Individual results may vary.
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <!-- Sticky CTA -->
+    <div id="stickyCTA" class="sticky-cta">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="font-weight-bold">Ready to try the GLP-1 Patch?</div>
+                    <div class="small opacity-75 d-none d-md-block">Get them before they are sold out</div>
+                </div>
+                <div class="col-auto">
+                    <a href="#" class="btn-secondary-custom">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 4.5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Sticky CTA functionality
+        let stickyCTA = document.getElementById('stickyCTA');
+        let isStickyCTAVisible = false;
+
+        function handleScroll() {
+            const scrolled = window.pageYOffset;
+            const height = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrolled / height) * 100;
+            
+            if (scrollPercent > 40 && !isStickyCTAVisible) {
+                stickyCTA.classList.add('show');
+                isStickyCTAVisible = true;
+            } else if (scrollPercent <= 40 && isStickyCTAVisible) {
+                stickyCTA.classList.remove('show');
+                isStickyCTAVisible = false;
+            }
+        }
+
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleScroll);
+
+        // Handle CTA click
+        document.querySelectorAll('.btn-primary-custom, .btn-secondary-custom').forEach(function(button) {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Add your CTA handling logic here
+                console.log('CTA clicked');
+            });
+        });
+    </script>
+</body>
+</html>
