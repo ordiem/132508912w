@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patched - Natural GLP-1 Alternative</title>
+    
+    <!-- Bootstrap 4.5 CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* CSS Variables for Design System */
+        :root {
+            --primary: 217 91% 60%;
+            --primary-foreground: 222 84% 4.9%;
+            --secondary: 210 40% 98%;
+            --secondary-foreground: 222 84% 4.9%;
+            --muted: 210 40% 96%;
+            --muted-foreground: 215 16% 47%;
+            --accent: 217 91% 60%;
+            --accent-foreground: 222 84% 4.9%;
+            --destructive: 0 84% 60%;
+            --destructive-foreground: 210 40% 98%;
+            --border: 214 32% 91%;
+            --input: 214 32% 91%;
+            --ring: 217 91% 60%;
+            --background: 0 0% 100%;
+            --foreground: 222 84% 4.9%;
+            --card: 0 0% 100%;
+            --card-foreground: 222 84% 4.9%;
+            --popover: 0 0% 100%;
+            --popover-foreground: 222 84% 4.9%;
+        }
+
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: hsl(var(--foreground));
+            background-color: hsl(var(--background));
+        }
+
+        /* Header Styles */
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 40;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid hsl(var(--border));
+        }
+
+        .logo-text {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: hsl(var(--primary));
+        }
+
+        .advertorial-badge {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            background-color: rgba(59, 130, 246, 0.1);
+            color: rgba(107, 114, 128, 0.5);
+            border-radius: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 500;
+            opacity: 0.5;
+        }
+
+        /* Hero Section */
+        .hero-image {
+            border-radius: 0.5rem;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: right;
+        }
+
+        @media (min-width: 768px) {
+            .hero-image img {
+                height: 350px;
+            }
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(255, 255, 255, 0.8), transparent, transparent);
+        }
+
+        .hero-title {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: hsl(var(--foreground));
+        }
+
+        @media (min-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-title {
+                font-size: 3rem;
+            }
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: hsl(var(--muted-foreground));
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+
+        @media (min-width: 768px) {
+            .hero-subtitle {
+                font-size: 1.5rem;
+            }
+        }
+
+        .category-text {
+            font-size: 0.75rem;
+            color: hsl(var(--muted-foreground));
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: hsl(var(--foreground));
+            margin-bottom: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        .content-text {
+            font-size: 1.125rem;
+            line-height: 1.75;
+            color: hsl(var(--foreground));
+            margin-bottom: 1.5rem;
+        }
+
+        .drop-cap {
+            font-size: 1.125rem;
+            line-height: 1.75;
+            color: hsl(var(--foreground));
+        }
+
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 4rem;
+            line-height: 3rem;
+            padding-right: 0.5rem;
+            margin-top: 0.25rem;
+            color: hsl(var(--primary));
+            font-weight: 700;
+        }
+
+        /* Feature Cards */
+        .feature-card {
+            background: linear-gradient(to right, rgba(59, 130, 246, 0.05), rgba(59, 130, 246, 0.1));
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 0.5rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature-list-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .check-icon {
+            width: 1.25rem;
+            height: 1.25rem;
+            color: hsl(var(--accent));
+        }
+
+        /* Highlight Boxes */
+        .highlight-box {
+            background: linear-gradient(to right, hsl(var(--muted)), rgba(59, 130, 246, 0.1));
+            border: 1px solid hsl(var(--muted));
+            border-radius: 0.5rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .highlight-primary {
+            background: linear-gradient(to right, rgba(59, 130, 246, 0.05), rgba(59, 130, 246, 0.1));
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 0.5rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .quote-box {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid hsl(var(--accent));
+            padding: 1.5rem;
+            border-radius: 0 0.5rem 0.5rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .quote-text {
+            font-size: 1.25rem;
+            font-style: italic;
+            color: hsl(var(--foreground));
+            line-height: 1.75;
+            margin-bottom: 0.5rem;
+        }
+
+        .quote-author {
+            color: hsl(var(--muted-foreground));
+            margin-top: 0.5rem;
+            display: block;
+        }
+
+        /* Ingredient Cards */
+        .ingredient-card {
+            background: linear-gradient(to right, hsl(var(--card)), rgba(59, 130, 246, 0.05));
+            border: 1px solid hsl(var(--border));
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s ease;
+        }
+
+        .ingredient-card:hover {
+            transform: scale(1.02);
+        }
+
+        .ingredient-icon {
+            width: 3rem;
+            height: 3rem;
+            background: hsl(var(--primary));
+            color: hsl(var(--primary-foreground));
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .ingredient-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: hsl(var(--foreground));
+            margin-bottom: 0.75rem;
+        }
+
+        .ingredient-description {
+            color: hsl(var(--muted-foreground));
+            line-height: 1.75;
+        }
+
+        /* Results Cards */
+        .results-card {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(59, 130, 246, 0.1));
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            height: 100%;
+        }
+
+        .results-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: hsl(var(--primary));
+            margin-bottom: 1rem;
+        }
+
+        .results-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .results-icon {
+            width: 1rem;
+            height: 1rem;
+            color: hsl(var(--accent));
+        }
+
+        .results-text {
+            font-size: 0.875rem;
+            color: hsl(var(--foreground));
+        }
+
+        /* Problem Cards */
+        .problem-card {
+            background: linear-gradient(to right, hsl(var(--card)), rgba(59, 130, 246, 0.05));
+            border: 1px solid hsl(var(--border));
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .problem-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+
+        .problem-title {
+            font-weight: 700;
+            font-size: 1.125rem;
+            color: hsl(var(--foreground));
+            margin-bottom: 0.5rem;
+        }
+
+        .problem-description {
+            color: hsl(var(--muted-foreground));
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        /* No Benefits Icons */
+        .no-benefit-icon {
+            width: 3rem;
+            height: 3rem;
+            background: hsl(var(--accent));
+            color: hsl(var(--accent-foreground));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.75rem auto;
+        }
+
+        /* Qualification Cards */
+        .qualification-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            background: hsl(var(--card));
+            border: 1px solid hsl(var(--border));
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Steps */
+        .step-number {
+            width: 2rem;
+            height: 2rem;
+            background: hsl(var(--primary));
+            color: hsl(var(--primary-foreground));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.875rem;
+        }
+
+        /* Buttons */
+        .btn-primary-custom {
+            background: hsl(var(--primary));
+            color: hsl(var(--primary-foreground));
+            border: none;
+            padding: 0.75rem 2rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            border-radius: 0.375rem;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary-custom:hover {
+            background: hsl(var(--primary) / 0.9);
+            color: hsl(var(--primary-foreground));
+            text-decoration: none;
+            transform: scale(1.02);
+        }
+
+        .btn-lg-custom {
+            padding: 1rem 3rem;
+            font-size: 1.25rem;
+        }
+
+        /* Image Captions */
+        .image-caption {
+            padding: 1rem;
+            background: rgba(156, 163, 175, 0.2);
+            font-size: 0.875rem;
+            color: hsl(var(--muted-foreground));
+            font-style: italic;
+            text-align: center;
+        }
+
+        /* Sticky CTA */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border-top: 1px solid hsl(var(--border));
+            box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+            padding: 0.75rem 1rem;
+            display: none;
+        }
+
+        .sticky-cta.show {
+            display: block;
+        }
+
+        .sticky-cta-title {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: hsl(var(--foreground));
+        }
+
+        .sticky-cta-subtitle {
+            font-size: 0.75rem;
+            color: hsl(var(--muted-foreground));
+        }
+
+        .btn-sm-custom {
+            padding: 0.5rem 1.5rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .btn-close {
+            background: transparent;
+            border: none;
+            padding: 0.5rem;
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.25rem;
+        }
+
+        .btn-close:hover {
+            background: hsl(var(--muted));
+        }
+
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            background: none;
+            border: none;
+            padding: 0.5rem;
+        }
+
+        .hamburger {
+            width: 1.25rem;
+            height: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .hamburger span {
+            width: 100%;
+            height: 2px;
+            background: hsl(var(--foreground));
+        }
+
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 1.75rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.125rem;
+            }
+            
+            .section-title {
+                font-size: 1.75rem;
+            }
+            
+            .content-text {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-header">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between py-3">
+                <div class="d-flex align-items-center">
+                    <h1 class="logo-text mb-0 mr-3">50&Beyond</h1>
+                    <span class="advertorial-badge">Advertorial</span>
+                </div>
+                <button class="mobile-menu-btn d-md-none">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-4">
+        <article class="fade-in">
+            <!-- Hero Section -->
+            <section class="content-section">
+                <!-- Hero Image -->
+                <div class="hero-image">
+                    <img src="/lovable-uploads/5fd12bde-144d-44a8-bf22-340cdae61a4d.png" 
+                         alt="Confident woman in her 50s representing natural health and wellness empowerment">
+                    <div class="hero-overlay"></div>
+                </div>
+                
+                <div class="category-text">
+                    HEALTH • WOMEN'S WELLNESS • BREAKTHROUGH RESEARCH
+                </div>
+                
+                <h1 class="hero-title">
+                    The Natural GLP-1 Alternative That Requires No Injections
+                </h1>
+                
+                <div class="hero-subtitle">
+                    An 80-Year-Old Military Invention Is Helping Women Over 45 Control Cravings, Boost Energy, and Reignite Fat Loss. Without Pills, Needles, or Side Effects
+                </div>
+            </section>
+
+            <!-- Opening Hook -->
+            <section class="content-section">
+                <p class="drop-cap content-text">
+                    If you're a woman over 45 and struggling with stubborn weight, blood sugar swings, or relentless food cravings... you may be missing the one thing that matters most: <span style="font-weight: 700; color: hsl(var(--primary));">absorption</span>.
+                </p>
+                
+                <p class="content-text">
+                    You see, it's not just about what you take. It's about what your body can actually use.
+                </p>
+
+                <p class="content-text">
+                    And for millions of women, especially after age 45, that's where everything starts to go wrong.
+                </p>
+            </section>
+
+            <!-- GLP-1 Hormone Section -->
+            <section class="content-section">
+                <h2 class="section-title">
+                    The Hidden Hormone Behind Your Hunger
+                </h2>
+
+                <p class="content-text">
+                    You may not have heard of it, but GLP-1 is the hormone that governs nearly every aspect of your metabolism.
+                </p>
+
+                <div class="feature-card">
+                    <div class="feature-list-item">
+                        <i class="fas fa-check-circle check-icon"></i>
+                        <span>It tells your brain when you're full</span>
+                    </div>
+                    <div class="feature-list-item">
+                        <i class="fas fa-check-circle check-icon"></i>
+                        <span>It regulates how quickly your stomach empties</span>
+                    </div>
+                    <div class="feature-list-item">
+                        <i class="fas fa-check-circle check-icon"></i>
+                        <span>It controls insulin, blood sugar, and how your body stores fat</span>
+                    </div>
+                </div>
+
+                <p class="content-text">
+                    GLP-1 is so effective, drug companies have built billion-dollar weight loss brands by synthetically mimicking it.
+                </p>
+
+                <p class="content-text">
+                    But there's a catch.
+                </p>
+
+                <p class="content-text">
+                    Those drugs are expensive. They require injections. And they often come with serious side effects.
+                </p>
+
+                <p class="content-text" style="font-size: 1.25rem; font-weight: 700; color: hsl(var(--primary));">
+                    What if you could activate your body's own GLP-1 production naturally, without drugs, without needles, and without the risks?
+                </p>
+
+                <p class="content-text">
+                    Turns out… you can. Thanks to a forgotten medical innovation born during the chaos of World War II.
+                </p>
+            </section>
+
+            <!-- Historical Solution Section -->
+            <section class="content-section">
+                <h2 class="section-title">
+                    The 1943 Military Medical Breakthrough That's Changing Women's Health Today
+                </h2>
+
+                <div class="highlight-box">
+                    <p class="content-text">
+                        In the final years of WWII, U.S. medics were faced with a brutal problem.
+                    </p>
+
+                    <p class="content-text">
+                        Wounded soldiers with stomach injuries couldn't take pills. They couldn't eat. They couldn't digest anything.
+                    </p>
+
+                    <p class="content-text">
+                        And yet, they needed life-saving medicine fast.
+                    </p>
+
+                    <p class="content-text" style="font-size: 1.25rem; font-weight: 700; color: hsl(var(--primary));">
+                        The solution? Transdermal delivery—a way to send critical compounds through the skin, directly into the bloodstream.
+                    </p>
+
+                    <p class="content-text">
+                        It bypassed the gut entirely. No swallowing. No digestion. Just rapid, direct absorption.
+                    </p>
+                </div>
+
+                <p class="content-text" style="font-size: 1.25rem; font-weight: 600; color: hsl(var(--primary));">
+                    It worked so well, this method is still used today in hospitals for:
+                </p>
+
+                <div class="highlight-primary">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="feature-list-item">
+                                <i class="fas fa-check-circle check-icon"></i>
+                                <span>Hormone replacement therapy</span>
+                            </div>
+                            <div class="feature-list-item">
+                                <i class="fas fa-check-circle check-icon"></i>
+                                <span>Smoking cessation</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-list-item">
+                                <i class="fas fa-check-circle check-icon"></i>
+                                <span>Pain management</span>
+                            </div>
+                            <div class="feature-list-item">
+                                <i class="fas fa-check-circle check-icon"></i>
+                                <span>Heart medications</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="content-text">
+                    Now, 80 years later, that same battlefield discovery is being used to help women stimulate GLP-1 naturally and finally get their metabolism working again.
+                </p>
+            </section>
+
+            <!-- Historical Military Medical Image -->
+            <section class="content-section">
+                <div class="border rounded">
+                    <img src="/lovable-uploads/ac3d4059-6944-438c-8f4a-116d60d88850.png" 
+                         alt="Historical black and white photograph of military medics treating a wounded soldier during World War II, demonstrating early battlefield medical innovations" 
+                         class="w-100" style="height: 16rem; object-fit: cover; object-position: bottom; border-radius: 0.5rem 0.5rem 0 0;">
+                    <div class="image-caption">
+                        World War II medics pioneered transdermal delivery methods to treat wounded soldiers when traditional medicine couldn't be administered orally.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Supplements Fail Section -->
+            <section class="content-section">
+                <h2 class="section-title">
+                    Why Most GLP-1 Supplements Stop Working After 45
+                </h2>
+
+                <p class="content-text">
+                    Dr. Sarah Chen, a metabolic researcher at Stanford Medical Center, first noticed the problem during routine blood tests.
+                </p>
+
+                <p class="content-text">
+                    Women in their late 40s, 50s, and 60s were taking supplements—good ones, backed by science. Some were even taking prescription GLP-1 drugs.
+                </p>
+
+                <p class="content-text">
+                    But their test results told a different story.
+                </p>
+
+                <p class="content-text">
+                    They were still nutrient-deficient. Still gaining weight. Still fatigued.
+                </p>
+
+                <p class="content-text">
+                    One patient—age 52—was spending hundreds of dollars every month on high-end supplements. Yet her labs showed she was absorbing almost nothing.
+                </p>
+
+                <div class="quote-box">
+                    <p class="quote-text">
+                        "These women weren't failing their supplements. Their supplements were failing them."
+                    </p>
+                    <cite class="quote-author">— Dr. Sarah Chen</cite>
+                </div>
+
+                <h3 class="section-title" style="font-size: 1.5rem;">
+                    <i class="fas fa-flask mr-3" style="color: hsl(var(--primary));"></i>
+                    The Real Problem Is Absorption
+                </h3>
+
+                <p class="content-text">
+                    As you age, your body goes through three changes that drastically reduce how well you absorb nutrients:
+                </p>
+
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <div class="problem-card">
+                            <div class="d-flex align-items-start">
+                                <div class="problem-icon">🔥</div>
+                                <div>
+                                    <h4 class="problem-title">Stomach Acid</h4>
+                                    <p class="problem-description">Kills up to 60% of nutrients before they leave the gut</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <div class="problem-card">
+                            <div class="d-flex align-items-start">
+                                <div class="problem-icon">🥘</div>
+                                <div>
+                                    <h4 class="problem-title">Liver Filtering</h4>
+                                    <p class="problem-description">Removes another 40% through "first-pass metabolism"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <div class="problem-card">
+                            <div class="d-flex align-items-start">
+                                <div class="problem-icon">⏰</div>
+                                <div>
+                                    <h4 class="problem-title">Slowed Digestion</h4>
+                                    <p class="problem-description">Especially common in women taking GLP-1 injections like Ozempic</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warning-box">
+                    <p class="content-text" style="margin-bottom: 0;">
+                        In short, even the most effective nutrients can't help you if they never make it into your bloodstream.
+                    </p>
+                </div>
+
+                <p class="content-text">
+                    That's why Dr. Chen went back to a long-lost method from 1943—and gave it a modern purpose.
+                </p>
+            </section>
+
+            <!-- Solution Section -->
+            <section class="content-section">
+                <h2 class="section-title">
+                    The Patch That Helps Activate GLP-1—Naturally, Safely, and Effectively
+                </h2>
+
+                <p class="content-text">
+                    After years of research, Dr. Chen and her team developed a medical-grade skin patch designed to deliver GLP-1 activating nutrients directly through the skin.
+                </p>
+
+                <div class="highlight-primary">
+                    <p class="text-center" style="font-size: 1.5rem; font-weight: 700; color: hsl(var(--primary)); margin-bottom: 1.5rem;">
+                        It's called Patched
+                    </p>
+
+                    <p class="content-text">
+                        And it's the first of its kind: A transdermal nutrient patch made specifically for women over 45 who want to take back control of their hunger, cravings, and metabolism—without relying on synthetic injections.
+                    </p>
+
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-3">
+                            <div class="no-benefit-icon">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <p>No pills to swallow</p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="no-benefit-icon">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <p>No digestive issues</p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="no-benefit-icon">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <p>No injections, ever</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="content-text">
+                    Just clinically-supported nutrients, delivered straight into your bloodstream, using the same wartime medical principle that once saved soldiers' lives.
+                </p>
+            </section>
+
+            <!-- Ingredients Section -->
+            <section class="content-section">
+                <h2 class="section-title">
+                    The 4 Natural Nutrients That Help Stimulate GLP-1
+                </h2>
+
+                <p class="content-text">
+                    Each Patched patch contains a precise blend of four science-backed ingredients shown to support natural GLP-1 activation:
+                </p>
+
+                <div class="ingredient-card">
+                    <div class="d-flex align-items-start">
+                        <div class="ingredient-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle check-icon mr-2"></i>
+                                <h3 class="ingredient-name mb-0">Berberine</h3>
+                            </div>
+                            <p class="ingredient-description">
+                                Often called "Nature's Ozempic." Shown to reduce food intake by 47% in human trials.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ingredient-card">
+                    <div class="d-flex align-items-start">
+                        <div class="ingredient-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle check-icon mr-2"></i>
+                                <h3 class="ingredient-name mb-0">Lemon Fruit Extract</h3>
+                            </div>
+                            <p class="ingredient-description">
+                                Triggers GLP-1 release in just 30 minutes—helping you feel full faster and longer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ingredient-card">
+                    <div class="d-flex align-items-start">
+                        <div class="ingredient-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle check-icon mr-2"></i>
+                                <h3 class="ingredient-name mb-0">Red Orange Complex</h3>
+                            </div>
+                            <p class="ingredient-description">
+                                Targets stubborn belly fat. Shown to reduce waist circumference in clinical studies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ingredient-card">
+                    <div class="d-flex align-items-start">
+                        <div class="ingredient-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle check-icon mr-2"></i>
+                                <h3 class="ingredient-name mb-0">Saffron Extract</h3>
+                            </div>
+                            <p class="ingredient-description">
+                                Reduces emotional eating and sugar cravings by up to 70%.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-primary">
+                    <p class="content-text" style="margin-bottom: 0;">
+                        Together, they work to support your body's natural metabolic rhythm—the one your body used to follow before hormones, stress, and time got in the way.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Transdermal Delivery Benefits -->
+            <section class="content-section">
+                <div class="border rounded">
+                    <img src="/lovable-uploads/44568e39-635a-4642-b6f5-6429c8bb905f.png" 
+                         alt="Scientific comparison diagram showing transdermal patch delivery versus pills and supplements, illustrating 8-hour sustained release through skin absorption versus short-term oral absorption with liver damage" 
+                         class="w-100" style="height: 24rem; object-fit: cover; object-position: center; border-radius: 0.5rem 0.5rem 0 0;">
+                    <div class="image-caption">
+                        Why transdermal patches deliver superior results: 8+ hours of sustained absorption while bypassing digestive limitations.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="content-section">
+                <h2 class="section-title">
+                    Backed by Research. Proven by Women.
+                </h2>
+
+                <p class="content-text">
+                    In a 6-month observational study conducted with 847 women using Patched daily, the results were impossible to ignore:
+                </p>
+
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="results-card">
+                            <h3 class="results-title">Appetite & Cravings</h3>
+                            <div class="results-item">
+                                <i class="fas fa-check-circle results-icon"></i>
+                                <span class="results-text">73% felt less hungry between meals</span>
+                            </div>
+                            <div class="results-item">
+                                <i class="fas fa-check-circle results-icon"></i>
+                                <span class="results-text">65% reported fewer sugar cravings</span>
+                            </div>
+                            <div class="results-item">
+                                <i class="fas fa-check-circle results-icon"></i>
+                                <span class="results-text">81% said they felt satisfied after smaller meals</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="results-card">
+                            <h3 class="results-title">Weight & Fat Loss</h3>
+                            <div class="results-item">
+                                <i class="fas fa-check-circle results-icon"></i>
+                                <span class="results-text">Average weight lost: 22.4 lbs</span>
+                            </div>
+                            <div class="results-item">
+                                <i class="fas fa-check-circle results-icon"></i>
+                                <span class="results-text">3.9 inches off the waist</span>
+                            </div>
+                            <div class="results-item">
+                                <i class="fas fa-check-circle results-icon"></i>
+                                <span class="results-text">3.8-point drop in BMI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="results-card">
+                            <h3 class="results-title">Energy & Metabolic Health</h3>
+                            <div class="results-item">
+                                <i class="fas fa-check-circle results-icon"></i>
+                                <span class="results-text">71% felt more energetic</span>
+                            </div>
+                            <div class="results-item">
+                                <i class="fas fa-check-circle results-icon"></i>
+                                <span class="results-text">67% had better blood sugar control</span>
+                            </div>
+                            <div class="results-item">
+                                <i class="fas fa-check-circle results-icon"></i>
+                                <span class="results-text">Nearly 50% reduced other medications</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Haven't You Heard Section -->
+            <section class="content-section">
+                <h2 class="section-title">
+                    Why You Haven't Heard About Patched Yet
+                </h2>
+
+                <p class="content-text">Let's be blunt: Drug companies bring in billions of dollars every year.</p>
+
+                <p class="content-text">
+                    They're loud. Flashy. Marketed like magic.
+                </p>
+
+                <p class="content-text">
+                    Patched isn't a drug. It's not synthetic. It's a natural solution rooted in history—and science.
+                </p>
+
+                <p class="content-text">
+                    But because it's affordable, effective, and drug-free… there's no massive pharma budget behind it.
+                </p>
+
+                <p class="content-text">
+                    That's why you're hearing about it now—through women, not TV ads.
+                </p>
+            </section>
+
+            <!-- Qualification Section -->
+            <section class="content-section">
+                <h2 class="section-title">
+                    Could Patched Work for You?
+                </h2>
+
+                <p class="content-text">
+                    If you answer "yes" to any of the following… it might be worth a closer look.
+                </p>
+
+                <div class="qualification-card">
+                    <i class="fas fa-check-circle check-icon"></i>
+                    <span>You're over 45 and struggling to manage your weight</span>
+                </div>
+
+                <div class="qualification-card">
+                    <i class="fas fa-check-circle check-icon"></i>
+                    <span>You're tired of cravings and emotional eating</span>
+                </div>
+
+                <div class="qualification-card">
+                    <i class="fas fa-check-circle check-icon"></i>
+                    <span>You've tried GLP-1 pills or injections with little success</span>
+                </div>
+
+                <div class="qualification-card">
+                    <i class="fas fa-check-circle check-icon"></i>
+                    <span>You want a natural, safe, proven alternative—without needles or side effects</span>
+                </div>
+
+                <div class="highlight-primary">
+                    <p class="content-text" style="margin-bottom: 0;">
+                        Then Patched may be exactly what your body's been missing.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Final CTA Section -->
+            <section class="content-section">
+                <h2 class="section-title">
+                    Try Patched Risk-Free — Lose 30 Pounds in 90 Days or It's Free
+                </h2>
+
+                <p class="content-text">
+                    If you've tried pills… injections… diets… and nothing has worked long-term, this is your invitation to try something completely different.
+                </p>
+
+                <p class="content-text">
+                    Patched uses a proven military medical method—transdermal delivery—to help you naturally activate GLP-1, control cravings, and finally feel in control of your weight again.
+                </p>
+
+                <p class="content-text">
+                    And now, for a limited time, you can join our 30 Pounds in 90 Days Challenge—with zero risk.
+                </p>
+
+                <div class="highlight-primary">
+                    <h3 class="section-title" style="font-size: 1.5rem;">Here's how it works:</h3>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="step-number mr-3">1</div>
+                        <span>Order Patched within the next 48 hours</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="step-number mr-3">2</div>
+                        <span>Use it exactly as directed for 90 days</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="step-number mr-3">3</div>
+                        <span>If you don't lose at least 30 pounds, you get a full refund—no questions asked</span>
+                    </div>
+                </div>
+
+                <p class="content-text">
+                    You'll be automatically enrolled in the challenge when you purchase today. No forms. No hoops. Just real results—or it's on us.
+                </p>
+
+                <div class="text-center highlight-primary">
+                    <p class="content-text" style="font-size: 1.25rem; font-weight: 700; color: hsl(var(--primary));">
+                        This is clinical-level metabolic support—without injections, without side effects, and without waste.
+                    </p>
+                    <p class="content-text">
+                        But this guarantee and enrollment window close in 48 hours.
+                    </p>
+                    <a href="#" class="btn-primary-custom btn-lg-custom">
+                        Try Patched Risk-Free Today →
+                    </a>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- Sticky CTA -->
+    <div id="sticky-cta" class="sticky-cta">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="flex-1">
+                    <p class="sticky-cta-title mb-0">Try Patched Risk-Free</p>
+                    <p class="sticky-cta-subtitle mb-0 d-none d-sm-block">Lose 30 Pounds in 90 Days or It's Free</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="btn-primary-custom btn-sm-custom mr-3">
+                        Try Risk-Free →
+                    </a>
+                    <button class="btn-close" onclick="hideStickyCTA()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 4.5 JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // Sticky CTA functionality
+        let stickyCTA = document.getElementById('sticky-cta');
+        let isStickyCTAVisible = false;
+
+        function handleScroll() {
+            const scrolled = window.scrollY;
+            const height = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrolled / height) * 100;
+            
+            if (scrollPercent > 40 && !isStickyCTAVisible) {
+                stickyCTA.classList.add('show');
+                isStickyCTAVisible = true;
+            }
+        }
+
+        function hideStickyCTA() {
+            stickyCTA.classList.remove('show');
+            isStickyCTAVisible = false;
+        }
+
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScroll);
+
+        // CTA button click handlers
+        document.querySelectorAll('.btn-primary-custom').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Add your CTA click handling logic here
+                console.log('CTA clicked');
+            });
+        });
+    </script>
+</body>
+</html>
