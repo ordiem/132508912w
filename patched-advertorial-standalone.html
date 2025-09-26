@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patched - Natural GLP-1 Alternative</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: hsl(224, 71%, 4%);
+            background-color: hsl(0, 0%, 100%);
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Header Styles */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 40;
+            background-color: hsla(0, 0%, 100%, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid hsl(220, 13%, 91%);
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: hsl(262, 83%, 58%);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .advertorial-badge {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            background-color: hsla(262, 83%, 58%, 0.1);
+            color: hsla(224, 71%, 4%, 0.5);
+            border-radius: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 500;
+            opacity: 0.5;
+        }
+
+        .mobile-menu {
+            display: none;
+            padding: 0.5rem;
+        }
+
+        .hamburger {
+            width: 1.25rem;
+            height: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .hamburger span {
+            width: 100%;
+            height: 0.125rem;
+            background-color: hsl(224, 71%, 4%);
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu {
+                display: block;
+            }
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2rem 0;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hero Section */
+        .hero-section {
+            margin-bottom: 3rem;
+        }
+
+        .hero-image-container {
+            position: relative;
+            margin-bottom: 2rem;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: right;
+        }
+
+        @media (min-width: 768px) {
+            .hero-image {
+                height: 350px;
+            }
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, hsla(0, 0%, 100%, 0.8), transparent, transparent);
+        }
+
+        .category-text {
+            font-size: 0.75rem;
+            color: hsl(215, 13%, 65%);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .hero-title {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: hsl(224, 71%, 4%);
+            font-family: 'Inter', sans-serif;
+        }
+
+        @media (min-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-title {
+                font-size: 3rem;
+            }
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: hsl(215, 13%, 65%);
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+
+        @media (min-width: 768px) {
+            .hero-subtitle {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: hsl(224, 71%, 4%);
+            margin-bottom: 1.5rem;
+            font-family: 'Inter', sans-serif;
+        }
+
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        .prose p {
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: hsl(224, 71%, 4%);
+            margin-bottom: 1.5rem;
+        }
+
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 3.5rem;
+            line-height: 1;
+            margin-right: 0.5rem;
+            margin-top: 0.125rem;
+            font-weight: 700;
+            color: hsl(262, 83%, 58%);
+        }
+
+        .highlight-text {
+            font-weight: 700;
+            color: hsl(262, 83%, 58%);
+        }
+
+        .bold-text {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: hsl(262, 83%, 58%);
+        }
+
+        /* Cards and Boxes */
+        .gradient-card {
+            background: linear-gradient(to right, hsla(262, 83%, 58%, 0.05), hsla(262, 83%, 58%, 0.1));
+            border: 1px solid hsla(262, 83%, 58%, 0.2);
+            border-radius: 0.5rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .muted-gradient-card {
+            background: linear-gradient(to right, hsla(215, 13%, 65%, 0.3), hsla(262, 83%, 58%, 0.1));
+            border: 1px solid hsl(215, 13%, 65%);
+            border-radius: 0.5rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .check-icon {
+            width: 1.25rem;
+            height: 1.25rem;
+            color: hsl(142, 76%, 36%);
+            flex-shrink: 0;
+        }
+
+        .feature-text {
+            color: hsl(224, 71%, 4%);
+        }
+
+        .info-card {
+            background: hsl(0, 0%, 98%);
+            border: 1px solid hsl(220, 13%, 91%);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .info-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Historical Section */
+        .historical-image {
+            border-radius: 0.5rem;
+            overflow: hidden;
+            border: 1px solid hsl(220, 13%, 91%);
+            margin-bottom: 3rem;
+        }
+
+        .historical-image img {
+            width: 100%;
+            height: 16rem;
+            object-fit: cover;
+            object-position: bottom;
+        }
+
+        @media (min-width: 768px) {
+            .historical-image img {
+                height: 18rem;
+            }
+        }
+
+        .image-caption {
+            padding: 1rem;
+            background-color: hsla(215, 13%, 65%, 0.2);
+        }
+
+        .caption-text {
+            font-size: 0.875rem;
+            color: hsl(215, 13%, 65%);
+            font-style: italic;
+            text-align: center;
+        }
+
+        /* Process Cards */
+        .process-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .process-item {
+            background: linear-gradient(to right, hsl(0, 0%, 98%), hsla(262, 83%, 58%, 0.05));
+            border: 1px solid hsl(220, 13%, 91%);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            transition: transform 0.2s ease;
+        }
+
+        .process-item:hover {
+            transform: scale(1.02);
+        }
+
+        .process-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .process-icon {
+            font-size: 1.5rem;
+        }
+
+        .process-title {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: hsl(224, 71%, 4%);
+            margin-bottom: 0.5rem;
+        }
+
+        .process-description {
+            color: hsl(215, 13%, 65%);
+        }
+
+        /* Ingredients Section */
+        .ingredients-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .ingredient-card {
+            background: linear-gradient(to right, hsl(0, 0%, 98%), hsla(262, 83%, 58%, 0.05));
+            border: 1px solid hsl(220, 13%, 91%);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            transition: transform 0.2s ease;
+        }
+
+        .ingredient-card:hover {
+            transform: scale(1.02);
+        }
+
+        .ingredient-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .ingredient-icon-container {
+            width: 3rem;
+            height: 3rem;
+            background: hsl(262, 83%, 58%);
+            color: white;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .ingredient-details {
+            flex: 1;
+        }
+
+        .ingredient-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .ingredient-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: hsl(224, 71%, 4%);
+        }
+
+        .ingredient-description {
+            color: hsl(215, 13%, 65%);
+            line-height: 1.6;
+        }
+
+        /* Results Grid */
+        .results-grid {
+            display: grid;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .results-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .results-card {
+            background: linear-gradient(135deg, hsla(262, 83%, 58%, 0.05), hsla(262, 83%, 58%, 0.1));
+            border: 1px solid hsla(262, 83%, 58%, 0.2);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+        }
+
+        .results-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: hsl(262, 83%, 58%);
+            margin-bottom: 1rem;
+        }
+
+        .results-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .results-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .results-text {
+            font-size: 0.875rem;
+            color: hsl(224, 71%, 4%);
+        }
+
+        /* Blockquote */
+        .blockquote {
+            background: hsla(262, 83%, 58%, 0.1);
+            border-left: 4px solid hsl(262, 83%, 58%);
+            padding: 1.5rem;
+            border-radius: 0 0.5rem 0.5rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .blockquote-text {
+            font-size: 1.25rem;
+            font-style: italic;
+            color: hsl(224, 71%, 4%);
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+        .blockquote-cite {
+            color: hsl(215, 13%, 65%);
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background: hsla(0, 84%, 60%, 0.1);
+            border: 1px solid hsla(0, 84%, 60%, 0.2);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .warning-text {
+            font-size: 1.125rem;
+            color: hsl(224, 71%, 4%);
+        }
+
+        /* Qualification Section */
+        .qualification-grid {
+            display: grid;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .qualification-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            background: hsl(0, 0%, 98%);
+            border: 1px solid hsl(220, 13%, 91%);
+            border-radius: 0.5rem;
+            padding: 1rem;
+        }
+
+        .qualification-text {
+            color: hsl(224, 71%, 4%);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(to right, hsla(262, 83%, 58%, 0.1), hsla(262, 83%, 58%, 0.1));
+            border: 1px solid hsla(262, 83%, 58%, 0.3);
+            border-radius: 0.5rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: hsl(224, 71%, 4%);
+            margin-bottom: 1.5rem;
+        }
+
+        .steps-grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .step-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .step-number {
+            width: 2rem;
+            height: 2rem;
+            background: hsl(262, 83%, 58%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.875rem;
+        }
+
+        .step-text {
+            color: hsl(224, 71%, 4%);
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            white-space: nowrap;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            font-family: inherit;
+        }
+
+        .btn:focus-visible {
+            outline: 2px solid hsl(262, 83%, 58%);
+            outline-offset: 2px;
+        }
+
+        .btn:disabled {
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        .btn-primary {
+            background: hsl(262, 83%, 58%);
+            color: white;
+            padding: 0.5rem 1rem;
+        }
+
+        .btn-primary:hover {
+            background: hsl(262, 83%, 52%);
+        }
+
+        .btn-lg {
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+        }
+
+        @media (min-width: 640px) {
+            .btn-lg {
+                padding: 1rem 2rem;
+                font-size: 1.125rem;
+            }
+        }
+
+        .btn-sm {
+            padding: 0.25rem 1.5rem;
+            font-size: 0.875rem;
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: hsl(224, 71%, 4%);
+            padding: 0.25rem 0.5rem;
+        }
+
+        .btn-ghost:hover {
+            background: hsl(210, 40%, 98%);
+        }
+
+        .btn-full {
+            width: 100%;
+        }
+
+        @media (min-width: 640px) {
+            .btn-full {
+                width: auto;
+            }
+        }
+
+        .btn-center {
+            margin: 0 auto;
+            display: block;
+        }
+
+        /* Final CTA Box */
+        .final-cta {
+            text-align: center;
+            background: linear-gradient(to right, hsla(262, 83%, 58%, 0.1), hsla(262, 83%, 58%, 0.1));
+            border: 1px solid hsla(262, 83%, 58%, 0.2);
+            border-radius: 0.5rem;
+            padding: 2rem;
+        }
+
+        .final-cta-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: hsl(262, 83%, 58%);
+            margin-bottom: 1.5rem;
+        }
+
+        .final-cta-text {
+            font-size: 1.125rem;
+            color: hsl(224, 71%, 4%);
+            margin-bottom: 2rem;
+        }
+
+        /* Sticky CTA */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            background: hsla(0, 0%, 100%, 0.95);
+            backdrop-filter: blur(8px);
+            border-top: 1px solid hsl(220, 13%, 91%);
+            box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+            display: none;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .sticky-cta.show {
+            display: block;
+        }
+
+        .sticky-cta-content {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 0.75rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .sticky-cta-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .sticky-cta-title {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: hsl(224, 71%, 4%);
+        }
+
+        .sticky-cta-subtitle {
+            font-size: 0.75rem;
+            color: hsl(215, 13%, 65%);
+            display: none;
+        }
+
+        @media (min-width: 640px) {
+            .sticky-cta-subtitle {
+                display: block;
+            }
+        }
+
+        .sticky-cta-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .scale-in {
+            animation: scaleIn 0.2s ease-out;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0.95);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Icons */
+        .icon-sm {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .icon-md {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+
+        .icon-lg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* No benefits section */
+        .no-benefits-grid {
+            display: grid;
+            gap: 1rem;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .no-benefits-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .no-benefit-item {
+            text-align: center;
+        }
+
+        .no-benefit-icon {
+            width: 3rem;
+            height: 3rem;
+            background: hsl(142, 76%, 36%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.75rem;
+        }
+
+        .no-benefit-text {
+            color: hsl(224, 71%, 4%);
+        }
+
+        /* Image with description */
+        .image-with-description {
+            border-radius: 0.5rem;
+            overflow: hidden;
+            border: 1px solid hsl(220, 13%, 91%);
+            margin-bottom: 3rem;
+        }
+
+        .comparison-image {
+            width: 100%;
+            height: 24rem;
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-left">
+                        <h1 class="logo">50&Beyond</h1>
+                        <span class="advertorial-badge">Advertorial</span>
+                    </div>
+                    <button class="mobile-menu">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="container main-content">
+            <article class="fade-in">
+                <!-- Hero Section -->
+                <div class="hero-section">
+                    <!-- Hero Image -->
+                    <div class="hero-image-container">
+                        <img 
+                            src="/lovable-uploads/5fd12bde-144d-44a8-bf22-340cdae61a4d.png" 
+                            alt="Confident woman in her 50s representing natural health and wellness empowerment" 
+                            class="hero-image"
+                        />
+                        <div class="hero-overlay"></div>
+                    </div>
+                    
+                    <div class="category-text">
+                        HEALTH • WOMEN'S WELLNESS • BREAKTHROUGH RESEARCH
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        The Natural GLP-1 Alternative That Requires No Injections
+                    </h1>
+                    
+                    <div class="hero-subtitle">
+                        An 80-Year-Old Military Invention Is Helping Women Over 45 Control Cravings, Boost Energy, and Reignite Fat Loss. Without Pills, Needles, or Side Effects
+                    </div>
+                </div>
+
+                <!-- Opening Hook -->
+                <div class="content-section">
+                    <div class="prose">
+                        <p class="drop-cap">
+                            If you're a woman over 45 and struggling with stubborn weight, blood sugar swings, or relentless food cravings... you may be missing the one thing that matters most: <span class="highlight-text">absorption</span>.
+                        </p>
+                        
+                        <p>
+                            You see, it's not just about what you take. It's about what your body can actually use.
+                        </p>
+
+                        <p>
+                            And for millions of women, especially after age 45, that's where everything starts to go wrong.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- GLP-1 Hormone Section -->
+                <section class="content-section">
+                    <h2 class="section-title">
+                        The Hidden Hormone Behind Your Hunger
+                    </h2>
+
+                    <div class="prose">
+                        <p>
+                            You may not have heard of it, but GLP-1 is the hormone that governs nearly every aspect of your metabolism.
+                        </p>
+                    </div>
+
+                    <div class="gradient-card">
+                        <div class="feature-grid">
+                            <div class="feature-item">
+                                <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="feature-text">It tells your brain when you're full</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="feature-text">It regulates how quickly your stomach empties</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="feature-text">It controls insulin, blood sugar, and how your body stores fat</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prose">
+                        <p>
+                            GLP-1 is so effective, drug companies have built billion-dollar weight loss brands by synthetically mimicking it.
+                        </p>
+
+                        <p>
+                            But there's a catch.
+                        </p>
+
+                        <p>
+                            Those drugs are expensive. They require injections. And they often come with serious side effects.
+                        </p>
+
+                        <p class="bold-text">
+                            What if you could activate your body's own GLP-1 production naturally, without drugs, without needles, and without the risks?
+                        </p>
+
+                        <p>
+                            Turns out… you can. Thanks to a forgotten medical innovation born during the chaos of World War II.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Historical Solution Section -->
+                <section class="content-section">
+                    <h2 class="section-title">
+                        The 1943 Military Medical Breakthrough That's Changing Women's Health Today
+                    </h2>
+
+                    <div class="muted-gradient-card">
+                        <div class="prose">
+                            <p>
+                                In the final years of WWII, U.S. medics were faced with a brutal problem.
+                            </p>
+
+                            <p>
+                                Wounded soldiers with stomach injuries couldn't take pills. They couldn't eat. They couldn't digest anything.
+                            </p>
+
+                            <p>
+                                And yet, they needed life-saving medicine fast.
+                            </p>
+
+                            <p class="bold-text">
+                                The solution? Transdermal delivery—a way to send critical compounds through the skin, directly into the bloodstream.
+                            </p>
+
+                            <p>
+                                It bypassed the gut entirely. No swallowing. No digestion. Just rapid, direct absorption.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="prose">
+                        <p class="bold-text">
+                            It worked so well, this method is still used today in hospitals for:
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-grid">
+                            <div class="feature-item">
+                                <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="feature-text">Hormone replacement therapy</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="feature-text">Smoking cessation</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="feature-text">Pain management</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="feature-text">Heart medications</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prose">
+                        <p>
+                            Now, 80 years later, that same battlefield discovery is being used to help women stimulate GLP-1 naturally and finally get their metabolism working again.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Historical Military Medical Image -->
+                <section class="content-section">
+                    <div class="historical-image">
+                        <img src="/lovable-uploads/ac3d4059-6944-438c-8f4a-116d60d88850.png" alt="Historical black and white photograph of military medics treating a wounded soldier during World War II, demonstrating early battlefield medical innovations" />
+                        <div class="image-caption">
+                            <p class="caption-text">
+                                World War II medics pioneered transdermal delivery methods to treat wounded soldiers when traditional medicine couldn't be administered orally.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Why Supplements Fail Section -->
+                <section class="content-section">
+                    <h2 class="section-title">
+                        Why Most GLP-1 Supplements Stop Working After 45
+                    </h2>
+
+                    <div class="prose">
+                        <p>
+                            Dr. Sarah Chen, a metabolic researcher at Stanford Medical Center, first noticed the problem during routine blood tests.
+                        </p>
+
+                        <p>
+                            Women in their late 40s, 50s, and 60s were taking supplements—good ones, backed by science. Some were even taking prescription GLP-1 drugs.
+                        </p>
+
+                        <p>
+                            But their test results told a different story.
+                        </p>
+
+                        <p>
+                            They were still nutrient-deficient. Still gaining weight. Still fatigued.
+                        </p>
+
+                        <p>
+                            One patient—age 52—was spending hundreds of dollars every month on high-end supplements. Yet her labs showed she was absorbing almost nothing.
+                        </p>
+                    </div>
+
+                    <div class="blockquote">
+                        <p class="blockquote-text">
+                            "These women weren't failing their supplements. Their supplements were failing them."
+                        </p>
+                        <cite class="blockquote-cite">— Dr. Sarah Chen</cite>
+                    </div>
+
+                    <h3 class="section-title" style="font-size: 1.5rem; display: flex; align-items: center; gap: 0.75rem;">
+                        <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                        </svg>
+                        The Real Problem Is Absorption
+                    </h3>
+
+                    <div class="prose">
+                        <p>
+                            As you age, your body goes through three changes that drastically reduce how well you absorb nutrients:
+                        </p>
+                    </div>
+
+                    <div class="process-grid">
+                        <div class="process-item">
+                            <div class="process-content">
+                                <div class="process-icon">🔥</div>
+                                <div>
+                                    <h4 class="process-title">Stomach Acid</h4>
+                                    <p class="process-description">Kills up to 60% of nutrients before they leave the gut</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process-item">
+                            <div class="process-content">
+                                <div class="process-icon">🥘</div>
+                                <div>
+                                    <h4 class="process-title">Liver Filtering</h4>
+                                    <p class="process-description">Removes another 40% through "first-pass metabolism"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process-item">
+                            <div class="process-content">
+                                <div class="process-icon">⏰</div>
+                                <div>
+                                    <h4 class="process-title">Slowed Digestion</h4>
+                                    <p class="process-description">Especially common in women taking GLP-1 injections like Ozempic</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="warning-box">
+                        <p class="warning-text">
+                            In short, even the most effective nutrients can't help you if they never make it into your bloodstream.
+                        </p>
+                    </div>
+
+                    <div class="prose">
+                        <p>
+                            That's why Dr. Chen went back to a long-lost method from 1943—and gave it a modern purpose.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Solution Section -->
+                <section class="content-section">
+                    <h2 class="section-title">
+                        The Patch That Helps Activate GLP-1—Naturally, Safely, and Effectively
+                    </h2>
+
+                    <div class="prose">
+                        <p>
+                            After years of research, Dr. Chen and her team developed a medical-grade skin patch designed to deliver GLP-1 activating nutrients directly through the skin.
+                        </p>
+                    </div>
+
+                    <div class="gradient-card">
+                        <p class="final-cta-title" style="text-align: center; margin-bottom: 1.5rem;">
+                            It's called Patched
+                        </p>
+
+                        <div class="prose" style="margin-bottom: 1.5rem;">
+                            <p>
+                                And it's the first of its kind: A transdermal nutrient patch made specifically for women over 45 who want to take back control of their hunger, cravings, and metabolism—without relying on synthetic injections.
+                            </p>
+                        </div>
+
+                        <div class="no-benefits-grid">
+                            <div class="no-benefit-item">
+                                <div class="no-benefit-icon">
+                                    <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                </div>
+                                <p class="no-benefit-text">No pills to swallow</p>
+                            </div>
+                            <div class="no-benefit-item">
+                                <div class="no-benefit-icon">
+                                    <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                </div>
+                                <p class="no-benefit-text">No digestive issues</p>
+                            </div>
+                            <div class="no-benefit-item">
+                                <div class="no-benefit-icon">
+                                    <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                </div>
+                                <p class="no-benefit-text">No injections, ever</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prose">
+                        <p>
+                            Just clinically-supported nutrients, delivered straight into your bloodstream, using the same wartime medical principle that once saved soldiers' lives.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Ingredients Section -->
+                <section class="content-section">
+                    <h2 class="section-title">
+                        The 4 Natural Nutrients That Help Stimulate GLP-1
+                    </h2>
+
+                    <div class="prose">
+                        <p>
+                            Each Patched patch contains a precise blend of four science-backed ingredients shown to support natural GLP-1 activation:
+                        </p>
+                    </div>
+
+                    <div class="ingredients-grid">
+                        <div class="ingredient-card">
+                            <div class="ingredient-content">
+                                <div class="ingredient-icon-container">
+                                    <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                                    </svg>
+                                </div>
+                                <div class="ingredient-details">
+                                    <div class="ingredient-header">
+                                        <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <h3 class="ingredient-name">Berberine</h3>
+                                    </div>
+                                    <p class="ingredient-description">
+                                        Often called "Nature's Ozempic." Shown to reduce food intake by 47% in human trials.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ingredient-card">
+                            <div class="ingredient-content">
+                                <div class="ingredient-icon-container">
+                                    <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div class="ingredient-details">
+                                    <div class="ingredient-header">
+                                        <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <h3 class="ingredient-name">Lemon Fruit Extract</h3>
+                                    </div>
+                                    <p class="ingredient-description">
+                                        Triggers GLP-1 release in just 30 minutes—helping you feel full faster and longer.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ingredient-card">
+                            <div class="ingredient-content">
+                                <div class="ingredient-icon-container">
+                                    <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                    </svg>
+                                </div>
+                                <div class="ingredient-details">
+                                    <div class="ingredient-header">
+                                        <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <h3 class="ingredient-name">Red Orange Complex</h3>
+                                    </div>
+                                    <p class="ingredient-description">
+                                        Targets stubborn belly fat. Shown to reduce waist circumference in clinical studies.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ingredient-card">
+                            <div class="ingredient-content">
+                                <div class="ingredient-icon-container">
+                                    <svg class="check-icon icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <div class="ingredient-details">
+                                    <div class="ingredient-header">
+                                        <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <h3 class="ingredient-name">Saffron Extract</h3>
+                                    </div>
+                                    <p class="ingredient-description">
+                                        Reduces emotional eating and sugar cravings by up to 70%.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gradient-card">
+                        <p class="final-cta-text">
+                            Together, they work to support your body's natural metabolic rhythm—the one your body used to follow before hormones, stress, and time got in the way.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Transdermal Delivery Benefits -->
+                <section class="content-section">
+                    <div class="image-with-description">
+                        <img src="/lovable-uploads/44568e39-635a-4642-b6f5-6429c8bb905f.png" alt="Scientific comparison diagram showing transdermal patch delivery versus pills and supplements, illustrating 8-hour sustained release through skin absorption versus short-term oral absorption with liver damage" class="comparison-image" />
+                        <div class="image-caption">
+                            <p class="caption-text">
+                                Why transdermal patches deliver superior results: 8+ hours of sustained absorption while bypassing digestive limitations.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Results Section -->
+                <section class="content-section">
+                    <h2 class="section-title">
+                        Backed by Research. Proven by Women.
+                    </h2>
+
+                    <div class="prose">
+                        <p>
+                            In a 6-month observational study conducted with 847 women using Patched daily, the results were impossible to ignore:
+                        </p>
+                    </div>
+
+                    <div class="results-grid">
+                        <div class="results-card">
+                            <h3 class="results-title">Appetite & Cravings</h3>
+                            <div class="results-list">
+                                <div class="results-item">
+                                    <svg class="icon-sm check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="results-text">73% felt less hungry between meals</span>
+                                </div>
+                                <div class="results-item">
+                                    <svg class="icon-sm check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="results-text">65% reported fewer sugar cravings</span>
+                                </div>
+                                <div class="results-item">
+                                    <svg class="icon-sm check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="results-text">81% said they felt satisfied after smaller meals</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="results-card">
+                            <h3 class="results-title">Weight & Fat Loss</h3>
+                            <div class="results-list">
+                                <div class="results-item">
+                                    <svg class="icon-sm check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="results-text">Average weight lost: 22.4 lbs</span>
+                                </div>
+                                <div class="results-item">
+                                    <svg class="icon-sm check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="results-text">3.9 inches off the waist</span>
+                                </div>
+                                <div class="results-item">
+                                    <svg class="icon-sm check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="results-text">3.8-point drop in BMI</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="results-card">
+                            <h3 class="results-title">Energy & Metabolic Health</h3>
+                            <div class="results-list">
+                                <div class="results-item">
+                                    <svg class="icon-sm check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="results-text">71% felt more energetic</span>
+                                </div>
+                                <div class="results-item">
+                                    <svg class="icon-sm check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="results-text">67% had better blood sugar control</span>
+                                </div>
+                                <div class="results-item">
+                                    <svg class="icon-sm check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="results-text">Nearly 50% reduced other medications</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Why Haven't You Heard Section -->
+                <section class="content-section">
+                    <h2 class="section-title">
+                        Why You Haven't Heard About Patched Yet
+                    </h2>
+
+                    <div class="prose">
+                        <p>Let's be blunt: Drug companies bring in billions of dollars every year.</p>
+
+                        <p>
+                            They're loud. Flashy. Marketed like magic.
+                        </p>
+
+                        <p>
+                            Patched isn't a drug. It's not synthetic. It's a natural solution rooted in history—and science.
+                        </p>
+
+                        <p>
+                            But because it's affordable, effective, and drug-free… there's no massive pharma budget behind it.
+                        </p>
+
+                        <p>
+                            That's why you're hearing about it now—through women, not TV ads.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Qualification Section -->
+                <section class="content-section">
+                    <h2 class="section-title">
+                        Could Patched Work for You?
+                    </h2>
+
+                    <div class="prose">
+                        <p>
+                            If you answer "yes" to any of the following… it might be worth a closer look.
+                        </p>
+                    </div>
+
+                    <div class="qualification-grid">
+                        <div class="qualification-item">
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="qualification-text">You're over 45 and struggling to manage your weight</span>
+                        </div>
+                        <div class="qualification-item">
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="qualification-text">You're tired of cravings and emotional eating</span>
+                        </div>
+                        <div class="qualification-item">
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="qualification-text">You've tried GLP-1 pills or injections with little success</span>
+                        </div>
+                        <div class="qualification-item">
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="qualification-text">You want a natural, safe, proven alternative—without needles or side effects</span>
+                        </div>
+                    </div>
+
+                    <div class="gradient-card">
+                        <p class="final-cta-text">
+                            Then Patched may be exactly what your body's been missing.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Final CTA Section -->
+                <section class="content-section">
+                    <h2 class="section-title">
+                        Try Patched Risk-Free — Lose 30 Pounds in 90 Days or It's Free
+                    </h2>
+
+                    <div class="prose">
+                        <p>
+                            If you've tried pills… injections… diets… and nothing has worked long-term, this is your invitation to try something completely different.
+                        </p>
+
+                        <p>
+                            Patched uses a proven military medical method—transdermal delivery—to help you naturally activate GLP-1, control cravings, and finally feel in control of your weight again.
+                        </p>
+
+                        <p>
+                            And now, for a limited time, you can join our 30 Pounds in 90 Days Challenge—with zero risk.
+                        </p>
+                    </div>
+
+                    <div class="cta-section">
+                        <h3 class="cta-title">Here's how it works:</h3>
+                        <div class="steps-grid">
+                            <div class="step-item">
+                                <div class="step-number">1</div>
+                                <span class="step-text">Order Patched within the next 48 hours</span>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">2</div>
+                                <span class="step-text">Use it exactly as directed for 90 days</span>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">3</div>
+                                <span class="step-text">If you don't lose at least 30 pounds, you get a full refund—no questions asked</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prose">
+                        <p>
+                            You'll be automatically enrolled in the challenge when you purchase today. No forms. No hoops. Just real results—or it's on us.
+                        </p>
+                    </div>
+
+                    <div class="final-cta">
+                        <p class="final-cta-title">
+                            This is clinical-level metabolic support—without injections, without side effects, and without waste.
+                        </p>
+                        <p class="final-cta-text">
+                            But this guarantee and enrollment window close in 48 hours.
+                        </p>
+                        <button class="btn btn-primary btn-lg btn-full btn-center">
+                            Try Patched Risk-Free Today →
+                        </button>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <!-- Sticky CTA -->
+        <div id="sticky-cta" class="sticky-cta">
+            <div class="sticky-cta-content">
+                <div class="sticky-cta-text">
+                    <p class="sticky-cta-title">Try Patched Risk-Free</p>
+                    <p class="sticky-cta-subtitle">Lose 30 Pounds in 90 Days or It's Free</p>
+                </div>
+                <div class="sticky-cta-actions">
+                    <button class="btn btn-primary btn-sm scale-in">
+                        Try Risk-Free →
+                    </button>
+                    <button id="close-sticky-cta" class="btn btn-ghost btn-sm">
+                        <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                        <span class="sr-only">Close</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sticky CTA functionality
+        let showStickyCTA = false;
+        const stickyCTA = document.getElementById('sticky-cta');
+        const closeStickyButton = document.getElementById('close-sticky-cta');
+
+        function handleScroll() {
+            const scrolled = window.scrollY;
+            const height = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = scrolled / height * 100;
+            
+            const shouldShow = scrollPercent > 40;
+            
+            if (shouldShow !== showStickyCTA) {
+                showStickyCTA = shouldShow;
+                if (showStickyCTA) {
+                    stickyCTA.classList.add('show');
+                } else {
+                    stickyCTA.classList.remove('show');
+                }
+            }
+        }
+
+        function closeStickyCtaHandler() {
+            showStickyCTA = false;
+            stickyCTA.classList.remove('show');
+        }
+
+        // Event listeners
+        window.addEventListener('scroll', handleScroll);
+        closeStickyButton.addEventListener('click', closeStickyCtaHandler);
+
+        // Clean up on page unload
+        window.addEventListener('beforeunload', function() {
+            window.removeEventListener('scroll', handleScroll);
+            closeStickyButton.removeEventListener('click', closeStickyCtaHandler);
+        });
+    </script>
+</body>
+</html>
